@@ -43,8 +43,8 @@ sudo ./install.sh [OPTIONS...] # for global installation
 
 ## GTK4
 ```sh
-rm -rf 				                             "$HOME/.config/gtk-4.0/{assets,gtk.css,gtk-dark.css}"
-mkdir -p 				                           "$HOME/.config/gtk-4.0"
+rm -rf                                     "$HOME/.config/gtk-4.0/{assets,gtk.css,gtk-dark.css}"
+mkdir -p                                   "$HOME/.config/gtk-4.0"
 ln -sf "${theme_dir}/gtk-4.0/assets"       "$HOME/.config/gtk-4.0/"
 ln -sf "${theme_dir}/gtk-4.0/gtk.css"      "$HOME/.config/gtk-4.0/gtk.css"
 ln -sf "${theme_dir}/gtk-4.0/gtk-dark.css" "$HOME/.config/gtk-4.0/gtk-dark.css"
