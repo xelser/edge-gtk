@@ -19,8 +19,8 @@ A **vivid** and **colorful** 🎨 GTK theme based on [vinceliuice](https://githu
 - XFCE (xfwm)
 - MATE (metacity)
 - GNOME (gnome-shell)
-> Soon, using [Gradiance](https://github.com/GradienceTeam/Gradience).
-> Because it has better support in the long run.
+> Soon, using [Gradiance](https://github.com/GradienceTeam/Gradience). Because it has better support in the long run.
+- Preferred icon theme: [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) with Edge's [Papirus Folders](https://github.com/xelser/edge-papirus-folders) theme
 # Install
 ## Requirements for GTK2
 - Arch: `sudo pacman -S gtk-engine-murrine gtk-engines`
@@ -67,9 +67,8 @@ flatpak override --user --env=GTK_THEME=${gtk_theme} # apply theme (Ex. Edge-lig
 ```
 > "So why install it to `$HOME/.themes` if flatpak wants it in `$HOME/.local/share/themes`?" Because GTK2 likes it in `$HOME/.themes`
 
-# Related Projects
-- Preferred icon theme: [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
-> papirus-folder theme coming soon.
+# Recommended and Related Projects
+
 - More Edge projects: https://github.com/sainnhe/edge/wiki/Related-Projects
 # Credits
 - The beautiful [Edge Colorscheme](https://github.com/sainnhe/edge) by [sainnhe](https://github.com/sainnhe)
