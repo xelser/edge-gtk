@@ -1,5 +1,6 @@
 # About
 A GTK theme based on [vinceliuice](https://github.com/vinceliuice)'s [Matcha GTK Theme](https://github.com/vinceliuice/Matcha-gtk-theme) and [sainnhe](https://github.com/sainnhe)'s [Edge Colorscheme](https://github.com/sainnhe/edge). 
+
 This theme aims to be:
 - **Cold** ❄️ 
 - **Vivid** 🎨
@@ -48,8 +49,7 @@ ln -sf "${theme_dir}/gtk-4.0/assets"       "$HOME/.config/gtk-4.0/"
 ln -sf "${theme_dir}/gtk-4.0/gtk.css"      "$HOME/.config/gtk-4.0/gtk.css"
 ln -sf "${theme_dir}/gtk-4.0/gtk-dark.css" "$HOME/.config/gtk-4.0/gtk-dark.css"
 ```
-> ${theme_dir} is the directory of your selected theme (Ex. Edge-light-purple)
-> Either in `/usr/share/themes/` or in `$HOME/.themes/`
+> ${theme_dir} is the directory of your selected theme (Ex. Edge-light-purple). Either in `/usr/share/themes/` or in `$HOME/.themes/`
 
 ## Flatpak
 The directory of the theme should be present in `$HOME/.local/share/themes/` as per [Flatpak Documentations](https://docs.flatpak.org/en/latest/desktop-integration.html) (anything in `/usr` is blacklisted). So you either have to copy from `/usr/share/themes` to `$HOME/.local/share/themes` ***OR*** if you installed it in `$HOME/.themes`, symlinking it to `$HOME/.local/share/themes` also works.
@@ -60,10 +60,9 @@ flatpak override --user --filesystem=xdg-data/themes:ro # theme directory
 flatpak override --user --filesystem=$HOME/.themes:ro # theme directory
 flatpak override --user --env=GTK_THEME=${gtk_theme} # apply theme (Ex. Edge-light-purple)
 ```
-> "So why install it to `$HOME/.themes` if flatpak wants it in `$HOME/.local/share/themes`"?
-> Because GTK2 likes it in `$HOME/.themes`
+> "So why install it to `$HOME/.themes` if flatpak wants it in `$HOME/.local/share/themes`?" Because GTK2 likes it in `$HOME/.themes`
 
-### Related Projects
+# Related Projects
 - Preferred icon theme: [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
 > papirus-folder theme coming soon.
 - More Edge projects: https://github.com/sainnhe/edge/wiki/Related-Projects
@@ -73,6 +72,7 @@ flatpak override --user --env=GTK_THEME=${gtk_theme} # apply theme (Ex. Edge-lig
   - [Material](https://github.com/material-theme/vsc-material-theme)
 - [Matcha GTK Theme](https://github.com/vinceliuice/Matcha-gtk-theme) by [vinceliuice](https://github.com/vinceliuice) for the awesome work
   - One of the popular GTK theme: [Arc Theme](https://github.com/horst3180/Arc-theme)
+
 This project wouldn't be possible without any of the above. Show them great support :heart:
 # License
 [GPL-3.0](./LICENSE) © xelser
