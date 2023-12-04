@@ -5,6 +5,7 @@ This theme aims to be:
 - **Cold** ❄️ 
 - **Vivid** 🎨
 - Easy on the eyes (soft contrast)
+
 ## Supports
 - GTK 2,3, and 4 
 - Cinnamon
@@ -73,3 +74,10 @@ flatpak override --user --env=GTK_THEME=${gtk_theme} # apply theme (Ex. Edge-lig
 This project wouldn't be possible without any of the above. Show them great support :heart:
 # License
 [GPL-3.0](./LICENSE) © xelser
+
+#### Preview
+![yellow](preview/Edge-light-yellow.png)
+![blue](preview/Edge-blue.png)
+![dark-red](preview/Edge-dark-red.png)
+![dark-cyan](preview/Edge-dark-cyan.png)
+![dark-purple](preview/Edge-dark-purple.png)
