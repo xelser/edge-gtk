@@ -24,12 +24,9 @@ This theme aims to be:
 git clone https://github.com/xelser/edge-gtk && cd edge-gtk
 ```
 2. Run the script
-```sh
-./install.sh [OPTIONS...] # for user installation
-```
-```sh
-sudo ./install.sh [OPTIONS...] # for global installation
-```
+- For user installation: `./install.sh` [OPTIONS...]
+- For global installation: `sudo ./install.sh` [OPTIONS...]
+
 #### OPTIONS:
 
 ```sh
