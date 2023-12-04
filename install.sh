@@ -13,7 +13,7 @@ fi
 REO_DIR="$(cd $(dirname "$0") && pwd)"
 SRC_DIR="${REO_DIR}/src"
 
-THEME_NAME=Beta_Edge
+THEME_NAME=Edge
 COLOR_VARIANTS=('' '-light' '-dark')
 THEME_VARIANTS=('-red' '-yellow' '-green' '-blue' '-purple' '-cyan')
 
