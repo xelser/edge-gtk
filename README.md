@@ -11,7 +11,7 @@ A **vivid** and **colorful** 🎨 GTK theme based on [vinceliuice](https://githu
   ![dark-purple](preview/Edge-dark-purple.png)
 </details>
 
-> ⚠️ Since this theme is still a WIP here are some [things](https://github.com/xelser/edge-gtk/issues/1) that needs to be done
+> ⚠️ Even though this theme is very usable, its still a WIP. There are some [loose ends](https://github.com/xelser/edge-gtk/issues/1) that needs to be addressed.
 
 ## Supports
 - GTK 2,3, and 4 
