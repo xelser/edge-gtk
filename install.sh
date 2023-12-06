@@ -111,7 +111,7 @@ install() {
   if [[ "${color}" == '-light' ]] ; then
     cp -r "themerc${color}"                                                           "${themedir}/xfwm4/themerc"
   else
-    cp -r "themerc-dark"                                                      				"${themedir}/xfwm4/themerc"
+    cp -r "themerc${theme}"                                                           "${themedir}/xfwm4/themerc"
   fi
 
   # Install xfwm4 hdpi Theme
@@ -121,7 +121,7 @@ install() {
   if [[ "${color}" == '-light' ]] ; then
     cp -r "themerc${color}"                                                           "${themedir}-hdpi/xfwm4/themerc"
   else
-    cp -r "themerc-dark"                                                 							"${themedir}-hdpi/xfwm4/themerc"
+    cp -r "themerc${theme}"                                                           "${themedir}-hdpi/xfwm4/themerc"
   fi
 
   # Install xfwm4 xhdpi Theme
@@ -131,7 +131,7 @@ install() {
   if [[ "${color}" == '-light' ]] ; then
     cp -r "themerc${color}"                                                           "${themedir}-xhdpi/xfwm4/themerc"
   else
-    cp -r "themerc-dark"                                                  						"${themedir}-xhdpi/xfwm4/themerc"
+    cp -r "themerc${theme}"                                                           "${themedir}-xhdpi/xfwm4/themerc"
   fi
 }
 
