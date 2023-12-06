@@ -308,8 +308,8 @@ entry:disabled {
 
 entry.warning {
   color: #FAFAFA;
-  border-color: #E5C07B;
-  background-color: #edd7ae;
+  border-color: #D19A66;
+  background-color: #e1c0a1;
 }
 
 entry.warning image {
@@ -318,13 +318,13 @@ entry.warning image {
 
 entry.warning:focus {
   color: #FAFAFA;
-  background-color: #E5C07B;
+  background-color: #D19A66;
   box-shadow: none;
 }
 
 entry.warning selection, entry.warning selection:focus {
   background-color: #FAFAFA;
-  color: #E5C07B;
+  color: #D19A66;
 }
 
 entry.error {
@@ -370,7 +370,7 @@ entry.search-missing selection, entry.search-missing selection:focus {
 }
 
 entry:drop(active):focus, entry:drop(active) {
-  border-color: #D19A66;
+  border-color: #E5C07B;
   box-shadow: none;
 }
 
@@ -558,8 +558,8 @@ button.text-button.image-button.popup {
 }
 
 button:drop(active) {
-  color: #D19A66;
-  border-color: #D19A66;
+  color: #E5C07B;
+  border-color: #E5C07B;
   box-shadow: none;
 }
 
@@ -850,12 +850,12 @@ toolbar.inline-toolbar toolbutton:only-child > button.flat, .inline-toolbar tool
 
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry.warning + entry,
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry + entry.warning {
-  border-left-color: #E5C07B;
+  border-left-color: #D19A66;
 }
 
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry.error + entry.warning,
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry.warning + entry.error {
-  border-left-color: #e39678;
+  border-left-color: #d9836e;
 }
 
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry + entry:focus:not(:last-child),
@@ -871,24 +871,24 @@ toolbar.inline-toolbar toolbutton:only-child > button.flat, .inline-toolbar tool
 
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry + entry:drop(active):not(:last-child),
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry + entry:drop(active):last-child {
-  border-left-color: #D19A66;
+  border-left-color: #E5C07B;
 }
 
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry:drop(active):not(:only-child) + entry,
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry:drop(active):not(:only-child) + button,
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry:drop(active):not(:only-child) + combobox > box > button.combo {
-  border-left-color: #D19A66;
+  border-left-color: #E5C07B;
 }
 
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry + entry.warning:focus:not(:last-child),
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry + entry.warning:focus:last-child {
-  border-left-color: #E5C07B;
+  border-left-color: #D19A66;
 }
 
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry.warning:focus:not(:only-child) + entry,
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry.warning:focus:not(:only-child) + button,
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry.warning:focus:not(:only-child) + combobox > box > button.combo {
-  border-left-color: #E5C07B;
+  border-left-color: #D19A66;
 }
 
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry + entry.error:focus:not(:last-child),
@@ -961,12 +961,12 @@ toolbar.inline-toolbar toolbutton:only-child > button.flat, .inline-toolbar tool
 
 .osd .linked:not(.vertical) > entry.warning + entry,
 .osd .linked:not(.vertical) > entry + entry.warning {
-  border-left-color: #E5C07B;
+  border-left-color: #D19A66;
 }
 
 .osd .linked:not(.vertical) > entry.error + entry.warning,
 .osd .linked:not(.vertical) > entry.warning + entry.error {
-  border-left-color: #e39678;
+  border-left-color: #d9836e;
 }
 
 .osd .linked:not(.vertical) > entry + entry:focus:not(:last-child),
@@ -982,24 +982,24 @@ toolbar.inline-toolbar toolbutton:only-child > button.flat, .inline-toolbar tool
 
 .osd .linked:not(.vertical) > entry + entry:drop(active):not(:last-child),
 .osd .linked:not(.vertical) > entry + entry:drop(active):last-child {
-  border-left-color: #D19A66;
+  border-left-color: #E5C07B;
 }
 
 .osd .linked:not(.vertical) > entry:drop(active):not(:only-child) + entry,
 .osd .linked:not(.vertical) > entry:drop(active):not(:only-child) + button,
 .osd .linked:not(.vertical) > entry:drop(active):not(:only-child) + combobox > box > button.combo {
-  border-left-color: #D19A66;
+  border-left-color: #E5C07B;
 }
 
 .osd .linked:not(.vertical) > entry + entry.warning:focus:not(:last-child),
 .osd .linked:not(.vertical) > entry + entry.warning:focus:last-child {
-  border-left-color: #E5C07B;
+  border-left-color: #D19A66;
 }
 
 .osd .linked:not(.vertical) > entry.warning:focus:not(:only-child) + entry,
 .osd .linked:not(.vertical) > entry.warning:focus:not(:only-child) + button,
 .osd .linked:not(.vertical) > entry.warning:focus:not(:only-child) + combobox > box > button.combo {
-  border-left-color: #E5C07B;
+  border-left-color: #D19A66;
 }
 
 .osd .linked:not(.vertical) > entry + entry.error:focus:not(:last-child),
@@ -1060,12 +1060,12 @@ toolbar.inline-toolbar toolbutton:only-child > button.flat, .inline-toolbar tool
 
 .linked.vertical > entry.warning + entry,
 .linked.vertical > entry + entry.warning {
-  border-top-color: #E5C07B;
+  border-top-color: #D19A66;
 }
 
 .linked.vertical > entry.error + entry.warning,
 .linked.vertical > entry.warning + entry.error {
-  border-top-color: #e39678;
+  border-top-color: #d9836e;
 }
 
 .linked.vertical > entry + entry:focus:not(:last-child),
@@ -1081,24 +1081,24 @@ toolbar.inline-toolbar toolbutton:only-child > button.flat, .inline-toolbar tool
 
 .linked.vertical > entry + entry:drop(active):not(:last-child),
 .linked.vertical > entry + entry:drop(active):last-child {
-  border-top-color: #D19A66;
+  border-top-color: #E5C07B;
 }
 
 .linked.vertical > entry:drop(active):not(:only-child) + entry,
 .linked.vertical > entry:drop(active):not(:only-child) + button,
 .linked.vertical > entry:drop(active):not(:only-child) + combobox > box > button.combo {
-  border-top-color: #D19A66;
+  border-top-color: #E5C07B;
 }
 
 .linked.vertical > entry + entry.warning:focus:not(:last-child),
 .linked.vertical > entry + entry.warning:focus:last-child {
-  border-top-color: #E5C07B;
+  border-top-color: #D19A66;
 }
 
 .linked.vertical > entry.warning:focus:not(:only-child) + entry,
 .linked.vertical > entry.warning:focus:not(:only-child) + button,
 .linked.vertical > entry.warning:focus:not(:only-child) + combobox > box > button.combo {
-  border-top-color: #E5C07B;
+  border-top-color: #D19A66;
 }
 
 .linked.vertical > entry + entry.error:focus:not(:last-child),
@@ -1189,7 +1189,7 @@ headerbar .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar):not(.sta
 headerbar .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar):not(.stack-switcher) > entry + entry:drop(active):not(:last-child),
 headerbar .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar):not(.stack-switcher) > entry + entry:drop(active):last-child, .titlebar .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar):not(.stack-switcher) > entry + entry:drop(active):not(:last-child),
 .titlebar .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar):not(.stack-switcher) > entry + entry:drop(active):last-child {
-  border-left-color: #D19A66;
+  border-left-color: #E5C07B;
 }
 
 headerbar .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar):not(.stack-switcher) > entry:drop(active):not(:only-child) + entry, .titlebar .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar):not(.stack-switcher) > entry:drop(active):not(:only-child) + entry {
@@ -1211,7 +1211,7 @@ headerbar .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar):not(.sta
 headerbar .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar):not(.stack-switcher) > entry + entry.warning:focus:not(:last-child),
 headerbar .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar):not(.stack-switcher) > entry + entry.warning:focus:last-child, .titlebar .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar):not(.stack-switcher) > entry + entry.warning:focus:not(:last-child),
 .titlebar .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar):not(.stack-switcher) > entry + entry.warning:focus:last-child {
-  border-left-color: #E5C07B;
+  border-left-color: #D19A66;
 }
 
 headerbar .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar):not(.stack-switcher) > entry.warning:focus:not(:only-child) + entry, .titlebar .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar):not(.stack-switcher) > entry.warning:focus:not(:only-child) + entry {
@@ -1452,7 +1452,7 @@ spinbutton:not(.vertical) > entry:focus + button {
 }
 
 spinbutton:not(.vertical) > entry:drop(active) + button {
-  border-left-color: #D19A66;
+  border-left-color: #E5C07B;
 }
 
 .osd spinbutton:not(.vertical) > button:hover:not(:active),
@@ -1485,7 +1485,7 @@ spinbutton.vertical > entry:focus + button {
 }
 
 spinbutton.vertical > entry:drop(active) + button {
-  border-top-color: #D19A66;
+  border-top-color: #E5C07B;
 }
 
 combobox button.combo {
@@ -1501,8 +1501,8 @@ combobox arrow {
 }
 
 combobox:drop(active) button.combo {
-  color: #D19A66;
-  border-color: #D19A66;
+  color: #E5C07B;
+  border-color: #E5C07B;
   box-shadow: none;
 }
 
@@ -1909,18 +1909,18 @@ headerbar entry progress {
 
 headerbar entry.warning {
   color: #FAFAFA;
-  border-color: #E5C07B;
-  background-color: #9b8561;
+  border-color: #D19A66;
+  background-color: #8f6e54;
 }
 
 headerbar entry.warning:focus {
   color: #FAFAFA;
-  background-color: #E5C07B;
+  background-color: #D19A66;
 }
 
 headerbar entry.warning selection, headerbar entry.warning selection:focus {
   background-color: #FAFAFA;
-  color: #E5C07B;
+  color: #D19A66;
 }
 
 headerbar entry.error {
@@ -2067,11 +2067,11 @@ headerbar .linked:not(.vertical):not(.path-bar) > entry.warning + entry {
 }
 
 headerbar .linked:not(.vertical):not(.path-bar) > entry + entry.warning {
-  border-left-color: #E5C07B;
+  border-left-color: #D19A66;
 }
 
 headerbar .linked:not(.vertical):not(.path-bar) > entry.error + entry.warning {
-  border-left-color: #E5C07B;
+  border-left-color: #D19A66;
 }
 
 headerbar .linked:not(.vertical):not(.path-bar) > entry.warning + entry.error {
@@ -3779,8 +3779,8 @@ levelbar block:not(.empty) {
 }
 
 levelbar block.low {
-  border-color: #E5C07B;
-  background-color: #E5C07B;
+  border-color: #D19A66;
+  background-color: #D19A66;
 }
 
 levelbar block.high {
@@ -3789,8 +3789,8 @@ levelbar block.high {
 }
 
 levelbar block.full {
-  border-color: #D38AEA;
-  background-color: #D38AEA;
+  border-color: #76AF6F;
+  background-color: #76AF6F;
 }
 
 levelbar block.empty {
@@ -4061,12 +4061,12 @@ row:not(:hover) {
 
 .app-notification .linked:not(.vertical) > entry.warning + entry,
 .app-notification .linked:not(.vertical) > entry + entry.warning {
-  border-left-color: #E5C07B;
+  border-left-color: #D19A66;
 }
 
 .app-notification .linked:not(.vertical) > entry.error + entry.warning,
 .app-notification .linked:not(.vertical) > entry.warning + entry.error {
-  border-left-color: #e39678;
+  border-left-color: #d9836e;
 }
 
 .app-notification .linked:not(.vertical) > entry + entry:focus:not(:last-child),
@@ -4082,24 +4082,24 @@ row:not(:hover) {
 
 .app-notification .linked:not(.vertical) > entry + entry:drop(active):not(:last-child),
 .app-notification .linked:not(.vertical) > entry + entry:drop(active):last-child {
-  border-left-color: #D19A66;
+  border-left-color: #E5C07B;
 }
 
 .app-notification .linked:not(.vertical) > entry:drop(active):not(:only-child) + entry,
 .app-notification .linked:not(.vertical) > entry:drop(active):not(:only-child) + button,
 .app-notification .linked:not(.vertical) > entry:drop(active):not(:only-child) + combobox > box > button.combo {
-  border-left-color: #D19A66;
+  border-left-color: #E5C07B;
 }
 
 .app-notification .linked:not(.vertical) > entry + entry.warning:focus:not(:last-child),
 .app-notification .linked:not(.vertical) > entry + entry.warning:focus:last-child {
-  border-left-color: #E5C07B;
+  border-left-color: #D19A66;
 }
 
 .app-notification .linked:not(.vertical) > entry.warning:focus:not(:only-child) + entry,
 .app-notification .linked:not(.vertical) > entry.warning:focus:not(:only-child) + button,
 .app-notification .linked:not(.vertical) > entry.warning:focus:not(:only-child) + combobox > box > button.combo {
-  border-left-color: #E5C07B;
+  border-left-color: #D19A66;
 }
 
 .app-notification .linked:not(.vertical) > entry + entry.error:focus:not(:last-child),
@@ -4380,7 +4380,7 @@ placessidebar row label.sidebar-label:dir(rtl) {
 placessidebar row.sidebar-placeholder-row {
   padding: 0 8px;
   min-height: 2px;
-  background-image: linear-gradient(to bottom, #D19A66, #D19A66);
+  background-image: linear-gradient(to bottom, #E5C07B, #E5C07B);
   background-clip: content-box;
 }
 
@@ -4389,15 +4389,15 @@ placessidebar row.sidebar-new-bookmark-row {
 }
 
 placessidebar row:drop(active):not(:disabled) {
-  box-shadow: inset 0 1px #D19A66, inset 0 -1px #D19A66;
+  box-shadow: inset 0 1px #E5C07B, inset 0 -1px #E5C07B;
 }
 
 placessidebar row:drop(active):not(:disabled), placessidebar row:drop(active):not(:disabled) label, placessidebar row:drop(active):not(:disabled) image {
-  color: #D19A66;
+  color: #E5C07B;
 }
 
 placessidebar row:drop(active):not(:disabled):selected {
-  background-color: #D19A66;
+  background-color: #E5C07B;
 }
 
 placessidebar row:drop(active):not(:disabled):selected, placessidebar row:drop(active):not(:disabled):selected label, placessidebar row:drop(active):not(:disabled):selected image {
@@ -4498,11 +4498,11 @@ infobar.question > revealer > box selection, infobar.question:backdrop > reveale
 }
 
 infobar.warning > revealer > box, infobar.warning:backdrop > revealer > box {
-  background-color: #E5C07B;
+  background-color: #D19A66;
 }
 
 infobar.warning > revealer > box selection, infobar.warning:backdrop > revealer > box selection {
-  color: #E5C07B;
+  color: #D19A66;
 }
 
 infobar.error > revealer > box, infobar.error:backdrop > revealer > box {
@@ -4794,7 +4794,7 @@ viewswitcher button:active + button, viewswitcher button:active:hover + button, 
 
 *:drop(active):focus,
 *:drop(active) {
-  box-shadow: inset 0 0 0 1px #D19A66;
+  box-shadow: inset 0 0 0 1px #E5C07B;
 }
 
 decoration {
@@ -6611,7 +6611,7 @@ dialog.background.csd box.dialog-vbox grid.horizontal stack scrolledwindow.frame
 
 .nemo-window .primary-toolbar .linked:not(.vertical):not(.path-bar):not(.stack-switcher) > entry + entry:drop(active):not(:last-child),
 .nemo-window .primary-toolbar .linked:not(.vertical):not(.path-bar):not(.stack-switcher) > entry + entry:drop(active):last-child {
-  border-left-color: #D19A66;
+  border-left-color: #E5C07B;
 }
 
 .nemo-window .primary-toolbar .linked:not(.vertical):not(.path-bar):not(.stack-switcher) > entry:drop(active):not(:only-child) + entry {
@@ -6630,7 +6630,7 @@ dialog.background.csd box.dialog-vbox grid.horizontal stack scrolledwindow.frame
 
 .nemo-window .primary-toolbar .linked:not(.vertical):not(.path-bar):not(.stack-switcher) > entry + entry.warning:focus:not(:last-child),
 .nemo-window .primary-toolbar .linked:not(.vertical):not(.path-bar):not(.stack-switcher) > entry + entry.warning:focus:last-child {
-  border-left-color: #E5C07B;
+  border-left-color: #D19A66;
 }
 
 .nemo-window .primary-toolbar .linked:not(.vertical):not(.path-bar):not(.stack-switcher) > entry.warning:focus:not(:only-child) + entry {
@@ -6746,12 +6746,12 @@ window.background:not(.csd) > widget > scrollbar {
 
 window.background:not(.csd) > widget > scrollbar,
 window.background:not(.csd) > widget > frame > border {
-  border-color: #EEF1F4;
+  border-color: #c0cbd6;
 }
 
 window.background:not(.csd) > widget > entry,
 window.background:not(.csd) > widget > button > button {
-  border: 1px solid #EEF1F4;
+  border: 1px solid #c0cbd6;
   border-radius: 2px;
 }
 
@@ -6759,7 +6759,7 @@ window.background:not(.csd) > widget > entry,
 window.background:not(.csd) > widget .entry {
   border-radius: 2px;
   background-image: image(#FAFAFA);
-  border: 1px solid #EEF1F4;
+  border: 1px solid #c0cbd6;
 }
 
 window.background:not(.csd) > widget > entry:focus,
@@ -6769,7 +6769,7 @@ window.background:not(.csd) > widget .entry:focus {
 
 window.background:not(.csd) > widget > spinbutton {
   background-image: image(#f4f6f8);
-  border: 1px solid #EEF1F4;
+  border: 1px solid #c0cbd6;
 }
 
 window.background:not(.csd) > widget > spinbutton:active {
@@ -6807,15 +6807,15 @@ window.background:not(.csd) > menu > menuitem > label:disabled {
 #MozillaGtkWidget > window.background > menu > separator {
   padding: 0;
   border: none;
-  background-color: #EEF1F4;
+  background-color: #c0cbd6;
 }
 
 #MozillaGtkWidget > widget border {
-  border-color: #EEF1F4;
+  border-color: #c0cbd6;
 }
 
 #MozillaGtkWidget > widget separator {
-  background-color: #EEF1F4;
+  background-color: #c0cbd6;
 }
 
 #MozillaGtkWidget > widget > scrolledwindow > textview {
@@ -9794,12 +9794,12 @@ filechooser placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled), f
 .nautilus-window placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled),
 .nautilus-window placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled) label,
 .nautilus-window placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled) .sidebar-icon {
-  color: #D19A66;
+  color: #E5C07B;
 }
 
 filechooser placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled):selected,
 .nautilus-window placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled):selected {
-  background-color: #D19A66;
+  background-color: #E5C07B;
 }
 
 filechooser placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled):selected, filechooser placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled):selected label, filechooser placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled):selected .sidebar-icon,
@@ -9980,9 +9980,9 @@ filechooser placessidebar.sidebar scrollbar trough,
 @define-color theme_unfocused_base_color #FAFAFA;
 @define-color borders rgba(32, 32, 35, 0.15);
 @define-color unfocused_borders rgba(32, 32, 35, 0.15);
-@define-color warning_color #E5C07B;
+@define-color warning_color #D19A66;
 @define-color error_color #E06C75;
-@define-color success_color #D38AEA;
+@define-color success_color #76AF6F;
 @define-color placeholder_text_color #A8A8A8;
 @define-color link_color #9b3abb;
 @define-color content_view_bg #FAFAFA;
@@ -10008,7 +10008,7 @@ filechooser placessidebar.sidebar scrollbar trough,
 @define-color budgie_tasklist_indicator_color #B05CCC;
 @define-color budgie_tasklist_indicator_color_active #B05CCC;
 @define-color budgie_tasklist_indicator_color_active_window #734689;
-@define-color budgie_tasklist_indicator_color_attention #E5C07B;
+@define-color budgie_tasklist_indicator_color_attention #D19A66;
 @define-color STRAWBERRY_100 #FF9262;
 @define-color STRAWBERRY_300 #FF793E;
 @define-color STRAWBERRY_500 #F15D22;

@@ -6,19 +6,14 @@ $text_color: if($variant == 'light', #4F5868, #C5CDD9);
 $bg_color: if($variant =='light', #EEF1F4, #2C2E34);
 $fg_color: if($variant =='light', #4B505B, #DDE2E7);
 
-@if $color=='green' {
-  $base_color: if($variant =='light', #FAFAFA, #363A49);
-  $bg_color: if($variant =='light', #EEF1F4, #2B2D37);
-}
-
 @if $color=='cyan' {
   $base_color: if($variant =='light', #FAFAFA, #363A49);
   $bg_color: if($variant =='light', #EEF1F4, #2B2D37);
 }
 
 @if $color=='blue' {
-  $base_color: if($variant =='light', #FAFAFA, #363A4E);
-  $bg_color: if($variant =='light', #EEF1F4, #2B2D3A);
+  $base_color: if($variant =='light', #FAFAFA, #363A49);
+  $bg_color: if($variant =='light', #EEF1F4, #2B2D37);
 }
 
 @if $color=='purple' {
@@ -26,14 +21,33 @@ $fg_color: if($variant =='light', #4B505B, #DDE2E7);
   $bg_color: if($variant =='light', #EEF1F4, #2B2D3A);
 }
 
-$selected_fg_color: #FAFAFA;
-$selected_bg_color: #2eb398;
+$selected_bg_color: #F0544C;
 @if $color=='red' { $selected_bg_color: #D05858; }
 @if $color=='yellow' { $selected_bg_color: #BE7E05; }
 @if $color=='green' { $selected_bg_color: #608E32; }
 @if $color=='cyan' { $selected_bg_color: #3A8B84; }
 @if $color=='blue' { $selected_bg_color: #5079BE; }
 @if $color=='purple' { $selected_bg_color: #B05CCC; }
+$selected_fg_color: #FAFAFA;
+
+$warning_color: #D19A66;
+$warning_fg_color: #FAFAFA;
+
+$error_color: #E06C75;
+$error_fg_color: #FAFAFA;
+
+$success_color: #76AF6F;
+$success_fg_color: #FAFAFA;
+
+$destructive_color: #BE5046;
+$destructive_fg_color: #FAFAFA;
+
+$suggested_color: $selected_bg_color;
+$suggested_fg_color: #FAFAFA;
+
+$progress_color: $selected_bg_color;
+$drop_target_color: #E5C07B;
+
 $alt_selected_bg_color: lighten($selected_bg_color, 6%);
 $selected_borders_color: darken($selected_bg_color, 20%);
 $borders_color: if($variant =='light', rgba(#202023, 0.15), rgba(#202023, 0.25));
@@ -50,27 +64,6 @@ $link_visited_color: if($variant == 'light', darken($text_color, 5%),
 
 $selection_mode_bg: if($trans == 'true', rgba($selected_bg_color, 0.95), $selected_bg_color);
 $selection_mode_fg: $selected_fg_color;
-$warning_color: #E5C07B;
-$error_color: #E06C75;
-$success_color: #3498db;
-$destructive_color: #BE5046;
-$suggested_color: $selected_bg_color;
-$progress_color: $selected_bg_color;
-
-$warning_fg_color: #FAFAFA;
-$error_fg_color: #FAFAFA;
-$success_fg_color: #FAFAFA;
-$destructive_fg_color: #FAFAFA;
-$suggested_fg_color: #FAFAFA;
-
-@if $color=='red' { $success_color: #EC7279; }
-@if $color=='yellow' { $success_color: #DEB974; }
-@if $color=='green' { $success_color: #A0C980; }
-@if $color=='cyan' { $success_color: #5DBBC1; }
-@if $color=='blue' { $success_color: #6CB6EB; }
-@if $color=='purple' { $success_color: #D38AEA; }
-
-$drop_target_color: #D19A66;
 
 //insensitive state derived colors
 $insensitive_fg_color: if($variant == 'light', rgba($fg_color, 0.55), rgba($fg_color, 0.45));
@@ -80,9 +73,9 @@ $header_bg: #24262A;
 @if $header=='light' { $header_bg: #E8EBF0; }
 @if $color=='red' and $header == 'dark' { $header_bg: if($variant =='light', #2C2E34, darken(#2C2E34, 3%)); }
 @if $color=='yellow' and $header == 'dark' { $header_bg: if($variant =='light', #2C2E34, darken(#2C2E34, 3%)); }
-@if $color=='green' and $header == 'dark' { $header_bg: if($variant =='light', #2B2D37, darken(#2B2D37, 3%)); }
+@if $color=='green' and $header == 'dark' { $header_bg: if($variant =='light', #2B2D37, darken(#2C2E34, 3%)); }
 @if $color=='cyan' and $header == 'dark' { $header_bg: if($variant =='light', #2B2D37, darken(#2B2D37, 3%)); }
-@if $color=='blue' and $header == 'dark' { $header_bg: if($variant =='light', #2B2D3A, darken(#2B2D3A, 3%)); }
+@if $color=='blue' and $header == 'dark' { $header_bg: if($variant =='light', #2B2D3A, darken(#2B2D37, 3%)); }
 @if $color=='purple' and $header == 'dark' { $header_bg: if($variant =='light', #2B2D3A, darken(#2B2D3A, 3%)); }
 
 $header_bg_backdrop: if($header == 'light', lighten($header_bg, 6%), lighten($header_bg, 5%));
@@ -112,9 +105,9 @@ $osd_insensitive_fg_color: mix($osd_fg_color, opacify($osd_bg_color, 1), 30%);
 $panel_bg: $bg_color;
 @if $color=='red' and $header == 'dark' { $panel_bg: #2C2E34; }
 @if $color=='yellow' and $header == 'dark' { $panel_bg: #2C2E34; }
-@if $color=='green' and $header == 'dark' { $panel_bg: #2B2D37; }
+@if $color=='green' and $header == 'dark' { $panel_bg: #2C2E34; }
 @if $color=='cyan' and $header == 'dark' { $panel_bg: #2B2D37; }
-@if $color=='blue' and $header == 'dark' { $panel_bg: #2B2D3A; }
+@if $color=='blue' and $header == 'dark' { $panel_bg: #2B2D37; }
 @if $color=='purple' and $header == 'dark' { $panel_bg: #2B2D3A; }
 
 $panel_fg: $fg_color;
