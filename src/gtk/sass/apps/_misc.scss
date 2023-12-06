@@ -149,7 +149,7 @@
 // Firefox and Thunderbird
 //
 
-$firefox_border: if($variant == 'light', darken($bg_color, 15%), $bg_color);
+$firefox_border: $bg_color;
 
 window.background:not(.csd) {
   > widget {
