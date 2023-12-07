@@ -73,9 +73,9 @@ $header_bg: #24262A;
 @if $header=='light' { $header_bg: #E8EBF0; }
 @if $color=='red' and $header == 'dark' { $header_bg: if($variant =='light', #2C2E34, darken(#2C2E34, 3%)); }
 @if $color=='yellow' and $header == 'dark' { $header_bg: if($variant =='light', #2C2E34, darken(#2C2E34, 3%)); }
-@if $color=='green' and $header == 'dark' { $header_bg: if($variant =='light', #2B2D37, darken(#2C2E34, 3%)); }
+@if $color=='green' and $header == 'dark' { $header_bg: if($variant =='light', #2C2E34, darken(#2C2E34, 3%)); }
 @if $color=='cyan' and $header == 'dark' { $header_bg: if($variant =='light', #2B2D37, darken(#2B2D37, 3%)); }
-@if $color=='blue' and $header == 'dark' { $header_bg: if($variant =='light', #2B2D3A, darken(#2B2D37, 3%)); }
+@if $color=='blue' and $header == 'dark' { $header_bg: if($variant =='light', #2B2D37, darken(#2B2D37, 3%)); }
 @if $color=='purple' and $header == 'dark' { $header_bg: if($variant =='light', #2B2D3A, darken(#2B2D3A, 3%)); }
 
 $header_bg_backdrop: if($header == 'light', lighten($header_bg, 6%), lighten($header_bg, 5%));
