@@ -18,8 +18,6 @@ A **vivid** and **colorful** 🎨 GTK theme based on [vinceliuice](https://githu
 - Cinnamon
 - XFCE (xfwm)
 - MATE (metacity)
-- GNOME (gnome-shell)
-> Soon, using [Gradiance](https://github.com/GradienceTeam/Gradience). Because it has better support in the long run.
 - Preferred icon theme: [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) with Edge's [Papirus Folders](https://github.com/xelser/edge-papirus-folders) theme
 # Install
 #### Requirements for GTK2
@@ -60,8 +58,6 @@ ln -sf "${theme_dir}/gtk-4.0/gtk-dark.css" "$HOME/.config/gtk-4.0/gtk-dark.css"
 
 
 ## Flatpak
-> ⚠️ Official Flatpak Package soon
-
 ### Using The Official [Flatpak Documentations](https://docs.flatpak.org/en/latest/desktop-integration.html) Instructions:
 The directory of the theme should be present in `$HOME/.local/share/themes/` (anything in `/usr` is blacklisted). So you either have to copy from `/usr/share/themes` to `$HOME/.local/share/themes` ***OR*** if you installed it in `$HOME/.themes`, symlinking it to `$HOME/.local/share/themes` also works.
 ```sh
