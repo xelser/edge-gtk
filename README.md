@@ -22,11 +22,11 @@ A **vivid** and **colorful** 🎨 GTK theme based on [vinceliuice](https://githu
 > Soon, using [Gradiance](https://github.com/GradienceTeam/Gradience). Because it has better support in the long run.
 - Preferred icon theme: [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) with Edge's [Papirus Folders](https://github.com/xelser/edge-papirus-folders) theme
 # Install
-## Requirements for GTK2
+#### Requirements for GTK2
 - Arch: `sudo pacman -S gtk-engine-murrine gtk-engines`
 - Fedora: `sudo dnf install gtk-murrine-engine gtk2-engines`
 - Debian/Ubuntu: `sudo apt-get install gtk2-engines-murrine gtk2-engines-pixbuf`
-### From Source
+## From Source
 1. Clone the Repo
 ```sh
 git clone https://github.com/xelser/edge-gtk && cd edge-gtk
@@ -35,7 +35,7 @@ git clone https://github.com/xelser/edge-gtk && cd edge-gtk
 - For user installation: `./install.sh` [OPTIONS...]
 - For global installation: `sudo ./install.sh` [OPTIONS...]
 
-#### OPTIONS:
+##### OPTIONS:
 
 ```sh
  -d, --dest DIR        Specify theme destination directory (Default: $HOME/.themes)
@@ -47,26 +47,36 @@ git clone https://github.com/xelser/edge-gtk && cd edge-gtk
 ```
 
 ## GTK4
+> Grab the directory of your selected theme (Ex. Edge-dark-blue). Either in `/usr/share/themes/` or in `$HOME/.themes/`
 ```sh
+theme_dir="/usr/share/themes/Edge-dark-blue"
+
 rm -rf                                     "$HOME/.config/gtk-4.0/{assets,gtk.css,gtk-dark.css}"
 mkdir -p                                   "$HOME/.config/gtk-4.0"
 ln -sf "${theme_dir}/gtk-4.0/assets"       "$HOME/.config/gtk-4.0/"
 ln -sf "${theme_dir}/gtk-4.0/gtk.css"      "$HOME/.config/gtk-4.0/gtk.css"
 ln -sf "${theme_dir}/gtk-4.0/gtk-dark.css" "$HOME/.config/gtk-4.0/gtk-dark.css"
 ```
-> ${theme_dir} is the directory of your selected theme (Ex. Edge-light-purple). Either in `/usr/share/themes/` or in `$HOME/.themes/`
+
 
 ## Flatpak
-The directory of the theme should be present in `$HOME/.local/share/themes/` as per [Flatpak Documentations](https://docs.flatpak.org/en/latest/desktop-integration.html) (anything in `/usr` is blacklisted). So you either have to copy from `/usr/share/themes` to `$HOME/.local/share/themes` ***OR*** if you installed it in `$HOME/.themes`, symlinking it to `$HOME/.local/share/themes` also works.
+> ⚠️ Official Flatpak Package soon
+
+### Using The Official [Flatpak Documentations](https://docs.flatpak.org/en/latest/desktop-integration.html) Instructions:
+The directory of the theme should be present in `$HOME/.local/share/themes/` (anything in `/usr` is blacklisted). So you either have to copy from `/usr/share/themes` to `$HOME/.local/share/themes` ***OR*** if you installed it in `$HOME/.themes`, symlinking it to `$HOME/.local/share/themes` also works.
 ```sh
 flatpak override --user --filesystem=xdg-config/gtk-3.0 # for gtk3
 flatpak override --user --filesystem=xdg-config/gtk-4.0 # for gtk4
 flatpak override --user --filesystem=xdg-data/themes:ro # theme directory
 flatpak override --user --filesystem=$HOME/.themes:ro # theme directory
-flatpak override --user --env=GTK_THEME=${gtk_theme} # apply theme (Ex. Edge-light-purple)
+flatpak override --user --env=GTK_THEME=${gtk_theme} # apply theme (Ex. Edge-dark-blue)
 ```
 > "So why install it to `$HOME/.themes` if flatpak wants it in `$HOME/.local/share/themes`?" Because GTK2 likes it in `$HOME/.themes`
 
+### Using [Stylepak](https://github.com/refi64/stylepak)
+```sh
+stylepak install-user Edge-dark-blue
+```
 # Recommended and Related Projects
 
 - More Edge projects: https://github.com/sainnhe/edge/wiki/Related-Projects
