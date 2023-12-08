@@ -11,8 +11,6 @@ A **vivid** and **colorful** 🎨 GTK theme based on [vinceliuice](https://githu
   ![dark-purple](preview/Edge-dark-purple.png)
 </details>
 
-> ⚠️ Even though this theme is very usable, its still a WIP. There are some [loose ends](https://github.com/xelser/edge-gtk/issues/1) that needs to be addressed.
-
 ## Supports
 - GTK 2,3, and 4 
 - Cinnamon
@@ -38,14 +36,14 @@ git clone https://github.com/xelser/edge-gtk && cd edge-gtk
 ```sh
  -d, --dest DIR        Specify theme destination directory (Default: $HOME/.themes)
  -n, --name NAME       Specify theme name (Default: Edge)
- -c, --color VARIANTS  Specify theme color variant(s) [standard|dark] (Default: All variants)
+ -c, --color VARIANTS  Specify theme color variant(s) [standard|light|dark] (Default: All variants)
  -t, --theme VARIANTS  Specify hue theme variant(s) [red|yellow|green|cyan|blue|purple] (Default: All variants)
  -r, --remove          Remove(Uninstall) themes
  -h, --help            Show this help
 ```
 
 ## GTK4
-> Grab the directory of your selected theme (Ex. Edge-dark-blue). Either in `/usr/share/themes/` or in `$HOME/.themes/`
+Grab the directory of your selected theme (Ex. Edge-dark-blue). Either in `/usr/share/themes/` or in `$HOME/.themes/`
 ```sh
 theme_dir="/usr/share/themes/Edge-dark-blue"
 
