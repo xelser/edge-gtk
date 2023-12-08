@@ -30,23 +30,23 @@ $selected_bg_color: #F0544C;
 @if $color=='purple' { $selected_bg_color: #B05CCC; }
 $selected_fg_color: #FAFAFA;
 
-$warning_color: #D19A66;
-$warning_fg_color: #FAFAFA;
-
-$error_color: #E06C75;
-$error_fg_color: #FAFAFA;
-
 $success_color: #76AF6F;
 $success_fg_color: #FAFAFA;
 
 $destructive_color: #BE5046;
 $destructive_fg_color: #FAFAFA;
 
+$error_color: if($variant =='light', #E17373, #EC7279);
+$error_fg_color: $fg_color;
+
+$warning_color: if($variant =='light', #CE9C3D, #DEB974);
+$warning_fg_color: $fg_color;
+
 $suggested_color: $selected_bg_color;
 $suggested_fg_color: #FAFAFA;
 
 $progress_color: $selected_bg_color;
-$drop_target_color: #E5C07B;
+$drop_target_color: #D19A66;
 
 $alt_selected_bg_color: lighten($selected_bg_color, 6%);
 $selected_borders_color: darken($selected_bg_color, 20%);
