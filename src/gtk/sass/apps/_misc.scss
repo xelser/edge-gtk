@@ -149,7 +149,7 @@
 // Firefox and Thunderbird
 //
 
-$firefox_border: if($variant == 'light', darken($bg_color, 15%), darken($base_color, 2%));
+$firefox_border: if($variant == 'light', darken($bg_color, 15%), $base_color);
 
 window.background:not(.csd) {
   > widget {
@@ -238,11 +238,11 @@ window.background:not(.csd) {
     // FIXME: this affected to popover widget as well,
     // so we can not set $lighter_bg_color to search-bar...
     > scrolledwindow > textview {
-      background-color: if($variant == 'light', $base_color, lighten($base_color, 5%));
+      background-color: if($variant == 'light', $base_color, $bg_color);
 
       text {
         background-color: transparent;
-        color: if($variant =='light', #242424, #aaaaaa);
+        color: $text_color;
         &:selected,
         &:selected:focus,
         selection { @extend %selected_items; }
@@ -593,3 +593,4 @@ menubar.-vala-panel-appmenu-private { // override global values
     }
   }
 }
+

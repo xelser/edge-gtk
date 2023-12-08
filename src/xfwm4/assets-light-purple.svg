@@ -859,7 +859,7 @@
               <ellipse
                  cy="255"
                  cx="1302"
-                 style="display:inline;opacity:0.25;fill:#565656;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+                 style="display:inline;opacity:0.25;fill:#252630;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
                  id="path4068-7-5-9-6-7-2-4-6-6"
                  rx="7.2727208"
                  ry="7.2727213" />
@@ -1085,7 +1085,7 @@
       <ellipse
          cy="637.36212"
          cx="52"
-         style="display:inline;opacity:0.25;fill:#565656;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         style="display:inline;opacity:0.25;fill:#252630;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="path4068-7-5-9-6-7-2-1-6-1"
          rx="9.9999704"
          ry="9.9999714" />
@@ -1362,7 +1362,7 @@
              height="20.000004"
              width="20.000004"
              id="rect575-0"
-             style="opacity:0.25;fill:#565656;fill-opacity:1;stroke:none;stroke-width:0.80000013;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />
+             style="opacity:0.25;fill:#252630;fill-opacity:1;stroke:none;stroke-width:0.80000013;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />
         </g>
       </g>
       <path

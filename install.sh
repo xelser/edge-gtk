@@ -22,7 +22,7 @@ usage() {
   printf "\n%s\n" "OPTIONS:"
   printf "  %-25s%s\n" "-d, --dest DIR" "Specify theme destination directory (Default: ${DEST_DIR})"
   printf "  %-25s%s\n" "-n, --name NAME" "Specify theme name (Default: ${THEME_NAME})"
-  printf "  %-25s%s\n" "-c, --color VARIANTS" "Specify theme color variant(s) [standard|dark] (Default: All variants)"
+  printf "  %-25s%s\n" "-c, --color VARIANTS" "Specify theme color variant(s) [standard|light|dark] (Default: All variants)"
   printf "  %-25s%s\n" "-t, --theme VARIANTS" "Specify hue theme variant(s) [red|yellow|green|blue|purple|cyan] (Default: All variants)"
   printf "  %-25s%s\n" "-r, --remove" "Remove(Uninstall) themes"
   printf "  %-25s%s\n" "-h, --help" "Show this help"
@@ -111,7 +111,7 @@ install() {
   if [[ "${color}" == '-light' ]] ; then
     cp -r "themerc${color}"                                                           "${themedir}/xfwm4/themerc"
   else
-    cp -r "themerc-dark"                                                      				"${themedir}/xfwm4/themerc"
+    cp -r "themerc${theme}"                                                           "${themedir}/xfwm4/themerc"
   fi
 
   # Install xfwm4 hdpi Theme
@@ -121,7 +121,7 @@ install() {
   if [[ "${color}" == '-light' ]] ; then
     cp -r "themerc${color}"                                                           "${themedir}-hdpi/xfwm4/themerc"
   else
-    cp -r "themerc-dark"                                                 							"${themedir}-hdpi/xfwm4/themerc"
+    cp -r "themerc${theme}"                                                           "${themedir}-hdpi/xfwm4/themerc"
   fi
 
   # Install xfwm4 xhdpi Theme
@@ -131,7 +131,7 @@ install() {
   if [[ "${color}" == '-light' ]] ; then
     cp -r "themerc${color}"                                                           "${themedir}-xhdpi/xfwm4/themerc"
   else
-    cp -r "themerc-dark"                                                  						"${themedir}-xhdpi/xfwm4/themerc"
+    cp -r "themerc${theme}"                                                           "${themedir}-xhdpi/xfwm4/themerc"
   fi
 }
 

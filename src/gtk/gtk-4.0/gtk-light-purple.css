@@ -74,7 +74,7 @@ treeview.expander:disabled {
 }
 
 textview:drop(active) {
-  caret-color: #D19A66;
+  caret-color: #E5C07B;
 }
 
 textview border {
@@ -387,8 +387,8 @@ entry:disabled {
 spinbutton.vertical > text.warning, spinbutton.warning:not(.vertical),
 entry.warning {
   color: #FAFAFA;
-  border-color: #E5C07B;
-  background-color: #edd7ae;
+  border-color: #D19A66;
+  background-color: #e1c0a1;
 }
 
 spinbutton.vertical > text.warning, spinbutton.warning:not(.vertical),
@@ -399,7 +399,7 @@ entry.warning {
 
 spinbutton.vertical > text.warning:focus-within, spinbutton.warning:focus-within:not(.vertical),
 entry.warning:focus-within {
-  outline-color: rgba(229, 192, 123, 0.5);
+  outline-color: rgba(209, 154, 102, 0.5);
   outline-width: 2px;
   outline-offset: -2px;
 }
@@ -412,14 +412,14 @@ entry.warning > image {
 spinbutton.vertical > text.warning:focus-within, spinbutton.warning:focus-within:not(.vertical),
 entry.warning:focus-within {
   color: #FAFAFA;
-  background-color: #E5C07B;
+  background-color: #D19A66;
   box-shadow: none;
 }
 
 spinbutton.vertical > text.warning > selection, spinbutton.warning:not(.vertical) > selection,
 entry.warning > selection {
   background-color: #FAFAFA;
-  color: #E5C07B;
+  color: #D19A66;
 }
 
 spinbutton.vertical > text.error, spinbutton.error:not(.vertical),
@@ -463,8 +463,8 @@ entry.error > selection {
 spinbutton.vertical > text.success, spinbutton.success:not(.vertical),
 entry.success {
   color: #FAFAFA;
-  border-color: #D38AEA;
-  background-color: #e3b7f0;
+  border-color: #76AF6F;
+  background-color: #abcda7;
 }
 
 spinbutton.vertical > text.success, spinbutton.success:not(.vertical),
@@ -475,7 +475,7 @@ entry.success {
 
 spinbutton.vertical > text.success:focus-within, spinbutton.success:focus-within:not(.vertical),
 entry.success:focus-within {
-  outline-color: rgba(211, 138, 234, 0.5);
+  outline-color: rgba(118, 175, 111, 0.5);
   outline-width: 2px;
   outline-offset: -2px;
 }
@@ -488,14 +488,14 @@ entry.success > image {
 spinbutton.vertical > text.success:focus-within, spinbutton.success:focus-within:not(.vertical),
 entry.success:focus-within {
   color: #FAFAFA;
-  background-color: #D38AEA;
+  background-color: #76AF6F;
   box-shadow: none;
 }
 
 spinbutton.vertical > text.success > selection, spinbutton.success:not(.vertical) > selection,
 entry.success > selection {
   background-color: #FAFAFA;
-  color: #D38AEA;
+  color: #76AF6F;
 }
 
 spinbutton.vertical > text.search-missing, spinbutton.search-missing:not(.vertical),
@@ -559,8 +559,8 @@ entry.password image.caps-lock-indicator {
 spinbutton.vertical > text:drop(active), spinbutton:drop(active):not(.vertical),
 entry:drop(active):focus-within,
 entry:drop(active) {
-  border-color: #D19A66;
-  box-shadow: inset 0 0 0 1px #D19A66;
+  border-color: #E5C07B;
+  box-shadow: inset 0 0 0 1px #E5C07B;
 }
 
 .osd spinbutton.vertical > text, .osd spinbutton:not(.vertical), .osd entry {
@@ -601,7 +601,7 @@ entry progress > trough > progress {
 }
 
 spinbutton.vertical.linked:not(.vertical) > text:drop(active) + text, spinbutton.vertical.linked:not(.vertical) > spinbutton:drop(active):not(.vertical) + text, spinbutton.vertical.linked:not(.vertical) > text:drop(active) + spinbutton:not(.vertical), .linked:not(.vertical) > spinbutton:drop(active):not(.vertical) + spinbutton:not(.vertical), spinbutton.vertical.linked:not(.vertical) > text:drop(active) + button, .linked:not(.vertical) > spinbutton:drop(active):not(.vertical) + button, spinbutton.vertical.linked:not(.vertical) > text:drop(active) + menubutton > button, .linked:not(.vertical) > spinbutton:drop(active):not(.vertical) + menubutton > button, spinbutton.vertical.linked:not(.vertical) > text:drop(active) + dropdown > button, .linked:not(.vertical) > spinbutton:drop(active):not(.vertical) + dropdown > button, spinbutton.vertical.linked:not(.vertical) > text:drop(active) + colorbutton > button, .linked:not(.vertical) > spinbutton:drop(active):not(.vertical) + colorbutton > button, spinbutton.vertical.linked:not(.vertical) > text:drop(active) + fontbutton > button, .linked:not(.vertical) > spinbutton:drop(active):not(.vertical) + fontbutton > button, spinbutton.vertical.linked:not(.vertical) > text:drop(active) + filechooserbutton > button, .linked:not(.vertical) > spinbutton:drop(active):not(.vertical) + filechooserbutton > button, spinbutton.vertical.linked:not(.vertical) > text:drop(active) + combobox > box > button.combo, .linked:not(.vertical) > spinbutton:drop(active):not(.vertical) + combobox > box > button.combo, spinbutton.vertical.linked:not(.vertical) > text:drop(active) + entry, .linked:not(.vertical) > spinbutton:drop(active):not(.vertical) + entry, .linked:not(.vertical) > entry:drop(active) + button, .linked:not(.vertical) > entry:drop(active) + menubutton > button, .linked:not(.vertical) > entry:drop(active) + dropdown > button, .linked:not(.vertical) > entry:drop(active) + colorbutton > button, .linked:not(.vertical) > entry:drop(active) + fontbutton > button, .linked:not(.vertical) > entry:drop(active) + filechooserbutton > button, .linked:not(.vertical) > entry:drop(active) + combobox > box > button.combo, spinbutton.vertical.linked:not(.vertical) > entry:drop(active) + text, .linked:not(.vertical) > entry:drop(active) + spinbutton:not(.vertical), .linked:not(.vertical) > entry:drop(active) + entry {
-  border-left-color: #D19A66;
+  border-left-color: #E5C07B;
 }
 
 spinbutton.vertical.linked > text:not(:disabled) + entry:not(:disabled), .linked.vertical > spinbutton:not(:disabled):not(.vertical) + entry:not(:disabled), spinbutton.vertical.linked > text:not(:disabled) + text:not(:disabled), spinbutton.vertical.linked > spinbutton:not(:disabled):not(.vertical) + text:not(:disabled), spinbutton.vertical.linked > text:not(:disabled) + spinbutton:not(:disabled):not(.vertical), .linked.vertical > spinbutton:not(:disabled):not(.vertical) + spinbutton:not(:disabled):not(.vertical), .linked.vertical > entry:not(:disabled) + entry:not(:disabled), spinbutton.vertical.linked > entry:not(:disabled) + text:not(:disabled), .linked.vertical > entry:not(:disabled) + spinbutton:not(:disabled):not(.vertical) {
@@ -616,7 +616,7 @@ spinbutton.vertical.linked > text + text:drop(active):not(:only-child), spinbutt
 spinbutton.vertical.linked > text + entry:drop(active):not(:only-child),
 .linked.vertical > spinbutton:not(.vertical) + entry:drop(active):not(:only-child), spinbutton.vertical.linked > entry + text:drop(active):not(:only-child), .linked.vertical > entry + spinbutton:drop(active):not(:only-child):not(.vertical),
 .linked.vertical > entry + entry:drop(active):not(:only-child) {
-  border-top-color: #D19A66;
+  border-top-color: #E5C07B;
 }
 
 spinbutton.vertical.linked > text:drop(active):not(:only-child) + text, spinbutton.vertical.linked > spinbutton:drop(active):not(:only-child):not(.vertical) + text, spinbutton.vertical.linked > text:drop(active):not(:only-child) + spinbutton:not(.vertical), .linked.vertical > spinbutton:drop(active):not(:only-child):not(.vertical) + spinbutton:not(.vertical),
@@ -644,7 +644,7 @@ spinbutton.vertical.linked > text:drop(active):not(:only-child) + combobox > box
 .linked.vertical > entry:drop(active):not(:only-child) + fontbutton > button,
 .linked.vertical > entry:drop(active):not(:only-child) + filechooserbutton > button,
 .linked.vertical > entry:drop(active):not(:only-child) + combobox > box > button.combo {
-  border-top-color: #D19A66;
+  border-top-color: #E5C07B;
 }
 
 treeview entry:focus-within:dir(rtl), treeview entry:focus-within:dir(ltr) {
@@ -859,9 +859,9 @@ button.text-button.image-button.popup {
 dropdown:drop(active) button.combo,
 combobox:drop(active) button.combo,
 button:drop(active) {
-  color: #D19A66;
-  border-color: #D19A66;
-  box-shadow: inset 0 0 0 1px #D19A66;
+  color: #E5C07B;
+  border-color: #E5C07B;
+  box-shadow: inset 0 0 0 1px #E5C07B;
 }
 
 
@@ -1221,12 +1221,12 @@ stacksidebar row.needs-attention > label:dir(rtl), stackswitcher > button.needs-
 
 .linked:not(.vertical):not(.path-bar) > entry.warning + entry,
 .linked:not(.vertical):not(.path-bar) > entry + entry.warning {
-  border-left-color: #E5C07B;
+  border-left-color: #D19A66;
 }
 
 .linked:not(.vertical):not(.path-bar) > entry.error + entry.warning,
 .linked:not(.vertical):not(.path-bar) > entry.warning + entry.error {
-  border-left-color: #e39678;
+  border-left-color: #d9836e;
 }
 
 .linked:not(.vertical):not(.path-bar) > entry + entry:focus-within:not(:last-child),
@@ -1243,25 +1243,25 @@ stacksidebar row.needs-attention > label:dir(rtl), stackswitcher > button.needs-
 
 .linked:not(.vertical):not(.path-bar) > entry + entry:drop(active):not(:last-child),
 .linked:not(.vertical):not(.path-bar) > entry + entry:drop(active):last-child {
-  border-left-color: #D19A66;
+  border-left-color: #E5C07B;
 }
 
 .linked:not(.vertical):not(.path-bar) > entry:drop(active):not(:only-child) + entry,
 .linked:not(.vertical):not(.path-bar) > entry:drop(active):not(:only-child) + button,
 .linked:not(.vertical):not(.path-bar) > entry:drop(active):not(:only-child) + combobox > box > button.combo {
-  border-left-color: #D19A66;
+  border-left-color: #E5C07B;
   margin-left: 0;
 }
 
 .linked:not(.vertical):not(.path-bar) > entry + entry.warning:focus-within:not(:last-child),
 .linked:not(.vertical):not(.path-bar) > entry + entry.warning:focus-within:last-child {
-  border-left-color: #E5C07B;
+  border-left-color: #D19A66;
 }
 
 .linked:not(.vertical):not(.path-bar) > entry.warning:focus-within:not(:only-child) + entry,
 .linked:not(.vertical):not(.path-bar) > entry.warning:focus-within:not(:only-child) + button,
 .linked:not(.vertical):not(.path-bar) > entry.warning:focus-within:not(:only-child) + combobox > box > button.combo {
-  border-left-color: #E5C07B;
+  border-left-color: #D19A66;
   margin-left: 0;
 }
 
@@ -1337,12 +1337,12 @@ stacksidebar row.needs-attention > label:dir(rtl), stackswitcher > button.needs-
 
 .osd .linked:not(.vertical) > entry.warning + entry,
 .osd .linked:not(.vertical) > entry + entry.warning {
-  border-left-color: #E5C07B;
+  border-left-color: #D19A66;
 }
 
 .osd .linked:not(.vertical) > entry.error + entry.warning,
 .osd .linked:not(.vertical) > entry.warning + entry.error {
-  border-left-color: #e39678;
+  border-left-color: #d9836e;
 }
 
 .osd .linked:not(.vertical) > entry + entry:focus-within:not(:last-child),
@@ -1359,25 +1359,25 @@ stacksidebar row.needs-attention > label:dir(rtl), stackswitcher > button.needs-
 
 .osd .linked:not(.vertical) > entry + entry:drop(active):not(:last-child),
 .osd .linked:not(.vertical) > entry + entry:drop(active):last-child {
-  border-left-color: #D19A66;
+  border-left-color: #E5C07B;
 }
 
 .osd .linked:not(.vertical) > entry:drop(active):not(:only-child) + entry,
 .osd .linked:not(.vertical) > entry:drop(active):not(:only-child) + button,
 .osd .linked:not(.vertical) > entry:drop(active):not(:only-child) + combobox > box > button.combo {
-  border-left-color: #D19A66;
+  border-left-color: #E5C07B;
   margin-left: 0;
 }
 
 .osd .linked:not(.vertical) > entry + entry.warning:focus-within:not(:last-child),
 .osd .linked:not(.vertical) > entry + entry.warning:focus-within:last-child {
-  border-left-color: #E5C07B;
+  border-left-color: #D19A66;
 }
 
 .osd .linked:not(.vertical) > entry.warning:focus-within:not(:only-child) + entry,
 .osd .linked:not(.vertical) > entry.warning:focus-within:not(:only-child) + button,
 .osd .linked:not(.vertical) > entry.warning:focus-within:not(:only-child) + combobox > box > button.combo {
-  border-left-color: #E5C07B;
+  border-left-color: #D19A66;
   margin-left: 0;
 }
 
@@ -1441,12 +1441,12 @@ stacksidebar row.needs-attention > label:dir(rtl), stackswitcher > button.needs-
 
 .linked.vertical > entry.warning + entry,
 .linked.vertical > entry + entry.warning {
-  border-top-color: #E5C07B;
+  border-top-color: #D19A66;
 }
 
 .linked.vertical > entry.error + entry.warning,
 .linked.vertical > entry.warning + entry.error {
-  border-top-color: #e39678;
+  border-top-color: #d9836e;
 }
 
 .linked.vertical > entry + entry:focus-within:not(:last-child),
@@ -1463,25 +1463,25 @@ stacksidebar row.needs-attention > label:dir(rtl), stackswitcher > button.needs-
 
 .linked.vertical > entry + entry:drop(active):not(:last-child),
 .linked.vertical > entry + entry:drop(active):last-child {
-  border-top-color: #D19A66;
+  border-top-color: #E5C07B;
 }
 
 .linked.vertical > entry:drop(active):not(:only-child) + entry,
 .linked.vertical > entry:drop(active):not(:only-child) + button,
 .linked.vertical > entry:drop(active):not(:only-child) + combobox > box > button.combo {
-  border-top-color: #D19A66;
+  border-top-color: #E5C07B;
   margin-left: 0;
 }
 
 .linked.vertical > entry + entry.warning:focus-within:not(:last-child),
 .linked.vertical > entry + entry.warning:focus-within:last-child {
-  border-top-color: #E5C07B;
+  border-top-color: #D19A66;
 }
 
 .linked.vertical > entry.warning:focus-within:not(:only-child) + entry,
 .linked.vertical > entry.warning:focus-within:not(:only-child) + button,
 .linked.vertical > entry.warning:focus-within:not(:only-child) + combobox > box > button.combo {
-  border-top-color: #E5C07B;
+  border-top-color: #D19A66;
   margin-left: 0;
 }
 
@@ -1574,7 +1574,7 @@ headerbar .linked:not(.vertical):not(.path-bar) > entry:focus-within:not(:only-c
 headerbar .linked:not(.vertical):not(.path-bar) > entry + entry:drop(active):not(:last-child),
 headerbar .linked:not(.vertical):not(.path-bar) > entry + entry:drop(active):last-child, .titlebar .linked:not(.vertical):not(.path-bar) > entry + entry:drop(active):not(:last-child),
 .titlebar .linked:not(.vertical):not(.path-bar) > entry + entry:drop(active):last-child {
-  border-left-color: #D19A66;
+  border-left-color: #E5C07B;
 }
 
 headerbar .linked:not(.vertical):not(.path-bar) > entry:drop(active):not(:only-child) + entry, .titlebar .linked:not(.vertical):not(.path-bar) > entry:drop(active):not(:only-child) + entry {
@@ -1596,7 +1596,7 @@ headerbar .linked:not(.vertical):not(.path-bar) > entry:drop(active):not(:only-c
 headerbar .linked:not(.vertical):not(.path-bar) > entry + entry.warning:focus-within:not(:last-child),
 headerbar .linked:not(.vertical):not(.path-bar) > entry + entry.warning:focus-within:last-child, .titlebar .linked:not(.vertical):not(.path-bar) > entry + entry.warning:focus-within:not(:last-child),
 .titlebar .linked:not(.vertical):not(.path-bar) > entry + entry.warning:focus-within:last-child {
-  border-left-color: #E5C07B;
+  border-left-color: #D19A66;
 }
 
 headerbar .linked:not(.vertical):not(.path-bar) > entry.warning:focus-within:not(:only-child) + entry, .titlebar .linked:not(.vertical):not(.path-bar) > entry.warning:focus-within:not(:only-child) + entry {
@@ -2649,18 +2649,18 @@ headerbar entry progress {
 
 headerbar entry.warning {
   color: #FAFAFA;
-  border-color: #E5C07B;
-  background-color: #e6d1aa;
+  border-color: #D19A66;
+  background-color: #daba9d;
 }
 
 headerbar entry.warning:focus-within {
   color: #FAFAFA;
-  background-color: #E5C07B;
+  background-color: #D19A66;
 }
 
 headerbar entry.warning selection, headerbar entry.warning selection:focus {
   background-color: #FAFAFA;
-  color: #E5C07B;
+  color: #D19A66;
 }
 
 headerbar entry.error {
@@ -2785,11 +2785,11 @@ headerbar .linked:not(.vertical):not(.path-bar) > entry.warning + entry {
 }
 
 headerbar .linked:not(.vertical):not(.path-bar) > entry + entry.warning {
-  border-left-color: #E5C07B;
+  border-left-color: #D19A66;
 }
 
 headerbar .linked:not(.vertical):not(.path-bar) > entry.error + entry.warning {
-  border-left-color: #E5C07B;
+  border-left-color: #D19A66;
 }
 
 headerbar .linked:not(.vertical):not(.path-bar) > entry.warning + entry.error {
@@ -4663,8 +4663,8 @@ levelbar > trough > block {
 }
 
 levelbar > trough > block.low {
-  border-color: #E5C07B;
-  background-color: #E5C07B;
+  border-color: #D19A66;
+  background-color: #D19A66;
 }
 
 levelbar > trough > block.high, levelbar > trough > block:not(.empty) {
@@ -4673,8 +4673,8 @@ levelbar > trough > block.high, levelbar > trough > block:not(.empty) {
 }
 
 levelbar > trough > block.full {
-  border-color: #D38AEA;
-  background-color: #D38AEA;
+  border-color: #76AF6F;
+  background-color: #76AF6F;
 }
 
 levelbar > trough > block.empty {
@@ -5016,12 +5016,12 @@ columnview row:not(:selected) cell editablelabel.editing text selection {
 
 .app-notification .linked:not(.vertical) > entry.warning + entry,
 .app-notification .linked:not(.vertical) > entry + entry.warning {
-  border-left-color: #E5C07B;
+  border-left-color: #D19A66;
 }
 
 .app-notification .linked:not(.vertical) > entry.error + entry.warning,
 .app-notification .linked:not(.vertical) > entry.warning + entry.error {
-  border-left-color: #e39678;
+  border-left-color: #d9836e;
 }
 
 .app-notification .linked:not(.vertical) > entry + entry:focus-within:not(:last-child),
@@ -5038,25 +5038,25 @@ columnview row:not(:selected) cell editablelabel.editing text selection {
 
 .app-notification .linked:not(.vertical) > entry + entry:drop(active):not(:last-child),
 .app-notification .linked:not(.vertical) > entry + entry:drop(active):last-child {
-  border-left-color: #D19A66;
+  border-left-color: #E5C07B;
 }
 
 .app-notification .linked:not(.vertical) > entry:drop(active):not(:only-child) + entry,
 .app-notification .linked:not(.vertical) > entry:drop(active):not(:only-child) + button,
 .app-notification .linked:not(.vertical) > entry:drop(active):not(:only-child) + combobox > box > button.combo {
-  border-left-color: #D19A66;
+  border-left-color: #E5C07B;
   margin-left: 0;
 }
 
 .app-notification .linked:not(.vertical) > entry + entry.warning:focus-within:not(:last-child),
 .app-notification .linked:not(.vertical) > entry + entry.warning:focus-within:last-child {
-  border-left-color: #E5C07B;
+  border-left-color: #D19A66;
 }
 
 .app-notification .linked:not(.vertical) > entry.warning:focus-within:not(:only-child) + entry,
 .app-notification .linked:not(.vertical) > entry.warning:focus-within:not(:only-child) + button,
 .app-notification .linked:not(.vertical) > entry.warning:focus-within:not(:only-child) + combobox > box > button.combo {
-  border-left-color: #E5C07B;
+  border-left-color: #D19A66;
   margin-left: 0;
 }
 
@@ -5461,7 +5461,7 @@ placessidebar .navigation-sidebar > row label.sidebar-label:dir(rtl) {
 placessidebar .navigation-sidebar > row.sidebar-placeholder-row {
   padding: 0 8px;
   min-height: 2px;
-  background-image: linear-gradient(to bottom, #D19A66, #D19A66);
+  background-image: linear-gradient(to bottom, #E5C07B, #E5C07B);
   background-clip: content-box;
 }
 
@@ -5470,13 +5470,13 @@ placessidebar .navigation-sidebar > row.sidebar-new-bookmark-row {
 }
 
 placessidebar .navigation-sidebar > row:drop(active):not(:disabled) {
-  color: #D19A66;
-  box-shadow: inset 0 1px #D19A66, inset 0 -1px #D19A66;
+  color: #E5C07B;
+  box-shadow: inset 0 1px #E5C07B, inset 0 -1px #E5C07B;
 }
 
 placessidebar .navigation-sidebar > row:drop(active):not(:disabled):selected {
   color: #FAFAFA;
-  background-color: #D19A66;
+  background-color: #E5C07B;
 }
 
 placesview .server-list-button > image {
@@ -5583,11 +5583,11 @@ infobar.question > revealer > box selection, infobar.question:backdrop > reveale
 }
 
 infobar.warning > revealer > box, infobar.warning:backdrop > revealer > box {
-  background-color: #E5C07B;
+  background-color: #D19A66;
 }
 
 infobar.warning > revealer > box selection, infobar.warning:backdrop > revealer > box selection {
-  color: #E5C07B;
+  color: #D19A66;
 }
 
 infobar.error > revealer > box, infobar.error:backdrop > revealer > box {
@@ -6100,9 +6100,9 @@ shortcut > .keycap {
 
 :not(decoration):not(window):drop(active):focus,
 :not(decoration):not(window):drop(active) {
-  border-color: #D19A66;
-  box-shadow: inset 0 0 0 1px #D19A66;
-  caret-color: #D19A66;
+  border-color: #E5C07B;
+  box-shadow: inset 0 0 0 1px #E5C07B;
+  caret-color: #E5C07B;
 }
 
 stackswitcher > button.text-button {
@@ -6440,8 +6440,8 @@ button.card:checked {
 }
 
 button.card:drop(active) {
-  color: #D19A66;
-  box-shadow: inset 0 0 0 1px #D19A66;
+  color: #E5C07B;
+  box-shadow: inset 0 0 0 1px #E5C07B;
 }
 
 menubutton.osd {
@@ -6805,7 +6805,7 @@ row.entry.error .suggested-action {
 }
 
 row.entry.warning text > selection:focus-within {
-  background-color: alpha(#E5C07B,0.2);
+  background-color: alpha(#D19A66,0.2);
 }
 
 row.entry.warning text > cursor-handle > contents {
@@ -6818,12 +6818,12 @@ row.entry.warning entry > text > placeholder, row.entry.warning spinbutton:not(.
 }
 
 row.entry.warning .suggested-action {
-  background-color: #E5C07B;
+  background-color: #D19A66;
   color: #FAFAFA;
 }
 
 row.entry.success text > selection:focus-within {
-  background-color: alpha(#D38AEA,0.2);
+  background-color: alpha(#76AF6F,0.2);
 }
 
 row.entry.success text > cursor-handle > contents {
@@ -6836,7 +6836,7 @@ row.entry.success entry > text > placeholder, row.entry.success spinbutton:not(.
 }
 
 row.entry.success .suggested-action {
-  background-color: #D38AEA;
+  background-color: #76AF6F;
   color: #FAFAFA;
 }
 
@@ -7294,8 +7294,8 @@ tabthumbnail > box {
 }
 
 tabthumbnail:drop(active) {
-  box-shadow: inset 0 0 0 3px alpha(#D19A66,0.4);
-  background-color: alpha(#D19A66,0.1);
+  box-shadow: inset 0 0 0 3px alpha(#E5C07B,0.4);
+  background-color: alpha(#E5C07B,0.1);
 }
 
 tabthumbnail .needs-attention:dir(ltr) {
@@ -8009,12 +8009,12 @@ toolbarview.undershoot-bottom scrolledwindow > undershoot.bottom {
 }
 
 .nautilus-window .sidebar-pane .navigation-sidebar > row:drop(active):not(:disabled), .nautilus-window flap .navigation-sidebar > row:drop(active):not(:disabled) {
-  color: #D19A66;
+  color: #E5C07B;
 }
 
 .nautilus-window .sidebar-pane .navigation-sidebar > row:drop(active):not(:disabled):selected, .nautilus-window flap .navigation-sidebar > row:drop(active):not(:disabled):selected {
   color: #FAFAFA;
-  background-color: #D19A66;
+  background-color: #E5C07B;
 }
 
 .nautilus-window .sidebar-pane .navigation-sidebar separator, .nautilus-window flap .navigation-sidebar separator {
@@ -8305,9 +8305,9 @@ menubutton.flat.popup.sources-button > button image.calendar-color-image {
 @define-color theme_unfocused_base_color #FAFAFA;
 @define-color borders rgba(32, 32, 35, 0.15);
 @define-color unfocused_borders rgba(32, 32, 35, 0.15);
-@define-color warning_color #E5C07B;
+@define-color warning_color #D19A66;
 @define-color error_color #E06C75;
-@define-color success_color #D38AEA;
+@define-color success_color #76AF6F;
 @define-color placeholder_text_color #A8A8A8;
 @define-color link_color #9b3abb;
 @define-color content_view_bg #FAFAFA;
@@ -8333,7 +8333,7 @@ menubutton.flat.popup.sources-button > button image.calendar-color-image {
 @define-color budgie_tasklist_indicator_color #B05CCC;
 @define-color budgie_tasklist_indicator_color_active #B05CCC;
 @define-color budgie_tasklist_indicator_color_active_window #cda1de;
-@define-color budgie_tasklist_indicator_color_attention #E5C07B;
+@define-color budgie_tasklist_indicator_color_attention #D19A66;
 @define-color STRAWBERRY_100 #FF9262;
 @define-color STRAWBERRY_300 #FF793E;
 @define-color STRAWBERRY_500 #F15D22;

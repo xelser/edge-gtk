@@ -125,7 +125,7 @@ stage {
 
 #menu-search-entry StIcon.capslock-warning, .menu #notification StEntry StIcon.capslock-warning, .popup-menu #notification StEntry StIcon.capslock-warning {
   icon-size: 16px;
-  warning-color: #E5C07B;
+  warning-color: #D19A66;
   padding: 0 4px;
 }
 
@@ -1123,7 +1123,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   background-color: rgba(133, 143, 162, 0.35);
   border: 1px solid rgba(53, 59, 69, 0.35);
   box-shadow: none;
-  background-color: #242631;
+  background-color: #24262e;
   border-color: #5079BE;
 }
 
@@ -1141,7 +1141,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .mount-password-reask {
-  color: #E5C07B;
+  color: #D19A66;
 }
 
 .show-processes-dialog,
@@ -1645,8 +1645,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .window-list-item-demands-attention {
-  background-gradient-start: #E5C07B;
-  background-gradient-end: #E5C07B;
+  background-gradient-start: #D19A66;
+  background-gradient-end: #D19A66;
 }
 
 .window-list-preview {
@@ -1830,8 +1830,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .grouped-window-list-item-demands-attention {
-  background-gradient-start: #E5C07B;
-  background-gradient-end: #E5C07B;
+  background-gradient-start: #D19A66;
+  background-gradient-end: #D19A66;
 }
 
 .sound-button {
@@ -2028,16 +2028,16 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .workspace-graph .workspace .windows {
-  -active-window-background: #4c4f66;
+  -active-window-background: #4d5062;
   -active-window-border: rgba(0, 0, 0, 0.8);
-  -inactive-window-background: #4c4f66;
+  -inactive-window-background: #4d5062;
   -inactive-window-border: rgba(0, 0, 0, 0.8);
 }
 
 .workspace-graph .workspace:active .windows {
-  -active-window-background: #565a75;
+  -active-window-background: #585c70;
   -active-window-border: rgba(0, 0, 0, 0.8);
-  -inactive-window-background: #363849;
+  -inactive-window-background: #363945;
   -inactive-window-border: rgba(0, 0, 0, 0.8);
 }
 
