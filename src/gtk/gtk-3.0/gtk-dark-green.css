@@ -6744,12 +6744,12 @@ window.background:not(.csd) > widget > scrollbar {
 
 window.background:not(.csd) > widget > scrollbar,
 window.background:not(.csd) > widget > frame > border {
-  border-color: #2e3039;
+  border-color: #33353F;
 }
 
 window.background:not(.csd) > widget > entry,
 window.background:not(.csd) > widget > button > button {
-  border: 1px solid #2e3039;
+  border: 1px solid #33353F;
   border-radius: 2px;
 }
 
@@ -6757,7 +6757,7 @@ window.background:not(.csd) > widget > entry,
 window.background:not(.csd) > widget .entry {
   border-radius: 2px;
   background-image: image(#33353F);
-  border: 1px solid #2e3039;
+  border: 1px solid #33353F;
 }
 
 window.background:not(.csd) > widget > entry:focus,
@@ -6767,7 +6767,7 @@ window.background:not(.csd) > widget .entry:focus {
 
 window.background:not(.csd) > widget > spinbutton {
   background-image: image(#383a45);
-  border: 1px solid #2e3039;
+  border: 1px solid #33353F;
 }
 
 window.background:not(.csd) > widget > spinbutton:active {
@@ -6805,19 +6805,19 @@ window.background:not(.csd) > menu > menuitem > label:disabled {
 #MozillaGtkWidget > window.background > menu > separator {
   padding: 0;
   border: none;
-  background-color: #2e3039;
+  background-color: #33353F;
 }
 
 #MozillaGtkWidget > widget border {
-  border-color: #2e3039;
+  border-color: #33353F;
 }
 
 #MozillaGtkWidget > widget separator {
-  background-color: #2e3039;
+  background-color: #33353F;
 }
 
 #MozillaGtkWidget > widget > scrolledwindow > textview {
-  background-color: #3e414d;
+  background-color: #2C2E34;
 }
 
 #MozillaGtkWidget > widget > scrolledwindow > textview text {
