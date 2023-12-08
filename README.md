@@ -63,7 +63,7 @@ flatpak override --user --filesystem=xdg-config/gtk-3.0 # for gtk3
 flatpak override --user --filesystem=xdg-config/gtk-4.0 # for gtk4
 flatpak override --user --filesystem=xdg-data/themes:ro # theme directory
 flatpak override --user --filesystem=$HOME/.themes:ro # theme directory
-flatpak override --user --env=GTK_THEME=${gtk_theme} # apply theme (Ex. Edge-dark-blue)
+flatpak override --user --env=GTK_THEME=Edge-dark-blue # apply theme
 ```
 > "So why install it to `$HOME/.themes` if flatpak wants it in `$HOME/.local/share/themes`?" Because GTK2 likes it in `$HOME/.themes`
 
