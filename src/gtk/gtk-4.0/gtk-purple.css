@@ -74,7 +74,7 @@ treeview.expander:disabled {
 }
 
 textview:drop(active) {
-  caret-color: #D19A66;
+  caret-color: #B05CCC;
 }
 
 textview border {
@@ -462,7 +462,7 @@ entry.error > selection {
 
 spinbutton.vertical > text.success, spinbutton.success:not(.vertical),
 entry.success {
-  color: #FAFAFA;
+  color: #4B505B;
   border-color: #76AF6F;
   background-color: #abcda7;
 }
@@ -482,19 +482,19 @@ entry.success:focus-within {
 
 spinbutton.vertical > text.success > image, spinbutton.success:not(.vertical) > image,
 entry.success > image {
-  color: #FAFAFA;
+  color: #4B505B;
 }
 
 spinbutton.vertical > text.success:focus-within, spinbutton.success:focus-within:not(.vertical),
 entry.success:focus-within {
-  color: #FAFAFA;
+  color: #4B505B;
   background-color: #76AF6F;
   box-shadow: none;
 }
 
 spinbutton.vertical > text.success > selection, spinbutton.success:not(.vertical) > selection,
 entry.success > selection {
-  background-color: #FAFAFA;
+  background-color: #4B505B;
   color: #76AF6F;
 }
 
@@ -559,8 +559,8 @@ entry.password image.caps-lock-indicator {
 spinbutton.vertical > text:drop(active), spinbutton:drop(active):not(.vertical),
 entry:drop(active):focus-within,
 entry:drop(active) {
-  border-color: #D19A66;
-  box-shadow: inset 0 0 0 1px #D19A66;
+  border-color: #B05CCC;
+  box-shadow: inset 0 0 0 1px #B05CCC;
 }
 
 .osd spinbutton.vertical > text, .osd spinbutton:not(.vertical), .osd entry {
@@ -601,7 +601,7 @@ entry progress > trough > progress {
 }
 
 spinbutton.vertical.linked:not(.vertical) > text:drop(active) + text, spinbutton.vertical.linked:not(.vertical) > spinbutton:drop(active):not(.vertical) + text, spinbutton.vertical.linked:not(.vertical) > text:drop(active) + spinbutton:not(.vertical), .linked:not(.vertical) > spinbutton:drop(active):not(.vertical) + spinbutton:not(.vertical), spinbutton.vertical.linked:not(.vertical) > text:drop(active) + button, .linked:not(.vertical) > spinbutton:drop(active):not(.vertical) + button, spinbutton.vertical.linked:not(.vertical) > text:drop(active) + menubutton > button, .linked:not(.vertical) > spinbutton:drop(active):not(.vertical) + menubutton > button, spinbutton.vertical.linked:not(.vertical) > text:drop(active) + dropdown > button, .linked:not(.vertical) > spinbutton:drop(active):not(.vertical) + dropdown > button, spinbutton.vertical.linked:not(.vertical) > text:drop(active) + colorbutton > button, .linked:not(.vertical) > spinbutton:drop(active):not(.vertical) + colorbutton > button, spinbutton.vertical.linked:not(.vertical) > text:drop(active) + fontbutton > button, .linked:not(.vertical) > spinbutton:drop(active):not(.vertical) + fontbutton > button, spinbutton.vertical.linked:not(.vertical) > text:drop(active) + filechooserbutton > button, .linked:not(.vertical) > spinbutton:drop(active):not(.vertical) + filechooserbutton > button, spinbutton.vertical.linked:not(.vertical) > text:drop(active) + combobox > box > button.combo, .linked:not(.vertical) > spinbutton:drop(active):not(.vertical) + combobox > box > button.combo, spinbutton.vertical.linked:not(.vertical) > text:drop(active) + entry, .linked:not(.vertical) > spinbutton:drop(active):not(.vertical) + entry, .linked:not(.vertical) > entry:drop(active) + button, .linked:not(.vertical) > entry:drop(active) + menubutton > button, .linked:not(.vertical) > entry:drop(active) + dropdown > button, .linked:not(.vertical) > entry:drop(active) + colorbutton > button, .linked:not(.vertical) > entry:drop(active) + fontbutton > button, .linked:not(.vertical) > entry:drop(active) + filechooserbutton > button, .linked:not(.vertical) > entry:drop(active) + combobox > box > button.combo, spinbutton.vertical.linked:not(.vertical) > entry:drop(active) + text, .linked:not(.vertical) > entry:drop(active) + spinbutton:not(.vertical), .linked:not(.vertical) > entry:drop(active) + entry {
-  border-left-color: #D19A66;
+  border-left-color: #B05CCC;
 }
 
 spinbutton.vertical.linked > text:not(:disabled) + entry:not(:disabled), .linked.vertical > spinbutton:not(:disabled):not(.vertical) + entry:not(:disabled), spinbutton.vertical.linked > text:not(:disabled) + text:not(:disabled), spinbutton.vertical.linked > spinbutton:not(:disabled):not(.vertical) + text:not(:disabled), spinbutton.vertical.linked > text:not(:disabled) + spinbutton:not(:disabled):not(.vertical), .linked.vertical > spinbutton:not(:disabled):not(.vertical) + spinbutton:not(:disabled):not(.vertical), .linked.vertical > entry:not(:disabled) + entry:not(:disabled), spinbutton.vertical.linked > entry:not(:disabled) + text:not(:disabled), .linked.vertical > entry:not(:disabled) + spinbutton:not(:disabled):not(.vertical) {
@@ -616,7 +616,7 @@ spinbutton.vertical.linked > text + text:drop(active):not(:only-child), spinbutt
 spinbutton.vertical.linked > text + entry:drop(active):not(:only-child),
 .linked.vertical > spinbutton:not(.vertical) + entry:drop(active):not(:only-child), spinbutton.vertical.linked > entry + text:drop(active):not(:only-child), .linked.vertical > entry + spinbutton:drop(active):not(:only-child):not(.vertical),
 .linked.vertical > entry + entry:drop(active):not(:only-child) {
-  border-top-color: #D19A66;
+  border-top-color: #B05CCC;
 }
 
 spinbutton.vertical.linked > text:drop(active):not(:only-child) + text, spinbutton.vertical.linked > spinbutton:drop(active):not(:only-child):not(.vertical) + text, spinbutton.vertical.linked > text:drop(active):not(:only-child) + spinbutton:not(.vertical), .linked.vertical > spinbutton:drop(active):not(:only-child):not(.vertical) + spinbutton:not(.vertical),
@@ -644,7 +644,7 @@ spinbutton.vertical.linked > text:drop(active):not(:only-child) + combobox > box
 .linked.vertical > entry:drop(active):not(:only-child) + fontbutton > button,
 .linked.vertical > entry:drop(active):not(:only-child) + filechooserbutton > button,
 .linked.vertical > entry:drop(active):not(:only-child) + combobox > box > button.combo {
-  border-top-color: #D19A66;
+  border-top-color: #B05CCC;
 }
 
 treeview entry:focus-within:dir(rtl), treeview entry:focus-within:dir(ltr) {
@@ -859,9 +859,9 @@ button.text-button.image-button.popup {
 dropdown:drop(active) button.combo,
 combobox:drop(active) button.combo,
 button:drop(active) {
-  color: #D19A66;
-  border-color: #D19A66;
-  box-shadow: inset 0 0 0 1px #D19A66;
+  color: #B05CCC;
+  border-color: #B05CCC;
+  box-shadow: inset 0 0 0 1px #B05CCC;
 }
 
 
@@ -1243,13 +1243,13 @@ stacksidebar row.needs-attention > label:dir(rtl), stackswitcher > button.needs-
 
 .linked:not(.vertical):not(.path-bar) > entry + entry:drop(active):not(:last-child),
 .linked:not(.vertical):not(.path-bar) > entry + entry:drop(active):last-child {
-  border-left-color: #D19A66;
+  border-left-color: #B05CCC;
 }
 
 .linked:not(.vertical):not(.path-bar) > entry:drop(active):not(:only-child) + entry,
 .linked:not(.vertical):not(.path-bar) > entry:drop(active):not(:only-child) + button,
 .linked:not(.vertical):not(.path-bar) > entry:drop(active):not(:only-child) + combobox > box > button.combo {
-  border-left-color: #D19A66;
+  border-left-color: #B05CCC;
   margin-left: 0;
 }
 
@@ -1359,13 +1359,13 @@ stacksidebar row.needs-attention > label:dir(rtl), stackswitcher > button.needs-
 
 .osd .linked:not(.vertical) > entry + entry:drop(active):not(:last-child),
 .osd .linked:not(.vertical) > entry + entry:drop(active):last-child {
-  border-left-color: #D19A66;
+  border-left-color: #B05CCC;
 }
 
 .osd .linked:not(.vertical) > entry:drop(active):not(:only-child) + entry,
 .osd .linked:not(.vertical) > entry:drop(active):not(:only-child) + button,
 .osd .linked:not(.vertical) > entry:drop(active):not(:only-child) + combobox > box > button.combo {
-  border-left-color: #D19A66;
+  border-left-color: #B05CCC;
   margin-left: 0;
 }
 
@@ -1463,13 +1463,13 @@ stacksidebar row.needs-attention > label:dir(rtl), stackswitcher > button.needs-
 
 .linked.vertical > entry + entry:drop(active):not(:last-child),
 .linked.vertical > entry + entry:drop(active):last-child {
-  border-top-color: #D19A66;
+  border-top-color: #B05CCC;
 }
 
 .linked.vertical > entry:drop(active):not(:only-child) + entry,
 .linked.vertical > entry:drop(active):not(:only-child) + button,
 .linked.vertical > entry:drop(active):not(:only-child) + combobox > box > button.combo {
-  border-top-color: #D19A66;
+  border-top-color: #B05CCC;
   margin-left: 0;
 }
 
@@ -1574,7 +1574,7 @@ headerbar .linked:not(.vertical):not(.path-bar) > entry:focus-within:not(:only-c
 headerbar .linked:not(.vertical):not(.path-bar) > entry + entry:drop(active):not(:last-child),
 headerbar .linked:not(.vertical):not(.path-bar) > entry + entry:drop(active):last-child, .titlebar .linked:not(.vertical):not(.path-bar) > entry + entry:drop(active):not(:last-child),
 .titlebar .linked:not(.vertical):not(.path-bar) > entry + entry:drop(active):last-child {
-  border-left-color: #D19A66;
+  border-left-color: #B05CCC;
 }
 
 headerbar .linked:not(.vertical):not(.path-bar) > entry:drop(active):not(:only-child) + entry, .titlebar .linked:not(.vertical):not(.path-bar) > entry:drop(active):not(:only-child) + entry {
@@ -5039,13 +5039,13 @@ columnview row:not(:selected) cell editablelabel.editing text selection {
 
 .app-notification .linked:not(.vertical) > entry + entry:drop(active):not(:last-child),
 .app-notification .linked:not(.vertical) > entry + entry:drop(active):last-child {
-  border-left-color: #D19A66;
+  border-left-color: #B05CCC;
 }
 
 .app-notification .linked:not(.vertical) > entry:drop(active):not(:only-child) + entry,
 .app-notification .linked:not(.vertical) > entry:drop(active):not(:only-child) + button,
 .app-notification .linked:not(.vertical) > entry:drop(active):not(:only-child) + combobox > box > button.combo {
-  border-left-color: #D19A66;
+  border-left-color: #B05CCC;
   margin-left: 0;
 }
 
@@ -5462,7 +5462,7 @@ placessidebar .navigation-sidebar > row label.sidebar-label:dir(rtl) {
 placessidebar .navigation-sidebar > row.sidebar-placeholder-row {
   padding: 0 8px;
   min-height: 2px;
-  background-image: linear-gradient(to bottom, #D19A66, #D19A66);
+  background-image: linear-gradient(to bottom, #B05CCC, #B05CCC);
   background-clip: content-box;
 }
 
@@ -5471,13 +5471,13 @@ placessidebar .navigation-sidebar > row.sidebar-new-bookmark-row {
 }
 
 placessidebar .navigation-sidebar > row:drop(active):not(:disabled) {
-  color: #D19A66;
-  box-shadow: inset 0 1px #D19A66, inset 0 -1px #D19A66;
+  color: #B05CCC;
+  box-shadow: inset 0 1px #B05CCC, inset 0 -1px #B05CCC;
 }
 
 placessidebar .navigation-sidebar > row:drop(active):not(:disabled):selected {
   color: #FAFAFA;
-  background-color: #D19A66;
+  background-color: #B05CCC;
 }
 
 placesview .server-list-button > image {
@@ -6101,9 +6101,9 @@ shortcut > .keycap {
 
 :not(decoration):not(window):drop(active):focus,
 :not(decoration):not(window):drop(active) {
-  border-color: #D19A66;
-  box-shadow: inset 0 0 0 1px #D19A66;
-  caret-color: #D19A66;
+  border-color: #B05CCC;
+  box-shadow: inset 0 0 0 1px #B05CCC;
+  caret-color: #B05CCC;
 }
 
 stackswitcher > button.text-button {
@@ -6441,8 +6441,8 @@ button.card:checked {
 }
 
 button.card:drop(active) {
-  color: #D19A66;
-  box-shadow: inset 0 0 0 1px #D19A66;
+  color: #B05CCC;
+  box-shadow: inset 0 0 0 1px #B05CCC;
 }
 
 menubutton.osd {
@@ -6838,7 +6838,7 @@ row.entry.success entry > text > placeholder, row.entry.success spinbutton:not(.
 
 row.entry.success .suggested-action {
   background-color: #76AF6F;
-  color: #FAFAFA;
+  color: #4B505B;
 }
 
 row.combo image.dropdown-arrow:disabled {
@@ -7295,8 +7295,8 @@ tabthumbnail > box {
 }
 
 tabthumbnail:drop(active) {
-  box-shadow: inset 0 0 0 3px alpha(#D19A66,0.4);
-  background-color: alpha(#D19A66,0.1);
+  box-shadow: inset 0 0 0 3px alpha(#B05CCC,0.4);
+  background-color: alpha(#B05CCC,0.1);
 }
 
 tabthumbnail .needs-attention:dir(ltr) {
@@ -8129,12 +8129,12 @@ toolbarview.undershoot-bottom scrolledwindow > undershoot.bottom {
 }
 
 .nautilus-window .sidebar-pane .navigation-sidebar > row:drop(active):not(:disabled), .nautilus-window flap .navigation-sidebar > row:drop(active):not(:disabled) {
-  color: #D19A66;
+  color: #B05CCC;
 }
 
 .nautilus-window .sidebar-pane .navigation-sidebar > row:drop(active):not(:disabled):selected, .nautilus-window flap .navigation-sidebar > row:drop(active):not(:disabled):selected {
   color: #FAFAFA;
-  background-color: #D19A66;
+  background-color: #B05CCC;
 }
 
 .nautilus-window .sidebar-pane .navigation-sidebar separator, .nautilus-window flap .navigation-sidebar separator {

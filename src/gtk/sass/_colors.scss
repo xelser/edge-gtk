@@ -30,23 +30,30 @@ $selected_bg_color: #F0544C;
 @if $color=='purple' { $selected_bg_color: #B05CCC; }
 $selected_fg_color: #FAFAFA;
 
-$success_color: #76AF6F;
-$success_fg_color: #FAFAFA;
+$success_color: if($variant =='light', #76AF6F, #A0C980);
+$success_fg_color: $fg_color;
 
-$destructive_color: #BE5046;
-$destructive_fg_color: #FAFAFA;
+$warning_color: if($variant =='light', #CE9C3D, #DEB974);
+$warning_fg_color: $fg_color;
 
 $error_color: if($variant =='light', #E17373, #EC7279);
 $error_fg_color: $fg_color;
 
-$warning_color: if($variant =='light', #CE9C3D, #DEB974);
-$warning_fg_color: $fg_color;
+$destructive_color: #BE5046;
+$destructive_fg_color: #FAFAFA;
 
 $suggested_color: $selected_bg_color;
 $suggested_fg_color: #FAFAFA;
 
 $progress_color: $selected_bg_color;
-$drop_target_color: #D19A66;
+@if $color=='red' { $progress_color: if($variant =='light', #D05858, #EC7279); }
+@if $color=='yellow' { $progress_color: if($variant =='light', #BE7E05, #DEB974); }
+@if $color=='green' { $progress_color: if($variant =='light', #608E32, #A0C980); }
+@if $color=='cyan' { $progress_color: if($variant =='light', #3A8B84, #5DBBC1); }
+@if $color=='blue' { $progress_color: if($variant =='light', #5079BE, #6CB6EB); }
+@if $color=='purple' { $progress_color: if($variant =='light', #B05CCC, #D38AEA); }
+$drop_target_color: $progress_color;
+//$drop_target_color: #F08437;
 
 $alt_selected_bg_color: lighten($selected_bg_color, 6%);
 $selected_borders_color: darken($selected_bg_color, 20%);
