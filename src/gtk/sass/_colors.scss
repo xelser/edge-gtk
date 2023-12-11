@@ -22,40 +22,40 @@ $fg_color: if($variant =='light', #4B505B, #DDE2E7);
 }
 
 $selected_bg_color: #F0544C;
-@if $color=='red' { $selected_bg_color: #D05858; }
-@if $color=='yellow' { $selected_bg_color: #BE7E05; }
-@if $color=='green' { $selected_bg_color: #608E32; }
-@if $color=='cyan' { $selected_bg_color: #3A8B84; }
-@if $color=='blue' { $selected_bg_color: #5079BE; }
-@if $color=='purple' { $selected_bg_color: #B05CCC; }
-$selected_fg_color: #FAFAFA;
+@if $color=='red' { $selected_bg_color: if($variant =='light', #D05858, #EC7279); }
+@if $color=='yellow' { $selected_bg_color: if($variant =='light', #BE7E05, #DEB974); }
+@if $color=='green' { $selected_bg_color: if($variant =='light', #608E32, #A0C980); }
+@if $color=='cyan' { $selected_bg_color: if($variant =='light', #3A8B84, #5DBBC1); }
+@if $color=='blue' { $selected_bg_color: if($variant =='light', #5079BE, #6CB6EB); }
+@if $color=='purple' { $selected_bg_color: if($variant =='light', #B05CCC, #D38AEA); }
+$selected_fg_color: $base_color;
 
-$warning_color: #D19A66;
-$warning_fg_color: #FAFAFA;
+$success_color: if($variant =='light', #76AF6F, #A0C980);
+$success_fg_color: $fg_color;
 
-$error_color: #E06C75;
-$error_fg_color: #FAFAFA;
+$warning_color: if($variant =='light', #CE9C3D, #DEB974);
+$warning_fg_color: $fg_color;
 
-$success_color: #76AF6F;
-$success_fg_color: #FAFAFA;
+$error_color: if($variant =='light', #E17373, #EC7279);
+$error_fg_color: $fg_color;
 
 $destructive_color: #BE5046;
 $destructive_fg_color: #FAFAFA;
 
 $suggested_color: $selected_bg_color;
-$suggested_fg_color: #FAFAFA;
+$suggested_fg_color: $selected_fg_color;
 
 $progress_color: $selected_bg_color;
-$drop_target_color: #E5C07B;
+$drop_target_color: $progress_color;
 
 $alt_selected_bg_color: lighten($selected_bg_color, 6%);
 $selected_borders_color: darken($selected_bg_color, 20%);
-$borders_color: if($variant =='light', rgba(#202023, 0.15), rgba(#202023, 0.25));
-$disable_borders_color: if($variant == 'light', rgba(#202023, 0.08), rgba(#202023, 0.15));
+$borders_color: if($variant =='light', rgba(black, 0.15), rgba(black, 0.25));
+$disable_borders_color: if($variant == 'light', rgba(black, 0.08), rgba(black, 0.15));
 $solid_borders_color: if($variant == 'light', darken($bg_color, 15%), darken($bg_color, 3%));
 $highlight: if($variant =='light', rgba(#FAFAFA, 0.13), rgba(#FAFAFA, 0.10));
 $focus_border_color: if($variant == 'light', transparentize($selected_bg_color, 0.5), transparentize($selected_bg_color, 0.3));
-$alt_focus_border_color: if($variant == 'light', transparentize(#202023, 0.7), transparentize(#FAFAFA, 0.7));
+$alt_focus_border_color: if($variant == 'light', transparentize(black, 0.7), transparentize(#FAFAFA, 0.7));
 
 $link_color: if($variant == 'light', darken($selected_bg_color, 10%),
                                      lighten($selected_bg_color, 20%));
@@ -79,14 +79,14 @@ $header_bg: #24262A;
 @if $color=='purple' and $header == 'dark' { $header_bg: if($variant =='light', #2B2D3A, darken(#2B2D3A, 3%)); }
 
 $header_bg_backdrop: if($header == 'light', lighten($header_bg, 6%), lighten($header_bg, 5%));
-$header_border: if($header == 'light', rgba(#202023, 0.15), rgba(#202023, 0.25));
+$header_border: if($header == 'light', rgba(black, 0.15), rgba(black, 0.25));
 $header_fg: if($header =='light', $fg_color, mix($selected_bg_color, #BAC3CB, 5%));
 
 $dark_sidebar_bg: if($variant == 'light' and $header == 'light', rgba(#EEF1F4, 0.95), rgba(#4F5868, 0.95));
 $dark_sidebar_fg: if($variant == 'light' and $header == 'light', $text_color, mix($selected_bg_color, #BAC3CB, 5%));
 $dark_sidebar_border: if($variant == 'light' and $header == 'light', darken($dark_sidebar_bg, 15%), darken($base_color, 5%));
-$dark_sidebar_hover_color: if($variant == 'light' and $header == 'light', rgba(#202023, 0.1), rgba(#FAFAFA, 0.08));
-$dark_sidebar_active_color: if($variant == 'light' and $header == 'light', rgba(#202023, 0.15), rgba(#FAFAFA, 0.12));
+$dark_sidebar_hover_color: if($variant == 'light' and $header == 'light', rgba(black, 0.1), rgba(#FAFAFA, 0.08));
+$dark_sidebar_active_color: if($variant == 'light' and $header == 'light', rgba(black, 0.15), rgba(#FAFAFA, 0.12));
 
 $osd_fg_color: $text_color;
 $osd_bg_color: rgba($base_color, 0.95);
@@ -114,9 +114,9 @@ $panel_fg: $fg_color;
 @if $header == 'dark' { $panel_fg: #DDE2E7; }
 
 $menu_bg_color: if($variant=='light', $base_color, $bg_color);
-$menu_hover_color: if($variant == 'light', rgba(#202023, 0.05), rgba(#FAFAFA, 0.04));
-$menu_selected_color: if($variant == 'light', rgba(#202023, 0.08), rgba(#FAFAFA, 0.07));
-$menu_active_color: if($variant == 'light', rgba(#202023, 0.15), rgba(#FAFAFA, 0.12));
+$menu_hover_color: if($variant == 'light', rgba(black, 0.05), rgba(#FAFAFA, 0.04));
+$menu_selected_color: if($variant == 'light', rgba(black, 0.08), rgba(#FAFAFA, 0.07));
+$menu_active_color: if($variant == 'light', rgba(black, 0.15), rgba(#FAFAFA, 0.12));
 
 $entry_bg: if($variant == 'light', $base_color, lighten($base_color, 0%));
 $entry_border: if($variant == 'light', $borders_color, darken($borders_color, 3%));
