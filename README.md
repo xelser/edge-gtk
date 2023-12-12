@@ -3,12 +3,13 @@ A **vivid** and **colorful** 🎨 GTK theme based on [vinceliuice](https://githu
 
 <details>
  <summary>Preview</summary>
- 
-  ![yellow](preview/Edge-light-yellow.png)
-  ![blue](preview/Edge-blue.png)
+  
   ![dark-red](preview/Edge-dark-red.png)
-  ![dark-cyan](preview/Edge-dark-cyan.png)
+  ![dark-blue](preview/Edge-dark-blue.png)
   ![dark-purple](preview/Edge-dark-purple.png)
+  ![cyan](preview/Edge-cyan.png)
+  ![yellow](preview/Edge-light-yellow.png)
+  
 </details>
 
 ## Supports
