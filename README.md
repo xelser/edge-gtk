@@ -1,17 +1,6 @@
 # About
 A **vivid** and **colorful** 🎨 GTK theme based on [vinceliuice](https://github.com/vinceliuice)'s [Matcha GTK Theme](https://github.com/vinceliuice/Matcha-gtk-theme) and [sainnhe](https://github.com/sainnhe)'s [Edge Colorscheme](https://github.com/sainnhe/edge).
 
-<details>
- <summary>Preview</summary>
-  
-  ![dark-red](preview/Edge-dark-red.png)
-  ![dark-blue](preview/Edge-dark-blue.png)
-  ![dark-purple](preview/Edge-dark-purple.png)
-  ![cyan](preview/Edge-cyan.png)
-  ![yellow](preview/Edge-light-yellow.png)
-  
-</details>
-
 ## Supports
 - GTK 2,3, and 4 
 - Cinnamon
