@@ -8859,7 +8859,7 @@ window#XfcePanelWindow.background.panel.xfce4-panel > widget wnck-pager:active, 
 XfdesktopIconView.view {
   border-radius: 2px;
   background: transparent;
-  color: #FAFAFA;
+  color: #4B505B;
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.26), 0 1px 2px rgba(0, 0, 0, 0.32), 0 2px 3px rgba(0, 0, 0, 0.12);
 }
 
@@ -8916,7 +8916,7 @@ window#whiskermenu-window > frame > stack button {
 
 window#whiskermenu-window > frame > stack button:hover {
   background-color: rgba(221, 226, 231, 0.12);
-  color: #FAFAFA;
+  color: #4B505B;
   border-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -9020,7 +9020,7 @@ window.thunar notebook header.top tab.reorderable-page > box > label {
 }
 
 #pulseaudio-button menuitem:hover scale highlight, #xfce4-power-manager-plugin menuitem:hover scale highlight {
-  background-color: #FAFAFA;
+  background-color: #4B505B;
 }
 
 /**********************
