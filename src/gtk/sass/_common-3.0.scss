@@ -2456,7 +2456,7 @@ switch {
   menuitem:hover switch#{$k},
   row:selected switch#{$k},
   infobar switch#{$k} {
-    background-image: -gtk-scaled(url("assets/switch#{$l}-selected.png"),url("assets/switch#{$l}-selected@2.png"));
+    background-image: -gtk-scaled(url("assets/switch#{$l}-selected.png"),url("assets/switch#{$l}-selected#{$asset_suffix}@2.png"));
   }
 
   headerbar switch#{$k},
@@ -2488,8 +2488,8 @@ switch {
     .osd,
     %osd_check_radio {
       #{$w}#{$s} {
-        -gtk-icon-source: -gtk-scaled(url("assets/#{$a}#{$as}-dark.png"),
-                                      url("assets/#{$a}#{$as}-dark@2.png"));
+        -gtk-icon-source: -gtk-scaled(url("assets/#{$a}#{$as}#{$asset_suffix}.png"),
+                                      url("assets/#{$a}#{$as}#{$asset_suffix}@2.png"));
       }
     }
     // the borders of checks and radios are
@@ -2500,8 +2500,8 @@ switch {
     treeview.#{$w}#{$s}:selected,
     row:selected #{$w}#{$s},
     infobar #{$w}#{$s} {
-      -gtk-icon-source: -gtk-scaled(url("assets/#{$a}#{$as}-selected.png"),
-                                    url("assets/#{$a}#{$as}-selected@2.png"));
+      -gtk-icon-source: -gtk-scaled(url("assets/#{$a}#{$as}-selected#{$asset_suffix}.png"),
+                                    url("assets/#{$a}#{$as}-selected#{$asset_suffix}@2.png"));
     }
   }
 }
@@ -2632,7 +2632,7 @@ scale {
     min-height: 15px;
     min-width: 15px;
     margin: -6px; // The slider is inside the trough, negative margin to make it bigger
-    background-color: $selected_fg_color;
+    background-color: $text_color;
     border: 1px solid $borders_color;
     border-radius: 100%;
 
@@ -2652,7 +2652,7 @@ scale {
     }
 
     &:disabled {
-      background-color: darken($selected_fg_color, 10%);
+      background-color: darken($text_color, 10%);
       border-color: darken($borders_color, 5%);
     }
 

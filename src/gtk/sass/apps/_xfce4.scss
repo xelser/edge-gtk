@@ -116,7 +116,7 @@ window#XfcePanelWindow.background.panel.xfce4-panel {
 XfdesktopIconView.view {
   border-radius: 2px;
   background: transparent;
-  color: $selected_fg_color;
+  color: $fg_color;
   text-shadow: $text_shadow;
 
   &:active, &:checked {
@@ -170,7 +170,7 @@ window#whiskermenu-window {
 
       &:hover {
         background-color: rgba($dark_menu_fg, 0.12);
-        color: if($variant == 'light' and $header == 'light', invert($selected_fg_color), $selected_fg_color);
+        color: if($variant == 'light' and $header == 'light', invert($fg_color), $fg_color);
         border-color: $dark_menu_border;
       }
 
@@ -311,7 +311,7 @@ window.thunar {
 #pulseaudio-button, #xfce4-power-manager-plugin {
   menuitem:hover {
     scale highlight {
-      background-color: $selected_fg_color;
+      background-color: $fg_color;
     }
   }
 }
