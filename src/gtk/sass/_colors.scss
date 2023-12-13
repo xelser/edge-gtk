@@ -1,24 +1,25 @@
 // When color definition differs for dark and light variant,
 // it gets @if ed depending on $variant
 
-$base_color: if($variant =='light', #FAFAFA, #33353F);
-$text_color: if($variant == 'light', #4F5868, #C5CDD9);
-$bg_color: if($variant =='light', #EEF1F4, #2C2E34);
 $fg_color: if($variant =='light', #4B505B, #DDE2E7);
+$text_color: if($variant == 'light', #4F5868, #C5CDD9);
+
+$bg_color: if($variant =='light', #EEF1F4, #2C2E34);
+$base_color: if($variant =='light', #FAFAFA, #33353F);
 
 @if $color=='cyan' {
-  $base_color: if($variant =='light', #FAFAFA, #363A49);
   $bg_color: if($variant =='light', #EEF1F4, #2B2D37);
+  $base_color: if($variant =='light', #FAFAFA, #333644);
 }
 
 @if $color=='blue' {
-  $base_color: if($variant =='light', #FAFAFA, #363A49);
   $bg_color: if($variant =='light', #EEF1F4, #2B2D37);
+  $base_color: if($variant =='light', #FAFAFA, #333644);
 }
 
 @if $color=='purple' {
-  $base_color: if($variant =='light', #FAFAFA, #363A4E);
   $bg_color: if($variant =='light', #EEF1F4, #2B2D3A);
+  $base_color: if($variant =='light', #FAFAFA, #333648);
 }
 
 $selected_bg_color: #F0544C;
