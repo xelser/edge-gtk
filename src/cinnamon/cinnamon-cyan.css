@@ -302,12 +302,12 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .cinnamon-link {
-  color: #2b6762;
+  color: #3A8B84;
   text-decoration: underline;
 }
 
 .cinnamon-link:hover {
-  color: #3a8b84;
+  color: #49afa6;
 }
 
 #Tooltip {
@@ -1123,7 +1123,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   background-color: rgba(133, 143, 162, 0.35);
   border: 1px solid rgba(53, 59, 69, 0.35);
   box-shadow: none;
-  background-color: #24262e;
+  background-color: #dfe3ea;
   border-color: #3A8B84;
 }
 
@@ -2028,16 +2028,16 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .workspace-graph .workspace .windows {
-  -active-window-background: #4d5062;
+  -active-window-background: white;
   -active-window-border: rgba(0, 0, 0, 0.8);
-  -inactive-window-background: #4d5062;
+  -inactive-window-background: white;
   -inactive-window-border: rgba(0, 0, 0, 0.8);
 }
 
 .workspace-graph .workspace:active .windows {
-  -active-window-background: #585c70;
+  -active-window-background: white;
   -active-window-border: rgba(0, 0, 0, 0.8);
-  -inactive-window-background: #363945;
+  -inactive-window-background: #f7f8fa;
   -inactive-window-border: rgba(0, 0, 0, 0.8);
 }
 

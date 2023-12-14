@@ -692,7 +692,7 @@ button.suggested-action:disabled label, button.suggested-action:disabled {
 
 button.destructive-action {
   background-clip: border-box;
-  color: #FAFAFA;
+  color: white;
   background-color: #BE5046;
   border-color: #BE5046;
 }
@@ -706,14 +706,14 @@ button.destructive-action.flat {
 
 button.destructive-action:hover {
   background-clip: border-box;
-  color: #FAFAFA;
+  color: white;
   background-color: #c56259;
   border-color: #c56259;
 }
 
 button.destructive-action:active, button.destructive-action:checked {
   background-clip: border-box;
-  color: #FAFAFA;
+  color: white;
   background-color: #cb746c;
   border-color: #cb746c;
 }
@@ -1376,11 +1376,11 @@ infobar.info > revealer > box *:link, infobar.info:hover > revealer > box *:link
 }
 
 *:link, button:link, button:visited {
-  color: #f2e3c6;
+  color: #DEB974;
 }
 
 *:link:visited, button:visited {
-  color: #e4e8ed;
+  color: #C5CDD9;
 }
 
 *:selected *:link:visited, *:selected button:visited {
@@ -1388,7 +1388,7 @@ infobar.info > revealer > box *:link, infobar.info:hover > revealer > box *:link
 }
 
 *:link:hover, button:hover:link, button:hover:visited {
-  color: #fbf7f0;
+  color: #e8ce9d;
 }
 
 *:selected *:link:hover, *:selected button:hover:link, *:selected button:hover:visited {
@@ -1396,7 +1396,7 @@ infobar.info > revealer > box *:link, infobar.info:hover > revealer > box *:link
 }
 
 *:link:active, button:active:link, button:active:visited {
-  color: #f2e3c6;
+  color: #DEB974;
 }
 
 *:selected *:link:active, *:selected button:active:link, *:selected button:active:visited {
@@ -1716,7 +1716,7 @@ headerbar.default-decoration {
   min-height: 28px;
   padding: 0 6px;
   background-color: #25272c;
-  box-shadow: inset 0 1px rgba(250, 250, 250, 0.1);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
 }
 
 .tiled headerbar.default-decoration, .maximized headerbar.default-decoration, .fullscreen headerbar.default-decoration {
@@ -1762,7 +1762,7 @@ headerbar.default-decoration button.titlebutton {
 }
 
 .titlebar, .titlebar headerbar {
-  box-shadow: inset 0 -1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(250, 250, 250, 0.1);
+  box-shadow: inset 0 -1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
 }
 
 .tiled .titlebar, .maximized .titlebar, .fullscreen .titlebar, .tiled .titlebar headerbar, .maximized .titlebar headerbar, .fullscreen .titlebar headerbar {
@@ -2118,7 +2118,7 @@ headerbar button.suggested-action:backdrop {
 
 headerbar button.destructive-action {
   background-clip: border-box;
-  color: #FAFAFA;
+  color: white;
   background-color: #BE5046;
   border-color: #BE5046;
 }
@@ -2132,14 +2132,14 @@ headerbar button.destructive-action.flat {
 
 headerbar button.destructive-action:hover {
   background-clip: border-box;
-  color: #FAFAFA;
+  color: white;
   background-color: #c56259;
   border-color: #c56259;
 }
 
 headerbar button.destructive-action:active, headerbar button.destructive-action:checked {
   background-clip: border-box;
-  color: #FAFAFA;
+  color: white;
   background-color: #cb746c;
   border-color: #cb746c;
 }
@@ -2326,7 +2326,7 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
 
 .titlebar:not(headerbar) > separator {
   background-image: linear-gradient(to bottom, #25272c, #25272c);
-  box-shadow: inset 0 1px rgba(250, 250, 250, 0.1);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
 }
 
 .titlebar:not(headerbar) > separator:backdrop {
@@ -3159,7 +3159,7 @@ switch {
 menuitem:hover switch,
 row:selected switch,
 infobar switch {
-  background-image: -gtk-scaled(url("assets/switch-selected.png"), url("assets/switch-selected-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/switch-selected-dark.png"), url("assets/switch-selected-dark@2.png"));
 }
 
 headerbar switch,
@@ -3174,7 +3174,7 @@ switch:checked {
 menuitem:hover switch:checked,
 row:selected switch:checked,
 infobar switch:checked {
-  background-image: -gtk-scaled(url("assets/switch-active-selected.png"), url("assets/switch-active-selected-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/switch-active-selected-dark.png"), url("assets/switch-active-selected-dark@2.png"));
 }
 
 headerbar switch:checked,
@@ -3189,7 +3189,7 @@ switch:hover {
 menuitem:hover switch:hover,
 row:selected switch:hover,
 infobar switch:hover {
-  background-image: -gtk-scaled(url("assets/switch-hover-selected.png"), url("assets/switch-hover-selected-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/switch-hover-selected-dark.png"), url("assets/switch-hover-selected-dark@2.png"));
 }
 
 headerbar switch:hover,
@@ -3204,7 +3204,7 @@ switch:checked:hover {
 menuitem:hover switch:checked:hover,
 row:selected switch:checked:hover,
 infobar switch:checked:hover {
-  background-image: -gtk-scaled(url("assets/switch-active-hover-selected.png"), url("assets/switch-active-hover-selected-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/switch-active-hover-selected-dark.png"), url("assets/switch-active-hover-selected-dark@2.png"));
 }
 
 headerbar switch:checked:hover,
@@ -3219,7 +3219,7 @@ switch:disabled {
 menuitem:hover switch:disabled,
 row:selected switch:disabled,
 infobar switch:disabled {
-  background-image: -gtk-scaled(url("assets/switch-insensitive-selected.png"), url("assets/switch-insensitive-selected-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/switch-insensitive-selected-dark.png"), url("assets/switch-insensitive-selected-dark@2.png"));
 }
 
 headerbar switch:disabled,
@@ -3234,7 +3234,7 @@ switch:checked:disabled {
 menuitem:hover switch:checked:disabled,
 row:selected switch:checked:disabled,
 infobar switch:checked:disabled {
-  background-image: -gtk-scaled(url("assets/switch-active-insensitive-selected.png"), url("assets/switch-active-insensitive-selected-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/switch-active-insensitive-selected-dark.png"), url("assets/switch-active-insensitive-selected-dark@2.png"));
 }
 
 headerbar switch:checked:disabled,
@@ -4206,7 +4206,7 @@ messagedialog.csd .titlebar {
   min-height: 20px;
   background-color: #2C2E34;
   border: none;
-  box-shadow: inset 0 1px rgba(250, 250, 250, 0.1);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
 }
 
 messagedialog .dialog-action-area.linked:not(.vertical) > button {
@@ -6346,7 +6346,7 @@ tabbox > tab button:active, tabbox > tab button:active:hover {
   min-width: 1px;
   background-color: #25272c;
   border-right: none;
-  box-shadow: inset 0 1px rgba(250, 250, 250, 0.1);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
 }
 
 .geary-main-window > deck > overlay > .geary-main-layout > leaflet > leaflet > box.vertical + separator.sidebar {
@@ -6744,12 +6744,12 @@ window.background:not(.csd) > widget > scrollbar {
 
 window.background:not(.csd) > widget > scrollbar,
 window.background:not(.csd) > widget > frame > border {
-  border-color: #33353F;
+  border-color: #2C2E34;
 }
 
 window.background:not(.csd) > widget > entry,
 window.background:not(.csd) > widget > button > button {
-  border: 1px solid #33353F;
+  border: 1px solid #2C2E34;
   border-radius: 2px;
 }
 
@@ -6757,7 +6757,7 @@ window.background:not(.csd) > widget > entry,
 window.background:not(.csd) > widget .entry {
   border-radius: 2px;
   background-image: image(#33353F);
-  border: 1px solid #33353F;
+  border: 1px solid #2C2E34;
 }
 
 window.background:not(.csd) > widget > entry:focus,
@@ -6767,7 +6767,7 @@ window.background:not(.csd) > widget .entry:focus {
 
 window.background:not(.csd) > widget > spinbutton {
   background-image: image(#383a45);
-  border: 1px solid #33353F;
+  border: 1px solid #2C2E34;
 }
 
 window.background:not(.csd) > widget > spinbutton:active {
@@ -6805,15 +6805,15 @@ window.background:not(.csd) > menu > menuitem > label:disabled {
 #MozillaGtkWidget > window.background > menu > separator {
   padding: 0;
   border: none;
-  background-color: #33353F;
+  background-color: #2C2E34;
 }
 
 #MozillaGtkWidget > widget border {
-  border-color: #33353F;
+  border-color: #2C2E34;
 }
 
 #MozillaGtkWidget > widget separator {
-  background-color: #33353F;
+  background-color: #2C2E34;
 }
 
 #MozillaGtkWidget > widget > scrolledwindow > textview {
@@ -7769,7 +7769,7 @@ window#MyControlCenter > frame > box.horizontal > widget > scrolledwindow.frame 
 }
 
 .budgie-popover.budgie-menu list.left-overlay-menu {
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15), 0 3px 5px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(250, 250, 250, 0.1);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15), 0 3px 5px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
   background-color: #33353F;
   padding: 6px;
   margin: 6px;
@@ -8671,7 +8671,7 @@ box.vertical > stack > box.vertical > .raven-background > viewport.frame > list 
 .budgie-run-dialog entry.search {
   font-size: 120%;
   padding: 6px 12px;
-  box-shadow: inset 0 1px rgba(250, 250, 250, 0.1);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
   background-color: transparent;
 }
 
@@ -8857,7 +8857,7 @@ window#XfcePanelWindow.background.panel.xfce4-panel > widget wnck-pager:active, 
 XfdesktopIconView.view {
   border-radius: 2px;
   background: transparent;
-  color: #DDE2E7;
+  color: #33353F;
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.26), 0 1px 2px rgba(0, 0, 0, 0.32), 0 2px 3px rgba(0, 0, 0, 0.12);
 }
 
@@ -8914,7 +8914,7 @@ window#whiskermenu-window > frame > stack button {
 
 window#whiskermenu-window > frame > stack button:hover {
   background-color: rgba(221, 226, 231, 0.12);
-  color: #DDE2E7;
+  color: #33353F;
   border-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -9018,7 +9018,7 @@ window.thunar notebook header.top tab.reorderable-page > box > label {
 }
 
 #pulseaudio-button menuitem:hover scale highlight, #xfce4-power-manager-plugin menuitem:hover scale highlight {
-  background-color: #DDE2E7;
+  background-color: #33353F;
 }
 
 /**********************
@@ -9972,7 +9972,7 @@ filechooser placessidebar.sidebar scrollbar trough,
 @define-color error_color #EC7279;
 @define-color success_color #A0C980;
 @define-color placeholder_text_color #A8A8A8;
-@define-color link_color #f2e3c6;
+@define-color link_color #DEB974;
 @define-color content_view_bg #33353F;
 /* Very contrasty background for text views (@theme_text_color foreground) */
 @define-color text_view_bg #25272e;

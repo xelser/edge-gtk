@@ -41,7 +41,7 @@ $error_color: if($variant =='light', #E17373, #EC7279);
 $error_fg_color: $fg_color;
 
 $destructive_color: #BE5046;
-$destructive_fg_color: #FAFAFA;
+$destructive_fg_color: white;
 
 $suggested_color: $selected_bg_color;
 $suggested_fg_color: $selected_fg_color;
@@ -49,28 +49,29 @@ $suggested_fg_color: $selected_fg_color;
 $progress_color: $selected_bg_color;
 $drop_target_color: $progress_color;
 
-$alt_selected_bg_color: lighten($selected_bg_color, 6%);
-$selected_borders_color: darken($selected_bg_color, 20%);
-$borders_color: if($variant =='light', darken($bg_color, 15%), darken($bg_color, 2%));
-$highlight: if($variant =='light', rgba(#FAFAFA, 0.13), rgba(#FAFAFA, 0.10));
-
-$link_color: if($variant == 'light', darken($selected_bg_color, 10%), lighten($selected_bg_color, 20%));
-$link_visited_color: if($variant == 'light', darken($text_color, 5%), lighten($text_color, 10%));
+$link_color: $selected_bg_color;
+$link_visited_color: $text_color;
 
 $selection_mode_bg: if($transparency == 'true', transparentize($selected_bg_color, 0.05), $selected_bg_color);
 $selection_mode_fg: $selected_fg_color;
+
+$alt_selected_bg_color: lighten($selected_bg_color, 6%);
+$selected_borders_color: darken($selected_bg_color, 20%);
+$borders_color: if($variant =='light', darken($bg_color, 15%), darken($bg_color, 2%));
+$highlight: if($variant =='light', rgba(white, 0.13), rgba(white, 0.10));
 
 //insensitive state derived colors
 $insensitive_fg_color: if($variant == 'light', transparentize($fg_color, 0.45), transparentize($fg_color, 0.55));
 $insensitive_bg_color: if($variant == 'light', mix($bg_color, $base_color, 40%), lighten($bg_color, 2%));
 
-$header_bg: #24262A;
-@if $color=='red' { $header_bg: if($variant =='light', #2C2E34, darken(#2C2E34, 3%)); }
-@if $color=='yellow' { $header_bg: if($variant =='light', #2C2E34, darken(#2C2E34, 3%)); }
-@if $color=='green' { $header_bg: if($variant =='light', #2C2E34, darken(#2C2E34, 3%)); }
-@if $color=='cyan' { $header_bg: if($variant =='light', #2B2D37, darken(#2B2D37, 3%)); }
-@if $color=='blue' { $header_bg: if($variant =='light', #2B2D37, darken(#2B2D37, 3%)); }
-@if $color=='purple' { $header_bg: if($variant =='light', #2B2D3A, darken(#2B2D3A, 3%)); }
+$header_bg: $bg_color;
+@if $variant=='light' { $header_bg: #E8EBF0; }
+@if $variant=='dark' and $color=='red' { $header_bg: if($variant =='light', #2C2E34, darken(#2C2E34, 3%)); }
+@if $variant=='dark' and $color=='yellow' { $header_bg: if($variant =='light', #2C2E34, darken(#2C2E34, 3%)); }
+@if $variant=='dark' and $color=='green' { $header_bg: if($variant =='light', #2C2E34, darken(#2C2E34, 3%)); }
+@if $variant=='dark' and $color=='cyan' { $header_bg: if($variant =='light', #2B2D37, darken(#2B2D37, 3%)); }
+@if $variant=='dark' and $color=='blue' { $header_bg: if($variant =='light', #2B2D37, darken(#2B2D37, 3%)); }
+@if $variant=='dark' and $color=='purple' { $header_bg: if($variant =='light', #2B2D3A, darken(#2B2D3A, 3%)); }
 
 $header_bg_backdrop: if($variant == 'dark', lighten($header_bg, 2%), lighten($header_bg, 3%));
 $header_border: if($variant == 'light', darken($header_bg, 7%), darken($header_bg, 4%));

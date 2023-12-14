@@ -692,7 +692,7 @@ button.suggested-action:disabled label, button.suggested-action:disabled {
 
 button.destructive-action {
   background-clip: border-box;
-  color: #FAFAFA;
+  color: white;
   background-color: #BE5046;
   border-color: #BE5046;
 }
@@ -706,14 +706,14 @@ button.destructive-action.flat {
 
 button.destructive-action:hover {
   background-clip: border-box;
-  color: #FAFAFA;
+  color: white;
   background-color: #c56259;
   border-color: #c56259;
 }
 
 button.destructive-action:active, button.destructive-action:checked {
   background-clip: border-box;
-  color: #FAFAFA;
+  color: white;
   background-color: #cb746c;
   border-color: #cb746c;
 }
@@ -1376,11 +1376,11 @@ infobar.info > revealer > box *:link, infobar.info:hover > revealer > box *:link
 }
 
 *:link, button:link, button:visited {
-  color: #bf3636;
+  color: #D05858;
 }
 
 *:link:visited, button:visited {
-  color: #444c5a;
+  color: #4F5868;
 }
 
 *:selected *:link:visited, *:selected button:visited {
@@ -1388,7 +1388,7 @@ infobar.info > revealer > box *:link, infobar.info:hover > revealer > box *:link
 }
 
 *:link:hover, button:hover:link, button:hover:visited {
-  color: #d05858;
+  color: #db8080;
 }
 
 *:selected *:link:hover, *:selected button:hover:link, *:selected button:hover:visited {
@@ -1396,7 +1396,7 @@ infobar.info > revealer > box *:link, infobar.info:hover > revealer > box *:link
 }
 
 *:link:active, button:active:link, button:active:visited {
-  color: #bf3636;
+  color: #D05858;
 }
 
 *:selected *:link:active, *:selected button:active:link, *:selected button:active:visited {
@@ -1716,7 +1716,7 @@ headerbar.default-decoration {
   min-height: 28px;
   padding: 0 6px;
   background-color: #e8ebf0;
-  box-shadow: inset 0 1px rgba(250, 250, 250, 0.13);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.13);
 }
 
 .tiled headerbar.default-decoration, .maximized headerbar.default-decoration, .fullscreen headerbar.default-decoration {
@@ -1762,7 +1762,7 @@ headerbar.default-decoration button.titlebutton {
 }
 
 .titlebar, .titlebar headerbar {
-  box-shadow: inset 0 -1px rgba(0, 0, 0, 0.15), inset 0 1px rgba(250, 250, 250, 0.13);
+  box-shadow: inset 0 -1px rgba(0, 0, 0, 0.15), inset 0 1px rgba(255, 255, 255, 0.13);
 }
 
 .titlebar.windowhandle viewswitcher button:not(.titlebutton):not(.suggested-action):not(.destructive-action) {
@@ -2114,7 +2114,7 @@ headerbar button.suggested-action:backdrop {
 
 headerbar button.destructive-action {
   background-clip: border-box;
-  color: #FAFAFA;
+  color: white;
   background-color: #BE5046;
   border-color: #BE5046;
 }
@@ -2128,14 +2128,14 @@ headerbar button.destructive-action.flat {
 
 headerbar button.destructive-action:hover {
   background-clip: border-box;
-  color: #FAFAFA;
+  color: white;
   background-color: #c56259;
   border-color: #c56259;
 }
 
 headerbar button.destructive-action:active, headerbar button.destructive-action:checked {
   background-clip: border-box;
-  color: #FAFAFA;
+  color: white;
   background-color: #cb746c;
   border-color: #cb746c;
 }
@@ -2322,7 +2322,7 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
 
 .titlebar:not(headerbar) > separator {
   background-image: linear-gradient(to bottom, #E8EBF0, #E8EBF0);
-  box-shadow: inset 0 1px rgba(250, 250, 250, 0.13);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.13);
 }
 
 .titlebar:not(headerbar) > separator:backdrop {
@@ -4203,7 +4203,7 @@ messagedialog.csd .titlebar {
   min-height: 20px;
   background-color: #EEF1F4;
   border: none;
-  box-shadow: inset 0 1px rgba(250, 250, 250, 0.13);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.13);
 }
 
 messagedialog .dialog-action-area.linked:not(.vertical) > button {
@@ -6344,8 +6344,8 @@ tabbox > tab button:active, tabbox > tab button:active:hover {
   min-width: 1px;
   background-color: #E8EBF0;
   border-right: none;
-  box-shadow: inset 0 1px rgba(250, 250, 250, 0.13);
-  box-shadow: inset 0 -1px rgba(0, 0, 0, 0.15), inset 0 1px rgba(250, 250, 250, 0.13);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.13);
+  box-shadow: inset 0 -1px rgba(0, 0, 0, 0.15), inset 0 1px rgba(255, 255, 255, 0.13);
 }
 
 .geary-main-window > deck > overlay > .geary-main-layout > leaflet > leaflet > box.vertical + separator.sidebar {
@@ -7769,7 +7769,7 @@ window#MyControlCenter > frame > box.horizontal > widget > scrolledwindow.frame 
 }
 
 .budgie-popover.budgie-menu list.left-overlay-menu {
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15), 0 3px 5px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(0, 0, 0, 0.15), inset 0 1px rgba(250, 250, 250, 0.13);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15), 0 3px 5px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(0, 0, 0, 0.15), inset 0 1px rgba(255, 255, 255, 0.13);
   background-color: #FAFAFA;
   padding: 6px;
   margin: 6px;
@@ -8671,7 +8671,7 @@ box.vertical > stack > box.vertical > .raven-background > viewport.frame > list 
 .budgie-run-dialog entry.search {
   font-size: 120%;
   padding: 6px 12px;
-  box-shadow: inset 0 1px rgba(250, 250, 250, 0.13);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.13);
   background-color: transparent;
 }
 
@@ -8857,7 +8857,7 @@ window#XfcePanelWindow.background.panel.xfce4-panel > widget wnck-pager:active, 
 XfdesktopIconView.view {
   border-radius: 2px;
   background: transparent;
-  color: #4B505B;
+  color: #FAFAFA;
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.26), 0 1px 2px rgba(0, 0, 0, 0.32), 0 2px 3px rgba(0, 0, 0, 0.12);
 }
 
@@ -8914,7 +8914,7 @@ window#whiskermenu-window > frame > stack button {
 
 window#whiskermenu-window > frame > stack button:hover {
   background-color: rgba(75, 80, 91, 0.12);
-  color: #b4afa4;
+  color: #050505;
   border-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -9020,7 +9020,7 @@ window.thunar notebook header.top tab.reorderable-page > box > label {
 }
 
 #pulseaudio-button menuitem:hover scale highlight, #xfce4-power-manager-plugin menuitem:hover scale highlight {
-  background-color: #4B505B;
+  background-color: #FAFAFA;
 }
 
 /**********************
@@ -9974,7 +9974,7 @@ filechooser placessidebar.sidebar scrollbar trough,
 @define-color error_color #E17373;
 @define-color success_color #76AF6F;
 @define-color placeholder_text_color #A8A8A8;
-@define-color link_color #bf3636;
+@define-color link_color #D05858;
 @define-color content_view_bg #FAFAFA;
 /* Very contrasty background for text views (@theme_text_color foreground) */
 @define-color text_view_bg #FAFAFA;
