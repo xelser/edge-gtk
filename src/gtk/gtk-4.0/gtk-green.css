@@ -1,9 +1,9 @@
 @keyframes header_ripple_effect {
   from {
-    background-image: radial-gradient(circle farthest-corner at center, #2C2E34 0%, transparent 0%);
+    background-image: radial-gradient(circle farthest-corner at center, #24262A 0%, transparent 0%);
   }
   to {
-    background-image: radial-gradient(circle farthest-corner at center, #2C2E34 100%, transparent 0%);
+    background-image: radial-gradient(circle farthest-corner at center, #24262A 100%, transparent 0%);
   }
 }
 
@@ -386,7 +386,7 @@ entry:disabled {
 
 spinbutton.vertical > text.warning, spinbutton.warning:not(.vertical),
 entry.warning {
-  color: #4B505B;
+  color: #FAFAFA;
   border-color: #CE9C3D;
   background-color: #e0c289;
 }
@@ -406,25 +406,25 @@ entry.warning:focus-within {
 
 spinbutton.vertical > text.warning > image, spinbutton.warning:not(.vertical) > image,
 entry.warning > image {
-  color: #4B505B;
+  color: #FAFAFA;
 }
 
 spinbutton.vertical > text.warning:focus-within, spinbutton.warning:focus-within:not(.vertical),
 entry.warning:focus-within {
-  color: #4B505B;
+  color: #FAFAFA;
   background-color: #CE9C3D;
   box-shadow: none;
 }
 
 spinbutton.vertical > text.warning > selection, spinbutton.warning:not(.vertical) > selection,
 entry.warning > selection {
-  background-color: #4B505B;
+  background-color: #FAFAFA;
   color: #CE9C3D;
 }
 
 spinbutton.vertical > text.error, spinbutton.error:not(.vertical),
 entry.error {
-  color: #4B505B;
+  color: #FAFAFA;
   border-color: #E17373;
   background-color: #eba9a9;
 }
@@ -444,25 +444,25 @@ entry.error:focus-within {
 
 spinbutton.vertical > text.error > image, spinbutton.error:not(.vertical) > image,
 entry.error > image {
-  color: #4B505B;
+  color: #FAFAFA;
 }
 
 spinbutton.vertical > text.error:focus-within, spinbutton.error:focus-within:not(.vertical),
 entry.error:focus-within {
-  color: #4B505B;
+  color: #FAFAFA;
   background-color: #E17373;
   box-shadow: none;
 }
 
 spinbutton.vertical > text.error > selection, spinbutton.error:not(.vertical) > selection,
 entry.error > selection {
-  background-color: #4B505B;
+  background-color: #FAFAFA;
   color: #E17373;
 }
 
 spinbutton.vertical > text.success, spinbutton.success:not(.vertical),
 entry.success {
-  color: #4B505B;
+  color: #FAFAFA;
   border-color: #76AF6F;
   background-color: #abcda7;
 }
@@ -482,25 +482,25 @@ entry.success:focus-within {
 
 spinbutton.vertical > text.success > image, spinbutton.success:not(.vertical) > image,
 entry.success > image {
-  color: #4B505B;
+  color: #FAFAFA;
 }
 
 spinbutton.vertical > text.success:focus-within, spinbutton.success:focus-within:not(.vertical),
 entry.success:focus-within {
-  color: #4B505B;
+  color: #FAFAFA;
   background-color: #76AF6F;
   box-shadow: none;
 }
 
 spinbutton.vertical > text.success > selection, spinbutton.success:not(.vertical) > selection,
 entry.success > selection {
-  background-color: #4B505B;
+  background-color: #FAFAFA;
   color: #76AF6F;
 }
 
 spinbutton.vertical > text.search-missing, spinbutton.search-missing:not(.vertical),
 entry.search-missing {
-  color: #4B505B;
+  color: #FAFAFA;
   border-color: #E17373;
   background-color: #eba9a9;
 }
@@ -520,19 +520,19 @@ entry.search-missing:focus-within {
 
 spinbutton.vertical > text.search-missing > image, spinbutton.search-missing:not(.vertical) > image,
 entry.search-missing > image {
-  color: #4B505B;
+  color: #FAFAFA;
 }
 
 spinbutton.vertical > text.search-missing:focus-within, spinbutton.search-missing:focus-within:not(.vertical),
 entry.search-missing:focus-within {
-  color: #4B505B;
+  color: #FAFAFA;
   background-color: #E17373;
   box-shadow: none;
 }
 
 spinbutton.vertical > text.search-missing > selection, spinbutton.search-missing:not(.vertical) > selection,
 entry.search-missing > selection {
-  background-color: #4B505B;
+  background-color: #FAFAFA;
   color: #E17373;
 }
 
@@ -959,8 +959,8 @@ popover.background.touch-selection button.flat:active, popover.background.magnif
 button.suggested-action {
   background-clip: border-box;
   color: #FAFAFA;
-  background-color: #608E32;
-  border-color: #608E32;
+  background-color: #6996E0;
+  border-color: #6996E0;
 }
 
 
@@ -968,15 +968,15 @@ button.suggested-action.flat {
   border-color: transparent;
   background-color: transparent;
   background-image: none;
-  color: #608E32;
+  color: #6996E0;
 }
 
 
 button.suggested-action:hover {
   background-clip: border-box;
   color: #FAFAFA;
-  background-color: #6da139;
-  border-color: #6da139;
+  background-color: #7ea5e4;
+  border-color: #7ea5e4;
 }
 
 
@@ -984,8 +984,8 @@ button.suggested-action:active,
 button.suggested-action:checked {
   background-clip: border-box;
   color: #FAFAFA;
-  background-color: #7ab43f;
-  border-color: #7ab43f;
+  background-color: #93b4e9;
+  border-color: #93b4e9;
 }
 
 
@@ -1011,7 +1011,7 @@ button.suggested-action:disabled {
 
 button.destructive-action {
   background-clip: border-box;
-  color: white;
+  color: #FAFAFA;
   background-color: #BE5046;
   border-color: #BE5046;
 }
@@ -1027,7 +1027,7 @@ button.destructive-action.flat {
 
 button.destructive-action:hover {
   background-clip: border-box;
-  color: white;
+  color: #FAFAFA;
   background-color: #c56259;
   border-color: #c56259;
 }
@@ -1036,7 +1036,7 @@ button.destructive-action:hover {
 button.destructive-action:active,
 button.destructive-action:checked {
   background-clip: border-box;
-  color: white;
+  color: #FAFAFA;
   background-color: #cb746c;
   border-color: #cb746c;
 }
@@ -1546,7 +1546,7 @@ headerbar .linked:not(.vertical):not(.path-bar) > entry.warning + entry.error, .
 .titlebar .linked:not(.vertical):not(.path-bar) > entry + entry.warning,
 .titlebar .linked:not(.vertical):not(.path-bar) > entry.error + entry.warning,
 .titlebar .linked:not(.vertical):not(.path-bar) > entry.warning + entry.error {
-  border-left-color: rgba(16, 17, 19, 0.42);
+  border-left-color: rgba(8, 8, 9, 0.42);
 }
 
 headerbar .linked:not(.vertical):not(.path-bar) > entry + entry:focus-within:not(:last-child),
@@ -1556,7 +1556,7 @@ headerbar .linked:not(.vertical):not(.path-bar) > entry + entry:focus-within:las
 }
 
 headerbar .linked:not(.vertical):not(.path-bar) > entry:focus-within:not(:only-child) + entry, .titlebar .linked:not(.vertical):not(.path-bar) > entry:focus-within:not(:only-child) + entry {
-  border-left-color: rgba(16, 17, 19, 0.42);
+  border-left-color: rgba(8, 8, 9, 0.42);
 }
 
 headerbar .linked:not(.vertical):not(.path-bar) > entry:focus-within:not(:only-child) + button:not(:hover):not(:active):not(:checked),
@@ -1568,7 +1568,7 @@ headerbar .linked:not(.vertical):not(.path-bar) > entry:focus-within:not(:only-c
 headerbar .linked:not(.vertical):not(.path-bar) > entry:focus-within:not(:only-child) + button:hover,
 headerbar .linked:not(.vertical):not(.path-bar) > entry:focus-within:not(:only-child) + combobox > box > button.combo:hover, .titlebar .linked:not(.vertical):not(.path-bar) > entry:focus-within:not(:only-child) + button:hover,
 .titlebar .linked:not(.vertical):not(.path-bar) > entry:focus-within:not(:only-child) + combobox > box > button.combo:hover {
-  border-left-color: rgba(16, 17, 19, 0.42);
+  border-left-color: rgba(8, 8, 9, 0.42);
 }
 
 headerbar .linked:not(.vertical):not(.path-bar) > entry + entry:drop(active):not(:last-child),
@@ -1578,7 +1578,7 @@ headerbar .linked:not(.vertical):not(.path-bar) > entry + entry:drop(active):las
 }
 
 headerbar .linked:not(.vertical):not(.path-bar) > entry:drop(active):not(:only-child) + entry, .titlebar .linked:not(.vertical):not(.path-bar) > entry:drop(active):not(:only-child) + entry {
-  border-left-color: rgba(16, 17, 19, 0.42);
+  border-left-color: rgba(8, 8, 9, 0.42);
 }
 
 headerbar .linked:not(.vertical):not(.path-bar) > entry:drop(active):not(:only-child) + button:not(:hover):not(:active):not(:checked),
@@ -1590,7 +1590,7 @@ headerbar .linked:not(.vertical):not(.path-bar) > entry:drop(active):not(:only-c
 headerbar .linked:not(.vertical):not(.path-bar) > entry:drop(active):not(:only-child) + button:hover,
 headerbar .linked:not(.vertical):not(.path-bar) > entry:drop(active):not(:only-child) + combobox > box > button.combo:hover, .titlebar .linked:not(.vertical):not(.path-bar) > entry:drop(active):not(:only-child) + button:hover,
 .titlebar .linked:not(.vertical):not(.path-bar) > entry:drop(active):not(:only-child) + combobox > box > button.combo:hover {
-  border-left-color: rgba(16, 17, 19, 0.42);
+  border-left-color: rgba(8, 8, 9, 0.42);
 }
 
 headerbar .linked:not(.vertical):not(.path-bar) > entry + entry.warning:focus-within:not(:last-child),
@@ -1600,7 +1600,7 @@ headerbar .linked:not(.vertical):not(.path-bar) > entry + entry.warning:focus-wi
 }
 
 headerbar .linked:not(.vertical):not(.path-bar) > entry.warning:focus-within:not(:only-child) + entry, .titlebar .linked:not(.vertical):not(.path-bar) > entry.warning:focus-within:not(:only-child) + entry {
-  border-left-color: rgba(16, 17, 19, 0.42);
+  border-left-color: rgba(8, 8, 9, 0.42);
 }
 
 headerbar .linked:not(.vertical):not(.path-bar) > entry.warning:focus-within:not(:only-child) + button:not(:hover):not(:active):not(:checked),
@@ -1612,7 +1612,7 @@ headerbar .linked:not(.vertical):not(.path-bar) > entry.warning:focus-within:not
 headerbar .linked:not(.vertical):not(.path-bar) > entry.warning:focus-within:not(:only-child) + button:hover,
 headerbar .linked:not(.vertical):not(.path-bar) > entry.warning:focus-within:not(:only-child) + combobox > box > button.combo:hover, .titlebar .linked:not(.vertical):not(.path-bar) > entry.warning:focus-within:not(:only-child) + button:hover,
 .titlebar .linked:not(.vertical):not(.path-bar) > entry.warning:focus-within:not(:only-child) + combobox > box > button.combo:hover {
-  border-left-color: rgba(16, 17, 19, 0.42);
+  border-left-color: rgba(8, 8, 9, 0.42);
 }
 
 headerbar .linked:not(.vertical):not(.path-bar) > entry + entry.error:focus-within:not(:last-child),
@@ -1622,7 +1622,7 @@ headerbar .linked:not(.vertical):not(.path-bar) > entry + entry.error:focus-with
 }
 
 headerbar .linked:not(.vertical):not(.path-bar) > entry.error:focus-within:not(:only-child) + entry, .titlebar .linked:not(.vertical):not(.path-bar) > entry.error:focus-within:not(:only-child) + entry {
-  border-left-color: rgba(16, 17, 19, 0.42);
+  border-left-color: rgba(8, 8, 9, 0.42);
 }
 
 headerbar .linked:not(.vertical):not(.path-bar) > entry.error:focus-within:not(:only-child) + button:not(:hover):not(:active):not(:checked),
@@ -1634,13 +1634,13 @@ headerbar .linked:not(.vertical):not(.path-bar) > entry.error:focus-within:not(:
 headerbar .linked:not(.vertical):not(.path-bar) > entry.error:focus-within:not(:only-child) + button:hover,
 headerbar .linked:not(.vertical):not(.path-bar) > entry.error:focus-within:not(:only-child) + combobox > box > button.combo:hover, .titlebar .linked:not(.vertical):not(.path-bar) > entry.error:focus-within:not(:only-child) + button:hover,
 .titlebar .linked:not(.vertical):not(.path-bar) > entry.error:focus-within:not(:only-child) + combobox > box > button.combo:hover {
-  border-left-color: rgba(16, 17, 19, 0.42);
+  border-left-color: rgba(8, 8, 9, 0.42);
 }
 
 headerbar .linked:not(.vertical):not(.path-bar) > button:active + entry,
 headerbar .linked:not(.vertical):not(.path-bar) > button:checked + entry, .titlebar .linked:not(.vertical):not(.path-bar) > button:active + entry,
 .titlebar .linked:not(.vertical):not(.path-bar) > button:checked + entry {
-  border-left-color: rgba(16, 17, 19, 0.42);
+  border-left-color: rgba(8, 8, 9, 0.42);
 }
 
 headerbar .linked:not(.vertical):not(.path-bar) > button + button, .titlebar .linked:not(.vertical):not(.path-bar) > button + button {
@@ -2431,8 +2431,8 @@ actionbar > revealer > box splitbutton {
 
 .sidebar-pane entry, headerbar entry {
   color: #b6c0c3;
-  border-color: rgba(16, 17, 19, 0.42);
-  background-color: rgba(95, 100, 113, 0.42);
+  border-color: rgba(8, 8, 9, 0.42);
+  background-color: rgba(88, 93, 102, 0.42);
 }
 
 .sidebar-pane entry image, headerbar entry image, headerbar entry image:hover {
@@ -2446,7 +2446,7 @@ actionbar > revealer > box splitbutton {
 .sidebar-pane entry:focus-within, headerbar entry:focus-within {
   color: #eef0f1;
   border-color: #608E32;
-  background-color: rgba(81, 85, 96, 0.42);
+  background-color: rgba(74, 78, 86, 0.42);
   background-clip: border-box;
 }
 
@@ -2456,8 +2456,8 @@ actionbar > revealer > box splitbutton {
 
 .sidebar-pane entry:disabled, headerbar entry:disabled {
   color: rgba(182, 192, 195, 0.55);
-  border-color: rgba(16, 17, 19, 0.42);
-  background-color: rgba(95, 100, 113, 0.85);
+  border-color: rgba(8, 8, 9, 0.42);
+  background-color: rgba(88, 93, 102, 0.85);
 }
 
 .sidebar-pane entry selection:focus-within, headerbar entry selection:focus-within {
@@ -2587,14 +2587,14 @@ headerbar {
   padding: 0;
   color: #b6c0c3;
   border: none;
-  background-color: #2C2E34;
+  background-color: #24262A;
   box-shadow: inset 0 -1px rgba(0, 0, 0, 0.15), inset 0 1px rgba(255, 255, 255, 0.13);
 }
 
 headerbar:backdrop {
   transition: 200ms ease-out;
   color: rgba(182, 192, 195, 0.7);
-  background-color: #383a42;
+  background-color: #303238;
 }
 
 headerbar > windowhandle > box {
@@ -2651,34 +2651,34 @@ headerbar entry progress {
 }
 
 headerbar entry.warning {
-  color: #4B505B;
+  color: #FAFAFA;
   border-color: #CE9C3D;
-  background-color: #8d7039;
+  background-color: #8a6d35;
 }
 
 headerbar entry.warning:focus-within {
-  color: #4B505B;
+  color: #FAFAFA;
   background-color: #CE9C3D;
 }
 
 headerbar entry.warning selection, headerbar entry.warning selection:focus {
-  background-color: #4B505B;
+  background-color: #FAFAFA;
   color: #CE9C3D;
 }
 
 headerbar entry.error {
-  color: #4B505B;
+  color: #FAFAFA;
   border-color: #E17373;
-  background-color: #99575a;
+  background-color: #955456;
 }
 
 headerbar entry.error:focus-within {
-  color: #4B505B;
+  color: #FAFAFA;
   background-color: #E17373;
 }
 
 headerbar entry.error selection, headerbar entry.error selection:focus {
-  background-color: #4B505B;
+  background-color: #FAFAFA;
   color: #E17373;
 }
 
@@ -2729,7 +2729,7 @@ headerbar.selection-mode button:backdrop {
 
 headerbar buttonbox.linked > button,
 headerbar stackswitcher.linked > button {
-  background-color: #434650;
+  background-color: #3c3f45;
   color: #b6c0c3;
   border-width: 0;
   border-color: rgba(0, 0, 0, 0.15);
@@ -2737,7 +2737,7 @@ headerbar stackswitcher.linked > button {
 
 headerbar buttonbox.linked > button:hover,
 headerbar stackswitcher.linked > button:hover {
-  background-color: #4f535b;
+  background-color: #484c52;
 }
 
 headerbar buttonbox.linked > button:active, headerbar buttonbox.linked > button:checked,
@@ -2764,7 +2764,7 @@ headerbar stackswitcher.linked > button + button {
 
 headerbar .linked:not(.vertical):not(.path-bar) > entry {
   border-radius: 3px;
-  border: 1px solid rgba(16, 17, 19, 0.42);
+  border: 1px solid rgba(8, 8, 9, 0.42);
 }
 
 headerbar .linked:not(.vertical):not(.path-bar) > entry:focus-within {
@@ -2772,11 +2772,11 @@ headerbar .linked:not(.vertical):not(.path-bar) > entry:focus-within {
 }
 
 headerbar .linked:not(.vertical):not(.path-bar) > entry + entry {
-  border-left-color: rgba(16, 17, 19, 0.42);
+  border-left-color: rgba(8, 8, 9, 0.42);
 }
 
 headerbar .linked:not(.vertical):not(.path-bar) > entry.error + entry {
-  border-left-color: rgba(16, 17, 19, 0.42);
+  border-left-color: rgba(8, 8, 9, 0.42);
 }
 
 headerbar .linked:not(.vertical):not(.path-bar) > entry + entry.error {
@@ -2784,7 +2784,7 @@ headerbar .linked:not(.vertical):not(.path-bar) > entry + entry.error {
 }
 
 headerbar .linked:not(.vertical):not(.path-bar) > entry.warning + entry {
-  border-left-color: rgba(16, 17, 19, 0.42);
+  border-left-color: rgba(8, 8, 9, 0.42);
 }
 
 headerbar .linked:not(.vertical):not(.path-bar) > entry + entry.warning {
@@ -2802,29 +2802,29 @@ headerbar .linked:not(.vertical):not(.path-bar) > entry.warning + entry.error {
 headerbar button.suggested-action {
   background-clip: border-box;
   color: #FAFAFA;
-  background-color: #608E32;
-  border-color: #608E32;
+  background-color: #6996E0;
+  border-color: #6996E0;
 }
 
 headerbar button.suggested-action.flat {
   border-color: transparent;
   background-color: transparent;
   background-image: none;
-  color: #608E32;
+  color: #6996E0;
 }
 
 headerbar button.suggested-action:hover {
   background-clip: border-box;
   color: #FAFAFA;
-  background-color: #6da139;
-  border-color: #6da139;
+  background-color: #7ea5e4;
+  border-color: #7ea5e4;
 }
 
 headerbar button.suggested-action:active, headerbar button.suggested-action:checked {
   background-clip: border-box;
   color: #FAFAFA;
-  background-color: #7ab43f;
-  border-color: #7ab43f;
+  background-color: #93b4e9;
+  border-color: #93b4e9;
 }
 
 headerbar button.suggested-action.flat:disabled, headerbar button.suggested-action:disabled {
@@ -2840,7 +2840,7 @@ headerbar button.suggested-action:backdrop {
 
 headerbar button.destructive-action {
   background-clip: border-box;
-  color: white;
+  color: #FAFAFA;
   background-color: #BE5046;
   border-color: #BE5046;
 }
@@ -2854,14 +2854,14 @@ headerbar button.destructive-action.flat {
 
 headerbar button.destructive-action:hover {
   background-clip: border-box;
-  color: white;
+  color: #FAFAFA;
   background-color: #c56259;
   border-color: #c56259;
 }
 
 headerbar button.destructive-action:active, headerbar button.destructive-action:checked {
   background-clip: border-box;
-  color: white;
+  color: #FAFAFA;
   background-color: #cb746c;
   border-color: #cb746c;
 }
@@ -2908,12 +2908,12 @@ headerbar spinbutton:not(.vertical) > button + button {
 
 headerbar spinbutton:not(.vertical) > button:hover:not(:active),
 headerbar spinbutton:not(.vertical) > button:hover + button {
-  box-shadow: inset 1px 0 rgba(44, 46, 52, 0.3);
+  box-shadow: inset 1px 0 rgba(36, 38, 42, 0.3);
 }
 
 headerbar spinbutton:not(.vertical) > button:disabled + button:not(:disabled):not(:active):not(:checked):not(:hover),
 headerbar spinbutton:not(.vertical) > button:not(:disabled):not(:active):not(:checked):not(:hover) + button:disabled {
-  box-shadow: inset 1px 0 rgba(44, 46, 52, 0.3);
+  box-shadow: inset 1px 0 rgba(36, 38, 42, 0.3);
 }
 
 headerbar spinbutton:not(.vertical) > button:first-child:hover:not(:active),
@@ -2931,8 +2931,8 @@ headerbar combobox:disabled {
 
 headerbar combobox > .linked > button.combo {
   color: #b6c0c3;
-  border-color: rgba(16, 17, 19, 0.42);
-  background-color: rgba(95, 100, 113, 0.42);
+  border-color: rgba(8, 8, 9, 0.42);
+  background-color: rgba(88, 93, 102, 0.42);
 }
 
 headerbar combobox > .linked > button.combo image, headerbar combobox > .linked > button.combo image:hover {
@@ -2942,14 +2942,14 @@ headerbar combobox > .linked > button.combo image, headerbar combobox > .linked 
 headerbar combobox > .linked > button.combo:hover {
   color: #eef0f1;
   border-color: #608E32;
-  background-color: rgba(81, 85, 96, 0.42);
+  background-color: rgba(74, 78, 86, 0.42);
   box-shadow: none;
 }
 
 headerbar combobox > .linked > button.combo:disabled {
   color: rgba(182, 192, 195, 0.55);
-  border-color: rgba(16, 17, 19, 0.42);
-  background-color: rgba(95, 100, 113, 0.85);
+  border-color: rgba(8, 8, 9, 0.42);
+  background-color: rgba(88, 93, 102, 0.85);
 }
 
 headerbar combobox > .linked > entry.combo:dir(ltr) {
@@ -2983,7 +2983,7 @@ headerbar switch:backdrop {
 }
 
 headerbar progressbar trough {
-  background-color: #151618;
+  background-color: #0c0d0f;
 }
 
 headerbar progressbar:backdrop {
@@ -2996,12 +2996,12 @@ headerbar scale:backdrop {
 
 headerbar scale slider {
   background-color: #f4f6f8;
-  border-color: rgba(44, 46, 52, 0.5);
+  border-color: rgba(36, 38, 42, 0.5);
 }
 
 headerbar scale slider:hover {
   background-color: white;
-  border-color: rgba(44, 46, 52, 0.5);
+  border-color: rgba(36, 38, 42, 0.5);
 }
 
 headerbar scale slider:active {
@@ -3010,16 +3010,16 @@ headerbar scale slider:active {
 }
 
 headerbar scale slider:disabled {
-  background-color: #b8babd;
-  border-color: rgba(44, 46, 52, 0.5);
+  background-color: #b6b8ba;
+  border-color: rgba(36, 38, 42, 0.5);
 }
 
 headerbar scale trough {
-  background-color: #151618;
+  background-color: #0c0d0f;
 }
 
 headerbar scale trough:disabled {
-  background-color: rgba(21, 22, 24, 0.95);
+  background-color: rgba(12, 13, 15, 0.95);
 }
 
 separator:first-child + headerbar, separator:first-child + headerbar:backdrop, headerbar:first-child, headerbar:first-child:backdrop {
@@ -3076,18 +3076,18 @@ headerbar.selection-mode .selection-menu .arrow {
 }
 
 .maximized headerbar {
-  background-color: #2c2e34;
+  background-color: #24262a;
   box-shadow: none;
 }
 
 .maximized headerbar:backdrop {
-  background-color: #383a42;
+  background-color: #303238;
 }
 
 headerbar.default-decoration {
   min-height: 28px;
   padding: 0 6px;
-  background-color: #2c2e34;
+  background-color: #24262a;
 }
 
 .tiled headerbar.default-decoration, .maximized headerbar.default-decoration, .fullscreen headerbar.default-decoration {
@@ -3125,13 +3125,13 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
 }
 
 .titlebar:not(headerbar) > separator {
-  background-image: linear-gradient(to bottom, #2C2E34, #2C2E34);
+  background-image: linear-gradient(to bottom, #24262A, #24262A);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.13);
 }
 
 .titlebar:not(headerbar) > separator:backdrop {
   transition: 200ms ease-out;
-  background-image: linear-gradient(to bottom, #383a42, #383a42);
+  background-image: linear-gradient(to bottom, #303238, #303238);
   box-shadow: none;
 }
 
@@ -3405,7 +3405,7 @@ treeview.view header.button.dnd:active {
 
 menubar {
   padding: 0;
-  background-color: #2c2e34;
+  background-color: #24262a;
   color: #b6c0c3;
 }
 
@@ -5576,11 +5576,11 @@ infobar.info > revealer > box selection, infobar.info:backdrop > revealer > box 
 }
 
 infobar.question > revealer > box, infobar.question:backdrop > revealer > box {
-  background-color: #608E32;
+  background-color: #6996E0;
 }
 
 infobar.question > revealer > box selection, infobar.question:backdrop > revealer > box selection {
-  color: #608E32;
+  color: #6996E0;
 }
 
 infobar.warning > revealer > box, infobar.warning:backdrop > revealer > box {
@@ -6014,10 +6014,10 @@ window.csd.maximized, window.csd.fullscreen {
 }
 
 window.solid-csd {
-  border: 1px solid #2C2E34;
+  border: 1px solid #24262A;
   border-radius: 0;
   margin: 0;
-  background-color: #2C2E34;
+  background-color: #24262A;
   box-shadow: none;
 }
 
@@ -6377,7 +6377,7 @@ button.opaque {
 }
 
 button.destructive-action {
-  color: white;
+  color: #FAFAFA;
 }
 
 button.destructive-action, button.destructive-action:checked {
@@ -6389,7 +6389,7 @@ button.suggested-action {
 }
 
 button.suggested-action, button.suggested-action:checked {
-  background-color: #608E32;
+  background-color: #6996E0;
 }
 
 button.font separator {
@@ -6451,13 +6451,13 @@ menubutton.osd {
 }
 
 menubutton.suggested-action {
-  background-color: #608E32;
+  background-color: #6996E0;
   color: #FAFAFA;
 }
 
 menubutton.destructive-action {
   background-color: #BE5046;
-  color: white;
+  color: #FAFAFA;
 }
 
 menubutton.opaque {
@@ -6576,13 +6576,13 @@ splitbutton.flat > menubutton > button {
 }
 
 splitbutton.suggested-action {
-  background-color: #608E32;
+  background-color: #6996E0;
   color: #FAFAFA;
 }
 
 splitbutton.destructive-action {
   background-color: #BE5046;
-  color: white;
+  color: #FAFAFA;
 }
 
 splitbutton.opaque {
@@ -6802,7 +6802,7 @@ row.entry.error entry > text > placeholder, row.entry.error spinbutton:not(.vert
 
 row.entry.error .suggested-action {
   background-color: #E17373;
-  color: #4B505B;
+  color: #FAFAFA;
 }
 
 row.entry.warning text > selection:focus-within {
@@ -6820,7 +6820,7 @@ row.entry.warning entry > text > placeholder, row.entry.warning spinbutton:not(.
 
 row.entry.warning .suggested-action {
   background-color: #CE9C3D;
-  color: #4B505B;
+  color: #FAFAFA;
 }
 
 row.entry.success text > selection:focus-within {
@@ -6838,7 +6838,7 @@ row.entry.success entry > text > placeholder, row.entry.success spinbutton:not(.
 
 row.entry.success .suggested-action {
   background-color: #76AF6F;
-  color: #4B505B;
+  color: #FAFAFA;
 }
 
 row.combo image.dropdown-arrow:disabled {
@@ -7191,7 +7191,7 @@ tabbar tab:selected, tabbar tab:checked {
 }
 
 tabbar tab:hover:not(:selected):not(:checked) {
-  box-shadow: inset 0 -3px #465e33;
+  box-shadow: inset 0 -3px #425a2e;
 }
 
 tabbar .start-action,
@@ -7539,12 +7539,12 @@ toolbarview.undershoot-bottom scrolledwindow > undershoot.bottom {
 }
 
 .sidebar-pane {
-  background-color: #2C2E34;
+  background-color: #24262A;
   color: #b6c0c3;
 }
 
 .sidebar-pane:backdrop {
-  background-color: #383a42;
+  background-color: #303238;
   color: rgba(182, 192, 195, 0.45);
 }
 
@@ -8472,15 +8472,15 @@ menubutton.flat.popup.sources-button > button image.calendar-color-image {
 @define-color text_view_bg #FAFAFA;
 @define-color wm_title alpha(#b6c0c3, 0.8);
 @define-color wm_unfocused_title alpha(#b6c0c3, 0.5);
-@define-color wm_bg #2c2e34;
-@define-color wm_bg_unfocused #383a42;
-@define-color wm_highlight #33353c;
+@define-color wm_bg #24262a;
+@define-color wm_bg_unfocused #303238;
+@define-color wm_highlight #2b2d32;
 @define-color wm_shadow alpha(black, 0.35);
 @define-color wm_button_close_bg #f46067;
 @define-color wm_button_close_hover_bg #f68086;
 @define-color wm_button_close_active_bg #f13039;
-@define-color wm_icon_close_bg #2C2E34;
-@define-color wm_button_hover_bg #151618;
+@define-color wm_icon_close_bg #24262A;
+@define-color wm_button_hover_bg #0c0d0f;
 @define-color wm_button_active_bg #608E32;
 @define-color wm_button_hover_border rgba(0, 0, 0, 0.25);
 @define-color wm_icon_bg #b6c0c3;
@@ -8489,7 +8489,7 @@ menubutton.flat.popup.sources-button > button image.calendar-color-image {
 @define-color wm_icon_active_bg #FAFAFA;
 @define-color budgie_tasklist_indicator_color #608E32;
 @define-color budgie_tasklist_indicator_color_active #608E32;
-@define-color budgie_tasklist_indicator_color_active_window #486233;
+@define-color budgie_tasklist_indicator_color_active_window #445e2e;
 @define-color budgie_tasklist_indicator_color_attention #CE9C3D;
 @define-color STRAWBERRY_100 #FF9262;
 @define-color STRAWBERRY_300 #FF793E;

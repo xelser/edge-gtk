@@ -386,7 +386,7 @@ entry:disabled {
 
 spinbutton.vertical > text.warning, spinbutton.warning:not(.vertical),
 entry.warning {
-  color: #4B505B;
+  color: #FAFAFA;
   border-color: #CE9C3D;
   background-color: #e0c289;
 }
@@ -406,25 +406,25 @@ entry.warning:focus-within {
 
 spinbutton.vertical > text.warning > image, spinbutton.warning:not(.vertical) > image,
 entry.warning > image {
-  color: #4B505B;
+  color: #FAFAFA;
 }
 
 spinbutton.vertical > text.warning:focus-within, spinbutton.warning:focus-within:not(.vertical),
 entry.warning:focus-within {
-  color: #4B505B;
+  color: #FAFAFA;
   background-color: #CE9C3D;
   box-shadow: none;
 }
 
 spinbutton.vertical > text.warning > selection, spinbutton.warning:not(.vertical) > selection,
 entry.warning > selection {
-  background-color: #4B505B;
+  background-color: #FAFAFA;
   color: #CE9C3D;
 }
 
 spinbutton.vertical > text.error, spinbutton.error:not(.vertical),
 entry.error {
-  color: #4B505B;
+  color: #FAFAFA;
   border-color: #E17373;
   background-color: #eba9a9;
 }
@@ -444,25 +444,25 @@ entry.error:focus-within {
 
 spinbutton.vertical > text.error > image, spinbutton.error:not(.vertical) > image,
 entry.error > image {
-  color: #4B505B;
+  color: #FAFAFA;
 }
 
 spinbutton.vertical > text.error:focus-within, spinbutton.error:focus-within:not(.vertical),
 entry.error:focus-within {
-  color: #4B505B;
+  color: #FAFAFA;
   background-color: #E17373;
   box-shadow: none;
 }
 
 spinbutton.vertical > text.error > selection, spinbutton.error:not(.vertical) > selection,
 entry.error > selection {
-  background-color: #4B505B;
+  background-color: #FAFAFA;
   color: #E17373;
 }
 
 spinbutton.vertical > text.success, spinbutton.success:not(.vertical),
 entry.success {
-  color: #4B505B;
+  color: #FAFAFA;
   border-color: #76AF6F;
   background-color: #abcda7;
 }
@@ -482,25 +482,25 @@ entry.success:focus-within {
 
 spinbutton.vertical > text.success > image, spinbutton.success:not(.vertical) > image,
 entry.success > image {
-  color: #4B505B;
+  color: #FAFAFA;
 }
 
 spinbutton.vertical > text.success:focus-within, spinbutton.success:focus-within:not(.vertical),
 entry.success:focus-within {
-  color: #4B505B;
+  color: #FAFAFA;
   background-color: #76AF6F;
   box-shadow: none;
 }
 
 spinbutton.vertical > text.success > selection, spinbutton.success:not(.vertical) > selection,
 entry.success > selection {
-  background-color: #4B505B;
+  background-color: #FAFAFA;
   color: #76AF6F;
 }
 
 spinbutton.vertical > text.search-missing, spinbutton.search-missing:not(.vertical),
 entry.search-missing {
-  color: #4B505B;
+  color: #FAFAFA;
   border-color: #E17373;
   background-color: #eba9a9;
 }
@@ -520,19 +520,19 @@ entry.search-missing:focus-within {
 
 spinbutton.vertical > text.search-missing > image, spinbutton.search-missing:not(.vertical) > image,
 entry.search-missing > image {
-  color: #4B505B;
+  color: #FAFAFA;
 }
 
 spinbutton.vertical > text.search-missing:focus-within, spinbutton.search-missing:focus-within:not(.vertical),
 entry.search-missing:focus-within {
-  color: #4B505B;
+  color: #FAFAFA;
   background-color: #E17373;
   box-shadow: none;
 }
 
 spinbutton.vertical > text.search-missing > selection, spinbutton.search-missing:not(.vertical) > selection,
 entry.search-missing > selection {
-  background-color: #4B505B;
+  background-color: #FAFAFA;
   color: #E17373;
 }
 
@@ -959,8 +959,8 @@ popover.background.touch-selection button.flat:active, popover.background.magnif
 button.suggested-action {
   background-clip: border-box;
   color: #FAFAFA;
-  background-color: #D05858;
-  border-color: #D05858;
+  background-color: #6996E0;
+  border-color: #6996E0;
 }
 
 
@@ -968,15 +968,15 @@ button.suggested-action.flat {
   border-color: transparent;
   background-color: transparent;
   background-image: none;
-  color: #D05858;
+  color: #6996E0;
 }
 
 
 button.suggested-action:hover {
   background-clip: border-box;
   color: #FAFAFA;
-  background-color: #d66c6c;
-  border-color: #d66c6c;
+  background-color: #7ea5e4;
+  border-color: #7ea5e4;
 }
 
 
@@ -984,8 +984,8 @@ button.suggested-action:active,
 button.suggested-action:checked {
   background-clip: border-box;
   color: #FAFAFA;
-  background-color: #db8080;
-  border-color: #db8080;
+  background-color: #93b4e9;
+  border-color: #93b4e9;
 }
 
 
@@ -1011,7 +1011,7 @@ button.suggested-action:disabled {
 
 button.destructive-action {
   background-clip: border-box;
-  color: white;
+  color: #FAFAFA;
   background-color: #BE5046;
   border-color: #BE5046;
 }
@@ -1027,7 +1027,7 @@ button.destructive-action.flat {
 
 button.destructive-action:hover {
   background-clip: border-box;
-  color: white;
+  color: #FAFAFA;
   background-color: #c56259;
   border-color: #c56259;
 }
@@ -1036,7 +1036,7 @@ button.destructive-action:hover {
 button.destructive-action:active,
 button.destructive-action:checked {
   background-clip: border-box;
-  color: white;
+  color: #FAFAFA;
   background-color: #cb746c;
   border-color: #cb746c;
 }
@@ -2648,34 +2648,34 @@ headerbar entry progress {
 }
 
 headerbar entry.warning {
-  color: #4B505B;
+  color: #FAFAFA;
   border-color: #CE9C3D;
   background-color: #d8bc85;
 }
 
 headerbar entry.warning:focus-within {
-  color: #4B505B;
+  color: #FAFAFA;
   background-color: #CE9C3D;
 }
 
 headerbar entry.warning selection, headerbar entry.warning selection:focus {
-  background-color: #4B505B;
+  background-color: #FAFAFA;
   color: #CE9C3D;
 }
 
 headerbar entry.error {
-  color: #4B505B;
+  color: #FAFAFA;
   border-color: #E17373;
   background-color: #e4a3a5;
 }
 
 headerbar entry.error:focus-within {
-  color: #4B505B;
+  color: #FAFAFA;
   background-color: #E17373;
 }
 
 headerbar entry.error selection, headerbar entry.error selection:focus {
-  background-color: #4B505B;
+  background-color: #FAFAFA;
   color: #E17373;
 }
 
@@ -2799,29 +2799,29 @@ headerbar .linked:not(.vertical):not(.path-bar) > entry.warning + entry.error {
 headerbar button.suggested-action {
   background-clip: border-box;
   color: #FAFAFA;
-  background-color: #D05858;
-  border-color: #D05858;
+  background-color: #6996E0;
+  border-color: #6996E0;
 }
 
 headerbar button.suggested-action.flat {
   border-color: transparent;
   background-color: transparent;
   background-image: none;
-  color: #D05858;
+  color: #6996E0;
 }
 
 headerbar button.suggested-action:hover {
   background-clip: border-box;
   color: #FAFAFA;
-  background-color: #d66c6c;
-  border-color: #d66c6c;
+  background-color: #7ea5e4;
+  border-color: #7ea5e4;
 }
 
 headerbar button.suggested-action:active, headerbar button.suggested-action:checked {
   background-clip: border-box;
   color: #FAFAFA;
-  background-color: #db8080;
-  border-color: #db8080;
+  background-color: #93b4e9;
+  border-color: #93b4e9;
 }
 
 headerbar button.suggested-action.flat:disabled, headerbar button.suggested-action:disabled {
@@ -2837,7 +2837,7 @@ headerbar button.suggested-action:backdrop {
 
 headerbar button.destructive-action {
   background-clip: border-box;
-  color: white;
+  color: #FAFAFA;
   background-color: #BE5046;
   border-color: #BE5046;
 }
@@ -2851,14 +2851,14 @@ headerbar button.destructive-action.flat {
 
 headerbar button.destructive-action:hover {
   background-clip: border-box;
-  color: white;
+  color: #FAFAFA;
   background-color: #c56259;
   border-color: #c56259;
 }
 
 headerbar button.destructive-action:active, headerbar button.destructive-action:checked {
   background-clip: border-box;
-  color: white;
+  color: #FAFAFA;
   background-color: #cb746c;
   border-color: #cb746c;
 }
@@ -5575,11 +5575,11 @@ infobar.info > revealer > box selection, infobar.info:backdrop > revealer > box 
 }
 
 infobar.question > revealer > box, infobar.question:backdrop > revealer > box {
-  background-color: #D05858;
+  background-color: #6996E0;
 }
 
 infobar.question > revealer > box selection, infobar.question:backdrop > revealer > box selection {
-  color: #D05858;
+  color: #6996E0;
 }
 
 infobar.warning > revealer > box, infobar.warning:backdrop > revealer > box {
@@ -6376,7 +6376,7 @@ button.opaque {
 }
 
 button.destructive-action {
-  color: white;
+  color: #FAFAFA;
 }
 
 button.destructive-action, button.destructive-action:checked {
@@ -6388,7 +6388,7 @@ button.suggested-action {
 }
 
 button.suggested-action, button.suggested-action:checked {
-  background-color: #D05858;
+  background-color: #6996E0;
 }
 
 button.font separator {
@@ -6450,13 +6450,13 @@ menubutton.osd {
 }
 
 menubutton.suggested-action {
-  background-color: #D05858;
+  background-color: #6996E0;
   color: #FAFAFA;
 }
 
 menubutton.destructive-action {
   background-color: #BE5046;
-  color: white;
+  color: #FAFAFA;
 }
 
 menubutton.opaque {
@@ -6575,13 +6575,13 @@ splitbutton.flat > menubutton > button {
 }
 
 splitbutton.suggested-action {
-  background-color: #D05858;
+  background-color: #6996E0;
   color: #FAFAFA;
 }
 
 splitbutton.destructive-action {
   background-color: #BE5046;
-  color: white;
+  color: #FAFAFA;
 }
 
 splitbutton.opaque {
@@ -6801,7 +6801,7 @@ row.entry.error entry > text > placeholder, row.entry.error spinbutton:not(.vert
 
 row.entry.error .suggested-action {
   background-color: #E17373;
-  color: #4B505B;
+  color: #FAFAFA;
 }
 
 row.entry.warning text > selection:focus-within {
@@ -6819,7 +6819,7 @@ row.entry.warning entry > text > placeholder, row.entry.warning spinbutton:not(.
 
 row.entry.warning .suggested-action {
   background-color: #CE9C3D;
-  color: #4B505B;
+  color: #FAFAFA;
 }
 
 row.entry.success text > selection:focus-within {
@@ -6837,7 +6837,7 @@ row.entry.success entry > text > placeholder, row.entry.success spinbutton:not(.
 
 row.entry.success .suggested-action {
   background-color: #76AF6F;
-  color: #4B505B;
+  color: #FAFAFA;
 }
 
 row.combo image.dropdown-arrow:disabled {
