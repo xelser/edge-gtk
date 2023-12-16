@@ -1123,7 +1123,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   background-color: rgba(133, 143, 162, 0.35);
   border: 1px solid rgba(53, 59, 69, 0.35);
   box-shadow: none;
-  background-color: #16181c;
+  background-color: #1d1f25;
   border-color: #6CB6EB;
 }
 
@@ -2028,16 +2028,16 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .workspace-graph .workspace .windows {
-  -active-window-background: #3f434f;
+  -active-window-background: #464a58;
   -active-window-border: rgba(0, 0, 0, 0.8);
-  -inactive-window-background: #3f434f;
+  -inactive-window-background: #464a58;
   -inactive-window-border: rgba(0, 0, 0, 0.8);
 }
 
 .workspace-graph .workspace:active .windows {
-  -active-window-background: #4b4f5d;
+  -active-window-background: #515666;
   -active-window-border: rgba(0, 0, 0, 0.8);
-  -inactive-window-background: #292b33;
+  -inactive-window-background: #2f323b;
   -inactive-window-border: rgba(0, 0, 0, 0.8);
 }
 
