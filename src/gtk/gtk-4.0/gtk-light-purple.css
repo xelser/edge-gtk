@@ -8332,7 +8332,7 @@ menubutton.flat.popup.sources-button > button image.calendar-color-image {
 @define-color wm_icon_active_bg #FAFAFA;
 @define-color budgie_tasklist_indicator_color #B05CCC;
 @define-color budgie_tasklist_indicator_color_active #B05CCC;
-@define-color budgie_tasklist_indicator_color_active_window #cda1de;
+@define-color budgie_tasklist_indicator_color_active_window #ca9edd;
 @define-color budgie_tasklist_indicator_color_attention #CE9C3D;
 @define-color STRAWBERRY_100 #FF9262;
 @define-color STRAWBERRY_300 #FF793E;

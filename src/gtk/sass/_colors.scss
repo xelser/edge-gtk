@@ -101,16 +101,8 @@ $osd_insensitive_bg_color: rgba(lighten($osd_bg_color, 6%), 0.45);
 $osd_insensitive_fg_color: mix($osd_fg_color, opacify($osd_bg_color, 1), 30%);
 
 // keep dark colors in dark headers
-$panel_bg: $bg_color;
-@if $header=='dark' and $color=='red' { $panel_bg: #24262A; }
-@if $header=='dark' and $color=='yellow' { $panel_bg: #24262A; }
-@if $header=='dark' and $color=='green' { $panel_bg: #24262A; }
-@if $header=='dark' and $color=='cyan' { $panel_bg: #24262D; }
-@if $header=='dark' and $color=='blue' { $panel_bg: #24262D; }
-@if $header=='dark' and $color=='purple' { $panel_bg: #252630; }
-
-$panel_fg: $fg_color;
-@if $header == 'dark' { $panel_fg: #DDE2E7; }
+$panel_bg: $header_bg;
+$panel_fg: if($header == 'light', #4B505B, #C5CDD9);
 
 $menu_bg_color: if($variant=='light', $base_color, $bg_color);
 $menu_hover_color: if($variant == 'light', rgba(black, 0.05), rgba(white, 0.04));

@@ -95,7 +95,7 @@ $osd_insensitive_fg_color: mix($osd_fg_color, opacify($osd_bg_color, 1), 30%);
 $osd_borders_color: $osd_button_border;
 
 $panel_bg: $header_bg;
-$panel_fg: $header_fg;
+$panel_fg: if($variant == 'light', #4B505B, #C5CDD9);
 
 $entry_bg: if($variant=='light', $base_color, lighten($base_color, 0%));
 $entry_border: if($variant == 'light', #cfd6e6, darken($borders_color, 0%));
