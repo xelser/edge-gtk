@@ -31,20 +31,20 @@ $selected_bg_color: $text_color;
 @if $color=='purple' { $selected_bg_color: if($variant =='light', #B05CCC, #D38AEA); }
 $selected_fg_color: $base_color;
 
-$destructive_color: #BE5046;
-$destructive_fg_color: #FAFAFA;
-
-$error_color: #E17373;
-$error_fg_color: #FAFAFA;
+$success_color: #76AF6F;
+$success_fg_color: #FAFAFA;
 
 $warning_color: #CE9C3D;
 $warning_fg_color: #FAFAFA;
 
-$success_color: #76AF6F;
-$success_fg_color: #FAFAFA;
+$destructive_color: #DE6569;
+$destructive_fg_color: #FAFAFA;
 
-$suggested_color: #6996E0;
-$suggested_fg_color: #FAFAFA;
+$error_color: #DE6569;
+$error_fg_color: #FAFAFA;
+
+$suggested_color: $selected_bg_color;
+$suggested_fg_color: $selected_fg_color;
 
 $progress_color: $selected_bg_color;
 $drop_target_color: $progress_color;

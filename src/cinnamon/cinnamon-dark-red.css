@@ -468,7 +468,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 #panel:highlight {
   border-image: none;
-  background-color: rgba(225, 115, 115, 0.5);
+  background-color: rgba(222, 101, 105, 0.5);
 }
 
 #panelLeft {
@@ -562,11 +562,11 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .panel-dummy {
-  background-color: rgba(225, 115, 115, 0.5);
+  background-color: rgba(222, 101, 105, 0.5);
 }
 
 .panel-dummy:entered {
-  background-color: rgba(225, 115, 115, 0.6);
+  background-color: rgba(222, 101, 105, 0.6);
 }
 
 .panel-status-button {
@@ -1091,13 +1091,13 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .run-dialog-error-label {
-  color: #E17373;
+  color: #DE6569;
 }
 
 .run-dialog-error-box {
   padding-top: 15px;
   spacing: 5px;
-  color: #E17373;
+  color: #DE6569;
 }
 
 .run-dialog-completion-box {
@@ -1492,7 +1492,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .window-list-box:highlight {
-  background-color: rgba(225, 115, 115, 0.5);
+  background-color: rgba(222, 101, 105, 0.5);
 }
 
 .window-list-item-label {
@@ -1663,7 +1663,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .grouped-window-list-thumbnail-alert {
-  background-color: rgba(225, 115, 115, 0.5);
+  background-color: rgba(222, 101, 105, 0.5);
 }
 
 .grouped-window-list-thumbnail-menu .item-box {
@@ -2160,7 +2160,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .applet-box:highlight {
   background-image: none;
   border-image: none;
-  background-color: rgba(225, 115, 115, 0.5);
+  background-color: rgba(222, 101, 105, 0.5);
 }
 
 .applet-label {
@@ -2203,7 +2203,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .desklet:highlight {
-  background-color: rgba(225, 115, 115, 0.5);
+  background-color: rgba(222, 101, 105, 0.5);
 }
 
 .desklet-with-borders {
@@ -2214,7 +2214,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .desklet-with-borders:highlight {
-  background-color: rgba(225, 115, 115, 0.5);
+  background-color: rgba(222, 101, 105, 0.5);
 }
 
 .desklet-with-borders-and-header {
@@ -2228,7 +2228,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .desklet-with-borders-and-header:highlight {
-  background-color: rgba(225, 115, 115, 0.5);
+  background-color: rgba(222, 101, 105, 0.5);
 }
 
 .desklet-header {

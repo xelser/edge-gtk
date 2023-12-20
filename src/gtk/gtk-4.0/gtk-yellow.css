@@ -194,11 +194,11 @@ label:disabled selection {
 }
 
 label.error {
-  color: #E17373;
+  color: #DE6569;
 }
 
 label.error:disabled {
-  color: rgba(225, 115, 115, 0.5);
+  color: rgba(222, 101, 105, 0.5);
 }
 
 .dim-label, row label.subtitle, popover.background label.separator, headerbar .subtitle, spinbutton.vertical > text > text > placeholder, spinbutton:not(.vertical) > text > placeholder,
@@ -425,8 +425,8 @@ entry.warning > selection {
 spinbutton.vertical > text.error, spinbutton.error:not(.vertical),
 entry.error {
   color: #FAFAFA;
-  border-color: #E17373;
-  background-color: #eba9a9;
+  border-color: #DE6569;
+  background-color: #e9a1a3;
 }
 
 spinbutton.vertical > text.error, spinbutton.error:not(.vertical),
@@ -437,7 +437,7 @@ entry.error {
 
 spinbutton.vertical > text.error:focus-within, spinbutton.error:focus-within:not(.vertical),
 entry.error:focus-within {
-  outline-color: rgba(225, 115, 115, 0.5);
+  outline-color: rgba(222, 101, 105, 0.5);
   outline-width: 2px;
   outline-offset: -2px;
 }
@@ -450,14 +450,14 @@ entry.error > image {
 spinbutton.vertical > text.error:focus-within, spinbutton.error:focus-within:not(.vertical),
 entry.error:focus-within {
   color: #FAFAFA;
-  background-color: #E17373;
+  background-color: #DE6569;
   box-shadow: none;
 }
 
 spinbutton.vertical > text.error > selection, spinbutton.error:not(.vertical) > selection,
 entry.error > selection {
   background-color: #FAFAFA;
-  color: #E17373;
+  color: #DE6569;
 }
 
 spinbutton.vertical > text.success, spinbutton.success:not(.vertical),
@@ -501,8 +501,8 @@ entry.success > selection {
 spinbutton.vertical > text.search-missing, spinbutton.search-missing:not(.vertical),
 entry.search-missing {
   color: #FAFAFA;
-  border-color: #E17373;
-  background-color: #eba9a9;
+  border-color: #DE6569;
+  background-color: #e9a1a3;
 }
 
 spinbutton.vertical > text.search-missing, spinbutton.search-missing:not(.vertical),
@@ -513,7 +513,7 @@ entry.search-missing {
 
 spinbutton.vertical > text.search-missing:focus-within, spinbutton.search-missing:focus-within:not(.vertical),
 entry.search-missing:focus-within {
-  outline-color: rgba(225, 115, 115, 0.5);
+  outline-color: rgba(222, 101, 105, 0.5);
   outline-width: 2px;
   outline-offset: -2px;
 }
@@ -526,14 +526,14 @@ entry.search-missing > image {
 spinbutton.vertical > text.search-missing:focus-within, spinbutton.search-missing:focus-within:not(.vertical),
 entry.search-missing:focus-within {
   color: #FAFAFA;
-  background-color: #E17373;
+  background-color: #DE6569;
   box-shadow: none;
 }
 
 spinbutton.vertical > text.search-missing > selection, spinbutton.search-missing:not(.vertical) > selection,
 entry.search-missing > selection {
   background-color: #FAFAFA;
-  color: #E17373;
+  color: #DE6569;
 }
 
 spinbutton.vertical > text > image, spinbutton:not(.vertical) > image,
@@ -959,8 +959,8 @@ popover.background.touch-selection button.flat:active, popover.background.magnif
 button.suggested-action {
   background-clip: border-box;
   color: #FAFAFA;
-  background-color: #6996E0;
-  border-color: #6996E0;
+  background-color: #BE7E05;
+  border-color: #BE7E05;
 }
 
 
@@ -968,15 +968,15 @@ button.suggested-action.flat {
   border-color: transparent;
   background-color: transparent;
   background-image: none;
-  color: #6996E0;
+  color: #BE7E05;
 }
 
 
 button.suggested-action:hover {
   background-clip: border-box;
   color: #FAFAFA;
-  background-color: #7ea5e4;
-  border-color: #7ea5e4;
+  background-color: #d78e06;
+  border-color: #d78e06;
 }
 
 
@@ -984,8 +984,8 @@ button.suggested-action:active,
 button.suggested-action:checked {
   background-clip: border-box;
   color: #FAFAFA;
-  background-color: #93b4e9;
-  border-color: #93b4e9;
+  background-color: #f09f06;
+  border-color: #f09f06;
 }
 
 
@@ -1012,8 +1012,8 @@ button.suggested-action:disabled {
 button.destructive-action {
   background-clip: border-box;
   color: #FAFAFA;
-  background-color: #BE5046;
-  border-color: #BE5046;
+  background-color: #DE6569;
+  border-color: #DE6569;
 }
 
 
@@ -1021,15 +1021,15 @@ button.destructive-action.flat {
   border-color: transparent;
   background-color: transparent;
   background-image: none;
-  color: #BE5046;
+  color: #DE6569;
 }
 
 
 button.destructive-action:hover {
   background-clip: border-box;
   color: #FAFAFA;
-  background-color: #c56259;
-  border-color: #c56259;
+  background-color: #e37a7d;
+  border-color: #e37a7d;
 }
 
 
@@ -1037,8 +1037,8 @@ button.destructive-action:active,
 button.destructive-action:checked {
   background-clip: border-box;
   color: #FAFAFA;
-  background-color: #cb746c;
-  border-color: #cb746c;
+  background-color: #e78f92;
+  border-color: #e78f92;
 }
 
 
@@ -1216,7 +1216,7 @@ stacksidebar row.needs-attention > label:dir(rtl), stackswitcher > button.needs-
 
 .linked:not(.vertical):not(.path-bar) > entry.error + entry,
 .linked:not(.vertical):not(.path-bar) > entry + entry.error {
-  border-left-color: #E17373;
+  border-left-color: #DE6569;
 }
 
 .linked:not(.vertical):not(.path-bar) > entry.warning + entry,
@@ -1226,7 +1226,7 @@ stacksidebar row.needs-attention > label:dir(rtl), stackswitcher > button.needs-
 
 .linked:not(.vertical):not(.path-bar) > entry.error + entry.warning,
 .linked:not(.vertical):not(.path-bar) > entry.warning + entry.error {
-  border-left-color: #d88858;
+  border-left-color: #d68153;
 }
 
 .linked:not(.vertical):not(.path-bar) > entry + entry:focus-within:not(:last-child),
@@ -1267,13 +1267,13 @@ stacksidebar row.needs-attention > label:dir(rtl), stackswitcher > button.needs-
 
 .linked:not(.vertical):not(.path-bar) > entry + entry.error:focus-within:not(:last-child),
 .linked:not(.vertical):not(.path-bar) > entry + entry.error:focus-within:last-child {
-  border-left-color: #E17373;
+  border-left-color: #DE6569;
 }
 
 .linked:not(.vertical):not(.path-bar) > entry.error:focus-within:not(:only-child) + entry,
 .linked:not(.vertical):not(.path-bar) > entry.error:focus-within:not(:only-child) + button,
 .linked:not(.vertical):not(.path-bar) > entry.error:focus-within:not(:only-child) + combobox > box > button.combo {
-  border-left-color: #E17373;
+  border-left-color: #DE6569;
   margin-left: 0;
 }
 
@@ -1332,7 +1332,7 @@ stacksidebar row.needs-attention > label:dir(rtl), stackswitcher > button.needs-
 
 .osd .linked:not(.vertical) > entry.error + entry,
 .osd .linked:not(.vertical) > entry + entry.error {
-  border-left-color: #E17373;
+  border-left-color: #DE6569;
 }
 
 .osd .linked:not(.vertical) > entry.warning + entry,
@@ -1342,7 +1342,7 @@ stacksidebar row.needs-attention > label:dir(rtl), stackswitcher > button.needs-
 
 .osd .linked:not(.vertical) > entry.error + entry.warning,
 .osd .linked:not(.vertical) > entry.warning + entry.error {
-  border-left-color: #d88858;
+  border-left-color: #d68153;
 }
 
 .osd .linked:not(.vertical) > entry + entry:focus-within:not(:last-child),
@@ -1383,13 +1383,13 @@ stacksidebar row.needs-attention > label:dir(rtl), stackswitcher > button.needs-
 
 .osd .linked:not(.vertical) > entry + entry.error:focus-within:not(:last-child),
 .osd .linked:not(.vertical) > entry + entry.error:focus-within:last-child {
-  border-left-color: #E17373;
+  border-left-color: #DE6569;
 }
 
 .osd .linked:not(.vertical) > entry.error:focus-within:not(:only-child) + entry,
 .osd .linked:not(.vertical) > entry.error:focus-within:not(:only-child) + button,
 .osd .linked:not(.vertical) > entry.error:focus-within:not(:only-child) + combobox > box > button.combo {
-  border-left-color: #E17373;
+  border-left-color: #DE6569;
   margin-left: 0;
 }
 
@@ -1436,7 +1436,7 @@ stacksidebar row.needs-attention > label:dir(rtl), stackswitcher > button.needs-
 
 .linked.vertical > entry.error + entry,
 .linked.vertical > entry + entry.error {
-  border-top-color: #E17373;
+  border-top-color: #DE6569;
 }
 
 .linked.vertical > entry.warning + entry,
@@ -1446,7 +1446,7 @@ stacksidebar row.needs-attention > label:dir(rtl), stackswitcher > button.needs-
 
 .linked.vertical > entry.error + entry.warning,
 .linked.vertical > entry.warning + entry.error {
-  border-top-color: #d88858;
+  border-top-color: #d68153;
 }
 
 .linked.vertical > entry + entry:focus-within:not(:last-child),
@@ -1487,13 +1487,13 @@ stacksidebar row.needs-attention > label:dir(rtl), stackswitcher > button.needs-
 
 .linked.vertical > entry + entry.error:focus-within:not(:last-child),
 .linked.vertical > entry + entry.error:focus-within:last-child {
-  border-top-color: #E17373;
+  border-top-color: #DE6569;
 }
 
 .linked.vertical > entry.error:focus-within:not(:only-child) + entry,
 .linked.vertical > entry.error:focus-within:not(:only-child) + button,
 .linked.vertical > entry.error:focus-within:not(:only-child) + combobox > box > button.combo {
-  border-top-color: #E17373;
+  border-top-color: #DE6569;
   margin-left: 0;
 }
 
@@ -1618,7 +1618,7 @@ headerbar .linked:not(.vertical):not(.path-bar) > entry.warning:focus-within:not
 headerbar .linked:not(.vertical):not(.path-bar) > entry + entry.error:focus-within:not(:last-child),
 headerbar .linked:not(.vertical):not(.path-bar) > entry + entry.error:focus-within:last-child, .titlebar .linked:not(.vertical):not(.path-bar) > entry + entry.error:focus-within:not(:last-child),
 .titlebar .linked:not(.vertical):not(.path-bar) > entry + entry.error:focus-within:last-child {
-  border-left-color: #E17373;
+  border-left-color: #DE6569;
 }
 
 headerbar .linked:not(.vertical):not(.path-bar) > entry.error:focus-within:not(:only-child) + entry, .titlebar .linked:not(.vertical):not(.path-bar) > entry.error:focus-within:not(:only-child) + entry {
@@ -1862,8 +1862,8 @@ popover.menu box.circular-buttons button.destructive-action.circular.image-butto
 list > row button.image-button:not(.flat).destructive-action {
   background-clip: border-box;
   color: white;
-  background-color: #BE5046;
-  border-color: #BE5046;
+  background-color: #DE6569;
+  border-color: #DE6569;
 }
 
 popover.menu box.circular-buttons button.destructive-action.circular.image-button.model,
@@ -2668,18 +2668,18 @@ headerbar entry.warning selection, headerbar entry.warning selection:focus {
 
 headerbar entry.error {
   color: #FAFAFA;
-  border-color: #E17373;
-  background-color: #955456;
+  border-color: #DE6569;
+  background-color: #944c50;
 }
 
 headerbar entry.error:focus-within {
   color: #FAFAFA;
-  background-color: #E17373;
+  background-color: #DE6569;
 }
 
 headerbar entry.error selection, headerbar entry.error selection:focus {
   background-color: #FAFAFA;
-  color: #E17373;
+  color: #DE6569;
 }
 
 headerbar.selection-mode button {
@@ -2780,7 +2780,7 @@ headerbar .linked:not(.vertical):not(.path-bar) > entry.error + entry {
 }
 
 headerbar .linked:not(.vertical):not(.path-bar) > entry + entry.error {
-  border-left-color: #E17373;
+  border-left-color: #DE6569;
 }
 
 headerbar .linked:not(.vertical):not(.path-bar) > entry.warning + entry {
@@ -2796,35 +2796,35 @@ headerbar .linked:not(.vertical):not(.path-bar) > entry.error + entry.warning {
 }
 
 headerbar .linked:not(.vertical):not(.path-bar) > entry.warning + entry.error {
-  border-left-color: #E17373;
+  border-left-color: #DE6569;
 }
 
 headerbar button.suggested-action {
   background-clip: border-box;
   color: #FAFAFA;
-  background-color: #6996E0;
-  border-color: #6996E0;
+  background-color: #BE7E05;
+  border-color: #BE7E05;
 }
 
 headerbar button.suggested-action.flat {
   border-color: transparent;
   background-color: transparent;
   background-image: none;
-  color: #6996E0;
+  color: #BE7E05;
 }
 
 headerbar button.suggested-action:hover {
   background-clip: border-box;
   color: #FAFAFA;
-  background-color: #7ea5e4;
-  border-color: #7ea5e4;
+  background-color: #d78e06;
+  border-color: #d78e06;
 }
 
 headerbar button.suggested-action:active, headerbar button.suggested-action:checked {
   background-clip: border-box;
   color: #FAFAFA;
-  background-color: #93b4e9;
-  border-color: #93b4e9;
+  background-color: #f09f06;
+  border-color: #f09f06;
 }
 
 headerbar button.suggested-action.flat:disabled, headerbar button.suggested-action:disabled {
@@ -2841,29 +2841,29 @@ headerbar button.suggested-action:backdrop {
 headerbar button.destructive-action {
   background-clip: border-box;
   color: #FAFAFA;
-  background-color: #BE5046;
-  border-color: #BE5046;
+  background-color: #DE6569;
+  border-color: #DE6569;
 }
 
 headerbar button.destructive-action.flat {
   border-color: transparent;
   background-color: transparent;
   background-image: none;
-  color: #BE5046;
+  color: #DE6569;
 }
 
 headerbar button.destructive-action:hover {
   background-clip: border-box;
   color: #FAFAFA;
-  background-color: #c56259;
-  border-color: #c56259;
+  background-color: #e37a7d;
+  border-color: #e37a7d;
 }
 
 headerbar button.destructive-action:active, headerbar button.destructive-action:checked {
   background-clip: border-box;
   color: #FAFAFA;
-  background-color: #cb746c;
-  border-color: #cb746c;
+  background-color: #e78f92;
+  border-color: #e78f92;
 }
 
 headerbar button.destructive-action.flat:disabled, headerbar button.destructive-action:disabled {
@@ -5012,7 +5012,7 @@ columnview row:not(:selected) cell editablelabel.editing text selection {
 
 .app-notification .linked:not(.vertical) > entry.error + entry,
 .app-notification .linked:not(.vertical) > entry + entry.error {
-  border-left-color: #E17373;
+  border-left-color: #DE6569;
 }
 
 .app-notification .linked:not(.vertical) > entry.warning + entry,
@@ -5022,7 +5022,7 @@ columnview row:not(:selected) cell editablelabel.editing text selection {
 
 .app-notification .linked:not(.vertical) > entry.error + entry.warning,
 .app-notification .linked:not(.vertical) > entry.warning + entry.error {
-  border-left-color: #d88858;
+  border-left-color: #d68153;
 }
 
 .app-notification .linked:not(.vertical) > entry + entry:focus-within:not(:last-child),
@@ -5063,13 +5063,13 @@ columnview row:not(:selected) cell editablelabel.editing text selection {
 
 .app-notification .linked:not(.vertical) > entry + entry.error:focus-within:not(:last-child),
 .app-notification .linked:not(.vertical) > entry + entry.error:focus-within:last-child {
-  border-left-color: #E17373;
+  border-left-color: #DE6569;
 }
 
 .app-notification .linked:not(.vertical) > entry.error:focus-within:not(:only-child) + entry,
 .app-notification .linked:not(.vertical) > entry.error:focus-within:not(:only-child) + button,
 .app-notification .linked:not(.vertical) > entry.error:focus-within:not(:only-child) + combobox > box > button.combo {
-  border-left-color: #E17373;
+  border-left-color: #DE6569;
   margin-left: 0;
 }
 
@@ -5576,11 +5576,11 @@ infobar.info > revealer > box selection, infobar.info:backdrop > revealer > box 
 }
 
 infobar.question > revealer > box, infobar.question:backdrop > revealer > box {
-  background-color: #6996E0;
+  background-color: #BE7E05;
 }
 
 infobar.question > revealer > box selection, infobar.question:backdrop > revealer > box selection {
-  color: #6996E0;
+  color: #BE7E05;
 }
 
 infobar.warning > revealer > box, infobar.warning:backdrop > revealer > box {
@@ -5592,11 +5592,11 @@ infobar.warning > revealer > box selection, infobar.warning:backdrop > revealer 
 }
 
 infobar.error > revealer > box, infobar.error:backdrop > revealer > box {
-  background-color: #E17373;
+  background-color: #DE6569;
 }
 
 infobar.error > revealer > box selection, infobar.error:backdrop > revealer > box selection {
-  color: #E17373;
+  color: #DE6569;
 }
 
 infobar.info > revealer > box, infobar.info:hover > revealer > box, infobar.info:backdrop > revealer > box, infobar.question > revealer > box, infobar.question:hover > revealer > box, infobar.question:backdrop > revealer > box, infobar.warning > revealer > box, infobar.warning:hover > revealer > box, infobar.warning:backdrop > revealer > box, infobar.error > revealer > box, infobar.error:hover > revealer > box, infobar.error:backdrop > revealer > box {
@@ -6381,7 +6381,7 @@ button.destructive-action {
 }
 
 button.destructive-action, button.destructive-action:checked {
-  background-color: #BE5046;
+  background-color: #DE6569;
 }
 
 button.suggested-action {
@@ -6389,7 +6389,7 @@ button.suggested-action {
 }
 
 button.suggested-action, button.suggested-action:checked {
-  background-color: #6996E0;
+  background-color: #BE7E05;
 }
 
 button.font separator {
@@ -6451,12 +6451,12 @@ menubutton.osd {
 }
 
 menubutton.suggested-action {
-  background-color: #6996E0;
+  background-color: #BE7E05;
   color: #FAFAFA;
 }
 
 menubutton.destructive-action {
-  background-color: #BE5046;
+  background-color: #DE6569;
   color: #FAFAFA;
 }
 
@@ -6576,12 +6576,12 @@ splitbutton.flat > menubutton > button {
 }
 
 splitbutton.suggested-action {
-  background-color: #6996E0;
+  background-color: #BE7E05;
   color: #FAFAFA;
 }
 
 splitbutton.destructive-action {
-  background-color: #BE5046;
+  background-color: #DE6569;
   color: #FAFAFA;
 }
 
@@ -6788,7 +6788,7 @@ row.entry.monospace text {
 }
 
 row.entry.error text > selection:focus-within {
-  background-color: alpha(#E17373,0.2);
+  background-color: alpha(#DE6569,0.2);
 }
 
 row.entry.error text > cursor-handle > contents {
@@ -6801,7 +6801,7 @@ row.entry.error entry > text > placeholder, row.entry.error spinbutton:not(.vert
 }
 
 row.entry.error .suggested-action {
-  background-color: #E17373;
+  background-color: #DE6569;
   color: #FAFAFA;
 }
 
@@ -8463,7 +8463,7 @@ menubutton.flat.popup.sources-button > button image.calendar-color-image {
 @define-color borders rgba(0, 0, 0, 0.15);
 @define-color unfocused_borders rgba(0, 0, 0, 0.15);
 @define-color warning_color #CE9C3D;
-@define-color error_color #E17373;
+@define-color error_color #DE6569;
 @define-color success_color #76AF6F;
 @define-color placeholder_text_color #A8A8A8;
 @define-color link_color #BE7E05;
