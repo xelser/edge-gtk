@@ -2590,21 +2590,21 @@ menubar > menuitem > window.background.popup > menu,
 
 menu,
 .menu {
-  padding: 4px 4px;
-  border-radius: 0;
+  padding: 6px 6px;
+  border-radius: 3px;
   background-color: #FAFAFA;
   border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 .csd menu, .csd .menu {
-  padding: 2px 2px;
-  border-radius: 2px;
+  padding: 5px 5px;
+  border-radius: 3px;
   border: none;
 }
 
 menu separator, .csd menu separator,
 .menu separator, .csd .menu separator {
-  margin: 2px 2px;
+  margin: 3px 3px;
   background-color: #FAFAFA;
 }
 
