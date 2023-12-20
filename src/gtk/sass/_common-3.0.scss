@@ -2000,20 +2000,20 @@ $_menu_bg: if($variant=='light', $base_color, $bg_color);
 
 menu,
 .menu {
-  padding: 4px 4px;
-  border-radius: 0;
+  padding: 6px 6px;
+  border-radius: 3px;
   background-color: $_menu_bg;
   border: 1px solid $borders_color;
 
   .csd & {
-    padding: 2px 2px;
-    border-radius: 2px;
+    padding: 5px 5px;
+    border-radius: 3px;
     border: none;
   }
 
   separator,
   .csd & separator {
-    margin: 2px 2px;
+    margin: 3px 3px;
     background-color: $_menu_bg;
   }
 
