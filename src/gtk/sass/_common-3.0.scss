@@ -67,8 +67,8 @@ $header_asset_suffix: if($header == 'dark', '-dark', ''); // use dark assets in 
   }
 
   &:selected {
-    background-color: $selected_bg_color;
-    color: $selected_fg_color;
+    background-color: $accent_color;
+    color: $base_color;
   }
 }
 
@@ -92,7 +92,7 @@ button.gtkstyle-fallback { // For Cinnamon system setting
       @extend %selected_items;
     }
 
-    &:hover { background-color: mix(black, $selected_bg_color, 10%); }
+    &:hover { background-color: mix(black, $accent_color, 10%); }
   }
 }
 
@@ -116,8 +116,8 @@ iconview {
 
 rubberband,
 .rubberband {
-  border: 1px solid darken($selected_bg_color, 10%);
-  background-color: rgba(darken($selected_bg_color, 10%), 0.2);
+  border: 1px solid darken($accent_color, 10%);
+  background-color: rgba(darken($accent_color, 10%), 0.2);
 }
 
 flowbox {
@@ -151,13 +151,13 @@ label {
   &:selected { @extend %nobg_selected_items; }
 
   selection {
-    color: $selected_fg_color;
-    background-color: $selected_bg_color;
+    color: $base_color;
+    background-color: $accent_color;
   }
 
   &:disabled {
     color: $insensitive_fg_color;
-    selection { color: mix($selected_fg_color, $selected_bg_color, 50%); }
+    selection { color: mix($base_color, $accent_color, 50%); }
   }
 }
 
@@ -176,8 +176,8 @@ assistant {
   .sidebar label { padding: 6px 12px; }
 
   .sidebar label.highlight {
-    background-color: $selected_bg_color;
-    color: $selected_fg_color;
+    background-color: $accent_color;
+    color: $base_color;
   }
 }
 
@@ -340,8 +340,8 @@ entry {
 
     selection {
       &:focus, & {
-        color: $selected_bg_color;
-        background-color: $selected_fg_color;
+        color: $accent_color;
+        background-color: $base_color;
       }
     }
   }
@@ -371,7 +371,7 @@ treeview entry {
     background-image: none;
     background-color: $base_color;
 
-    &:focus { border-color: $selected_bg_color; }
+    &:focus { border-color: $accent_color; }
   }
 }
 
@@ -379,7 +379,7 @@ treeview entry {
 // Buttons
 //
 // stuff for .needs-attention
-$_dot_color: $selected_bg_color;
+$_dot_color: $accent_color;
 $button_transition: all 200ms $ease-out-quad;
 
 @keyframes needs_attention {
@@ -394,7 +394,7 @@ $button_transition: all 200ms $ease-out-quad;
     background-image: -gtk-gradient(radial,
                                     center center, 0,
                                     center center, 0.5,
-                                    to($selected_bg_color),
+                                    to($accent_color),
                                     to(transparent));
   }
 }
@@ -446,7 +446,7 @@ button {
   }
 
   &:active { color: $fg_color; }
-  &:active:hover, &:checked { color: $selected_fg_color; }
+  &:active:hover, &:checked { color: $base_color; }
 
   &.flat:disabled { @include button(undecorated); }
 
@@ -509,7 +509,7 @@ button {
       min-width: 36px;
     }
 
-    &:hover { color: $selected_bg_color; }
+    &:hover { color: $accent_color; }
     &:active, &:checked { @include button(osd-active); }
     &:disabled { @include button(osd-insensitive); }
   }
@@ -699,7 +699,7 @@ toolbar.inline-toolbar toolbutton {
     > entry.error + entry.warning,
     > entry.warning + entry.error { border-#{$_border}-color: mix($error_color, $warning_color, 50%);}
 
-    @each $e_type, $e_color in (':focus',$selected_bg_color),
+    @each $e_type, $e_color in (':focus',$accent_color),
                                (':drop(active)', $drop_target_color),
                                ('.warning:focus', $warning_color),
                                ('.error:focus', $error_color) {
@@ -715,7 +715,7 @@ toolbar.inline-toolbar toolbutton {
     }
 
     > button:active + entry,
-    > button:checked + entry { border-#{$_border}-color: $selected_bg_color; }
+    > button:checked + entry { border-#{$_border}-color: $accent_color; }
   }
 
   @if $entry_rules=='false' {
@@ -727,7 +727,7 @@ toolbar.inline-toolbar toolbutton {
     > entry.error + entry.warning,
     > entry.warning + entry.error { border-#{$_border}-color: $e_border; }
 
-    @each $e_type, $e_color in (':focus',$selected_bg_color),
+    @each $e_type, $e_color in (':focus',$accent_color),
                                (':drop(active)', $drop_target_color),
                                ('.warning:focus', $warning_color),
                                ('.error:focus', $error_color) {
@@ -930,24 +930,24 @@ modelbutton.flat arrow {
 // Links
 //
 
-%link_selected { color: mix($selected_fg_color, $selected_bg_color, 80%); }
+%link_selected { color: mix($base_color, $accent_color, 80%); }
 
 *:link, %links {
   color: $link_color;
 
   &:visited {
     color: $link_visited_color;
-    *:selected & { color: mix($selected_fg_color, $selected_bg_color, 60%); }
+    *:selected & { color: mix($base_color, $accent_color, 60%); }
   }
 
   &:hover {
     color: lighten($link_color,10%);
-    *:selected & { color: mix($selected_fg_color, $selected_bg_color, 90%); }
+    *:selected & { color: mix($base_color, $accent_color, 90%); }
   }
 
   &:active {
     color: $link_color;
-    *:selected & { color: mix($selected_fg_color, $selected_bg_color, 80%); }
+    *:selected & { color: mix($base_color, $accent_color, 80%); }
   }
 
   &:selected,
@@ -971,7 +971,7 @@ spinbutton {
 
   &:drop(active) { box-shadow: none; }
 
-  button:active { color: $selected_fg_color; }
+  button:active { color: $base_color; }
   &:disabled { color: $insensitive_fg_color; }
 
   &:not(.vertical) {
@@ -994,7 +994,7 @@ spinbutton {
     > button.up:dir(rtl):hover:not(:active),
     > entry + button:not(:active):hover { box-shadow: none; }
 
-    > entry:focus + button { border-left-color: $selected_bg_color; }
+    > entry:focus + button { border-left-color: $accent_color; }
 
     > entry:drop(active) + button { border-left-color: $drop_target_color; }
 
@@ -1006,7 +1006,7 @@ spinbutton {
       > button.up:dir(rtl):hover:not(:active),
       > entry + button:not(:active):hover { box-shadow: none; }
 
-      > entry:focus + button { border-left-color: $selected_bg_color; }
+      > entry:focus + button { border-left-color: $accent_color; }
     }
   }
   &.vertical {
@@ -1020,7 +1020,7 @@ spinbutton {
 
     button.up { border-radius: 3px 3px 0 0; }
 
-    > entry:focus + button { border-top-color: $selected_bg_color; }
+    > entry:focus + button { border-top-color: $accent_color; }
 
     > entry:drop(active) + button { border-top-color: $drop_target_color; }
   }
@@ -1272,7 +1272,7 @@ headerbar {
   border: none;
   margin: 0;
   border-image: radial-gradient(circle closest-corner at center calc(100% - 1px),
-                                $selected_bg_color 0%,
+                                $accent_color 0%,
                                 transparent 0%)
                                 0 0 0 / 0 0 0;
 
@@ -1280,7 +1280,7 @@ headerbar {
     color: $header_fg;
     background-color: rgba($header_fg, 0.15);
     border-image: radial-gradient(circle closest-corner at center calc(100% - 1px),
-                                  $selected_bg_color 100%,
+                                  $accent_color 100%,
                                   transparent 0%)
                                   0 0 2 / 0 0 2px;
   }
@@ -1293,7 +1293,7 @@ headerbar {
     color: rgba($header_fg, 0.4);
     background-color: rgba($header_fg, 0.05);
     border-image: radial-gradient(circle closest-corner at center calc(100% - 1px),
-                                  rgba($selected_bg_color, 0.4) 100%,
+                                  rgba($accent_color, 0.4) 100%,
                                   transparent 0%)
                                   0 0 2 / 0 0 2px;
   }
@@ -1308,11 +1308,11 @@ headerbar {
   &, & headerbar {
     box-shadow: inset 0 -1px $borders_color, inset 0 1px $highlight;
 
-    @if $header == 'dark' and $variant == 'light' { box-shadow: inset 0 1px $highlight; }
+    //@if $header == 'dark' and $variant == 'light' { box-shadow: inset 0 1px $highlight; }
 
     .tiled &,
     .maximized &,
-    .fullscreen & { @if $header == 'dark' { box-shadow: none; }}
+    .fullscreen & { box-shadow: none; }
   }
 
   &.windowhandle {
@@ -1334,7 +1334,7 @@ headerbar {
 window.background > box.vertical > headerbar:not(.titlebar) { // reset headerbar style for not CSD window
   &, &:backdrop { background-color: $header_bg; }
   border-radius: 0 0 0 0;
-  box-shadow: if($header == 'dark', none, inset 0 -1px $borders_color);
+  box-shadow: inset 0 -1px $borders_color;
 
   // Fixes split headerbars
   separator:first-child + &,
@@ -1360,20 +1360,20 @@ window.background > box.vertical > headerbar:not(.titlebar) { // reset headerbar
     @include entry(header-focus);
     background-clip: if($variant=='light', border-box, padding-box);
 
-    image { color: $selected_bg_color; }
+    image { color: $accent_color; }
   }
 
   &:disabled { @include entry(header-insensitive); }
 
   selection, selection:focus {
-    background-color: $selected_fg_color;
-    color: $selected_bg_color;
+    background-color: $base_color;
+    color: $accent_color;
   }
 }
 
 %header_button {
   @include button(header-normal);
-  border-width: if($header == 'dark', 0, 1px);
+  border-width: 1px;
 
   &:backdrop { opacity: 0.8; }
 
@@ -1396,12 +1396,12 @@ window.background > box.vertical > headerbar:not(.titlebar) { // reset headerbar
   .linked:not(.vertical):not(.path-bar):not(.stack-switcher) > & {
     border-radius: 3px;
     border-style: solid;
-    border-width: if($header == 'dark', 0, 1px);
+    border-width: 1px;
     box-shadow: none;
 
     &:last-child {
       border-left-style: solid;
-      border-left-width: if($header == 'dark', 0, 1px);
+      border-left-width: 1px;
       border-color: transparent;
 
       &:hover, &:active { border-color: $borders_color; }
@@ -1462,20 +1462,20 @@ headerbar {
     &:hover { background-color: gtkalpha($selection_mode_fg, 0.3); }
 
     &:active, &:checked {
-      color: $selected_bg_color;
-      background-color: $selected_fg_color;
-      border-color: $selected_fg_color;
+      color: $accent_color;
+      background-color: $base_color;
+      border-color: $base_color;
     }
 
     &:disabled {
-      color: rgba($selected_fg_color, 0.42);
-      label { color: rgba($selected_fg_color, 0.42); }
+      color: rgba($base_color, 0.42);
+      label { color: rgba($base_color, 0.42); }
     }
 
     &:disabled:checked, &:disabled:active {
-      color: $selected_bg_color;
-      background-color: rgba($selected_fg_color, 0.5);
-      border-color: rgba($selected_fg_color, 0.42);
+      color: $accent_color;
+      background-color: rgba($base_color, 0.5);
+      border-color: rgba($base_color, 0.42);
     }
 
     &:backdrop { opacity: 0.7; background: none; }
@@ -1513,7 +1513,7 @@ headerbar {
   .linked:not(.vertical):not(.path-bar).stack-switcher > button {
     background-color: lighten($header_bg, 10%);
     color: $header_fg;
-    border-width: if($header == 'dark', 0, 1px);
+    border-width: 1px;
     border-color: $borders_color;
 
     &:hover { background-color: mix($header_fg, lighten($header_bg, 10%), 10%); }
@@ -1534,7 +1534,7 @@ headerbar {
       border-radius: 3px;
       border: 1px solid $header_entry_border;
 
-      &:focus { border-color: $selected_bg_color; }
+      &:focus { border-color: $accent_color; }
     }
 
     > entry + entry { border-left-color: $header_entry_border; }
@@ -1578,8 +1578,8 @@ headerbar {
   // Headerbar Spinbuttons
   spinbutton:not(.vertical) {
     &:focus {
-    color: $selected_fg_color;
-    caret-color: $selected_fg_color;
+    color: $base_color;
+    caret-color: $base_color;
     }
 
     button {
@@ -1601,7 +1601,7 @@ headerbar {
     > button:first-child:hover:not(:active),
     > entry + button:not(:active):hover { box-shadow: none; }
 
-    > entry:focus + button { border-left-color: $selected_bg_color; }
+    > entry:focus + button { border-left-color: $accent_color; }
   }
 
   // Headerbar ComboBoxes
@@ -1619,12 +1619,12 @@ headerbar {
       &:dir(ltr) {
         border-right-style: none;
 
-        &:focus { box-shadow: 1px 0 $selected_bg_color; }
+        &:focus { box-shadow: 1px 0 $accent_color; }
       }
       &:dir(rtl) {
         border-left-style: none;
 
-        &:focus { box-shadow: -1px 0 $selected_bg_color; }
+        &:focus { box-shadow: -1px 0 $accent_color; }
       }
     }
 
@@ -1674,8 +1674,8 @@ headerbar {
         border-color: $_slider_border;
       }
       &:active {
-        background-color: $selected_bg_color;
-        border-color: $selected_bg_color;
+        background-color: $accent_color;
+        border-color: $accent_color;
       }
       &:disabled {
         background-color: mix($_slider_bg, $header_bg, 70%);
@@ -1773,12 +1773,12 @@ headerbar {
 
   &:hover { background-color: rgba($fg_color, 0.06); }
   &:checked, &:active {
-    background-color: $selected_bg_color;
-    border-color: $selected_bg_color;
+    background-color: $accent_color;
+    border-color: $accent_color;
 
     &:hover{
-      background-color: lighten($selected_bg_color, 5%);
-      border-color: lighten($selected_bg_color, 5%);
+      background-color: lighten($accent_color, 5%);
+      border-color: lighten($accent_color, 5%);
     }
   }
 
@@ -1826,12 +1826,12 @@ treeview.view {
 
   rubberband { @extend rubberband; }                    // to avoid borders being overridden by the previously set props
 
-  acceleditor > label { background-color: $selected_bg_color; }
+  acceleditor > label { background-color: $accent_color; }
 
   &:selected {
     &, &:focus {
       border-radius: 0;
-      border-left-color: mix($selected_fg_color, $selected_bg_color, 50%);
+      border-left-color: mix($base_color, $accent_color, 50%);
       border-top-color: rgba($fg_color, 0.1);   // doesn't work unfortunately
 
       @extend %selected_items;
@@ -1842,7 +1842,7 @@ treeview.view {
     color: $insensitive_fg_color;
 
     &:selected {
-      color: mix($selected_fg_color, $selected_bg_color, 40%);
+      color: mix($base_color, $accent_color, 40%);
     }
   }
 
@@ -1854,7 +1854,7 @@ treeview.view {
   &:drop(active) {
     border-style: solid none;
     border-width: 1px;
-    border-color: mix($fg_color, $selected_bg_color, 50%);
+    border-color: mix($fg_color, $accent_color, 50%);
 
     &.after { border-top-style: none; }
     &.before { border-bottom-style: none; }
@@ -1870,23 +1870,23 @@ treeview.view {
     &:hover { color: $fg_color; }
 
     &:selected {
-      color: mix($selected_fg_color, $selected_bg_color, 70%);
-      &:hover { color: $selected_fg_color; }
+      color: mix($base_color, $accent_color, 70%);
+      &:hover { color: $base_color; }
     }
 
     &:checked { -gtk-icon-source: -gtk-icontheme('pan-down-symbolic'); }
   }
 
   &.progressbar, &.progressbar:hover { // progress bar in treeviews
-    color: $selected_fg_color;
+    color: $base_color;
     border-radius: 3px;
     background-color: $progress_color;
 
     &:selected, &:selected:focus {
-      color: $selected_bg_color;
+      color: $accent_color;
       border-radius: 3px;
       box-shadow: none;
-      background-color: $selected_fg_color;
+      background-color: $base_color;
     }
   }
 
@@ -1897,7 +1897,7 @@ treeview.view {
     border-width: 0;
 
     &:selected, &:selected:focus {
-      color: $selected_fg_color;
+      color: $base_color;
       background-color: rgba(black, 0.2);
       border-radius: 3px;
       border-width: 0;
@@ -1924,7 +1924,7 @@ treeview.view {
                                     rgba(if($variant == 'light', black, white), 0.12) 80%,
                                     $base_color 80%) 0 1 0 0 / 0 1px 0 0 stretch;
 
-      &:hover { color: $selected_bg_color; }
+      &:hover { color: $accent_color; }
       &:active { color: $fg_color; }
 
       &:active, &:hover { background-color: $base_color; }
@@ -1947,8 +1947,8 @@ treeview.view {
     &, &:selected, &:hover, &:active {
       padding: 0 6px;
       transition: none;
-      color: $selected_fg_color;
-      background-color: $selected_bg_color;
+      color: $base_color;
+      background-color: $accent_color;
       border-radius: 0;
       border-style: none;
     }
@@ -2000,20 +2000,20 @@ $_menu_bg: if($variant=='light', $base_color, $bg_color);
 
 menu,
 .menu {
-  padding: 6px 6px;
-  border-radius: 3px;
+  padding: 0px 0px;
+  border-radius: 0px;
   background-color: $_menu_bg;
   border: 1px solid $borders_color;
 
   .csd & {
-    padding: 5px 5px;
-    border-radius: 3px;
+    padding: 0px 0px;
+    border-radius: 0px;
     border: none;
   }
 
   separator,
   .csd & separator {
-    margin: 3px 3px;
+    margin: 0px 0px;
     background-color: $_menu_bg;
   }
 
@@ -2150,8 +2150,8 @@ popover.background {
 
     &:checked,
     &:active {
-      background-color: $selected_bg_color;
-      color: $selected_fg_color;
+      background-color: $accent_color;
+      color: $base_color;
     }
   }
 }
@@ -2206,10 +2206,10 @@ notebook {
               &:last-child { margin-right: 6px; }
             }
             &:hover {
-              box-shadow: inset 0 -2px gtkalpha($selected_bg_color, 0.6), 0 1px gtkalpha($selected_bg_color, 0.6);
+              box-shadow: inset 0 -2px gtkalpha($accent_color, 0.6), 0 1px gtkalpha($accent_color, 0.6);
             }
             &:checked {
-              box-shadow: inset 0 -2px $selected_bg_color, 0 1px $selected_bg_color;
+              box-shadow: inset 0 -2px $accent_color, 0 1px $accent_color;
             }
           }
           @else if $_pos==bottom {
@@ -2218,10 +2218,10 @@ notebook {
               &:last-child { margin-right: 6px; }
             }
             &:hover {
-              box-shadow: inset 0 2px gtkalpha($selected_bg_color, 0.6), 0 -1px gtkalpha($selected_bg_color, 0.6);
+              box-shadow: inset 0 2px gtkalpha($accent_color, 0.6), 0 -1px gtkalpha($accent_color, 0.6);
             }
             &:checked {
-              box-shadow: inset 0 2px $selected_bg_color, 0 -1px $selected_bg_color;
+              box-shadow: inset 0 2px $accent_color, 0 -1px $accent_color;
             }
           }
           @else if $_pos==left {
@@ -2230,10 +2230,10 @@ notebook {
               &:last-child { margin-bottom: 6px; }
             }
             &:hover {
-              box-shadow: inset -2px 0 gtkalpha($selected_bg_color, 0.6), 1px 0 gtkalpha($selected_bg_color, 0.6);
+              box-shadow: inset -2px 0 gtkalpha($accent_color, 0.6), 1px 0 gtkalpha($accent_color, 0.6);
             }
             &:checked {
-              box-shadow: inset -2px 0 $selected_bg_color, 1px 0 $selected_bg_color;
+              box-shadow: inset -2px 0 $accent_color, 1px 0 $accent_color;
             }
           }
           @else if $_pos==right {
@@ -2242,10 +2242,10 @@ notebook {
               &:last-child { margin-bottom: 6px; }
             }
             &:hover {
-              box-shadow: inset 2px 0 gtkalpha($selected_bg_color, 0.6), -1px 0 gtkalpha($selected_bg_color, 0.6);
+              box-shadow: inset 2px 0 gtkalpha($accent_color, 0.6), -1px 0 gtkalpha($accent_color, 0.6);
             }
             &:checked {
-              box-shadow: inset 2px 0 $selected_bg_color, -1px 0 $selected_bg_color;
+              box-shadow: inset 2px 0 $accent_color, -1px 0 $accent_color;
             }
           }
         }
@@ -2309,7 +2309,7 @@ notebook {
         }
         &:active, &:active:hover {
           @extend %undecorated_button;
-          color: $selected_bg_color;
+          color: $accent_color;
           background-color: darken($bg_color, 8%);
         }
       }
@@ -2367,7 +2367,7 @@ scrollbar {
 
     &:hover { background-color: mix($fg_color, $bg_color, 30%); }
 
-    &:hover:active { background-color: $selected_bg_color;}
+    &:hover:active { background-color: $accent_color;}
 
     &:disabled { background-color: transparent; }
   }
@@ -2456,7 +2456,7 @@ switch {
   menuitem:hover switch#{$k},
   row:selected switch#{$k},
   infobar switch#{$k} {
-    background-image: -gtk-scaled(url("assets/switch#{$l}-selected#{$asset_suffix}.png"),url("assets/switch#{$l}-selected#{$asset_suffix}@2.png"));
+    background-image: -gtk-scaled(url("assets/switch#{$l}-selected.png"),url("assets/switch#{$l}-selected@2.png"));
   }
 
   headerbar switch#{$k},
@@ -2488,8 +2488,8 @@ switch {
     .osd,
     %osd_check_radio {
       #{$w}#{$s} {
-        -gtk-icon-source: -gtk-scaled(url("assets/#{$a}#{$as}#{$asset_suffix}.png"),
-                                      url("assets/#{$a}#{$as}#{$asset_suffix}@2.png"));
+        -gtk-icon-source: -gtk-scaled(url("assets/#{$a}#{$as}-dark.png"),
+                                      url("assets/#{$a}#{$as}-dark@2.png"));
       }
     }
     // the borders of checks and radios are
@@ -2500,8 +2500,8 @@ switch {
     treeview.#{$w}#{$s}:selected,
     row:selected #{$w}#{$s},
     infobar #{$w}#{$s} {
-      -gtk-icon-source: -gtk-scaled(url("assets/#{$a}#{$as}-selected#{$asset_suffix}.png"),
-                                    url("assets/#{$a}#{$as}-selected#{$asset_suffix}@2.png"));
+      -gtk-icon-source: -gtk-scaled(url("assets/#{$a}#{$as}-selected.png"),
+                                    url("assets/#{$a}#{$as}-selected@2.png"));
     }
   }
 }
@@ -2596,9 +2596,9 @@ scale {
           &:disabled { background-color: if($variant == 'light', rgba(black, 0.08), rgba(black, 0.15)); }
 
           highlight {
-            background-color: $selected_bg_color;
+            background-color: $accent_color;
 
-            &:disabled { background-color: rgba($selected_bg_color, 0.55); }
+            &:disabled { background-color: rgba($accent_color, 0.55); }
           }
         }
       }
@@ -2610,9 +2610,9 @@ scale {
     border-radius: 2.5px;
 
     &, &:hover, &:focus, &:backdrop {
-      background-color: $selected_bg_color;
+      background-color: $accent_color;
 
-      &:disabled { background-color: rgba($selected_bg_color, 0.55); }
+      &:disabled { background-color: rgba($accent_color, 0.55); }
     }
   }
 
@@ -2622,7 +2622,7 @@ scale {
     border-radius: 2.5px;
 
     &, &:hover, &:focus, &:backdrop {
-      background-color: rgba($selected_bg_color, 0.5);
+      background-color: rgba($accent_color, 0.5);
 
       &:disabled { background-color: transparent; }
     }
@@ -2641,14 +2641,14 @@ scale {
 
     &:hover {
       background-clip: border-box;
-      background-color: $selected_bg_color;
-      border-color: darken($selected_bg_color, 3%);
+      background-color: $accent_color;
+      border-color: darken($accent_color, 3%);
     }
 
     &:active {
       background-clip: border-box;
-      background-color: darken($selected_bg_color, 3%);
-      border-color: darken($selected_bg_color, 6%);
+      background-color: darken($accent_color, 3%);
+      border-color: darken($accent_color, 6%);
     }
 
     &:disabled {
@@ -2719,7 +2719,7 @@ scale {
   highlight {
     background-color: $alt_selected_bg_color;
 
-    &:disabled { background-color: mix($selected_fg_color, $selected_bg_color, 55%); }
+    &:disabled { background-color: mix($base_color, $accent_color, 55%); }
   }
 
   &:disabled { background-color: rgba(black, 0.1); }
@@ -2752,7 +2752,7 @@ progressbar {
     box-shadow: none; //needed for clipping
 
     row:selected &,
-    infobar & { background-color: $selected_fg_color; }
+    infobar & { background-color: $base_color; }
   }
   // Trough
   trough {
@@ -2790,8 +2790,8 @@ levelbar {
   &.vertical.discrete block { margin: 1px 0; }
 
   block:not(.empty) {
-    border: 1px solid $selected_bg_color;
-    background-color: $selected_bg_color;
+    border: 1px solid $accent_color;
+    background-color: $accent_color;
     border-radius: 2px;
   }
   block.low {
@@ -2799,8 +2799,8 @@ levelbar {
     background-color: $warning_color;
   }
   block.high {
-    border-color: $selected_bg_color;
-    background-color: $selected_bg_color;
+    border-color: $accent_color;
+    background-color: $accent_color;
   }
   block.full {
     border-color: $success_color;
@@ -2940,10 +2940,10 @@ list {
   }
 
   &:selected {
-    &:active { color: $selected_fg_color; }
+    &:active { color: $base_color; }
 
     &.has-open-popup,
-    &:hover { background-color: mix(black, $selected_bg_color, 10%); }
+    &:hover { background-color: mix(black, $accent_color, 10%); }
   }
 }
 
@@ -3247,7 +3247,7 @@ placessidebar {
       background-clip: content-box;
     }
 
-    &.sidebar-new-bookmark-row { color: $selected_bg_color; }
+    &.sidebar-new-bookmark-row { color: $accent_color; }
 
     &:drop(active):not(:disabled) {
       &, label, image { color: $drop_target_color; }
@@ -3256,7 +3256,7 @@ placessidebar {
                   inset 0 -1px $drop_target_color;
 
       &:selected {
-        &, label, image { color: $selected_fg_color; }
+        &, label, image { color: $base_color; }
         background-color: $drop_target_color;
       }
     }
@@ -3296,7 +3296,7 @@ paned {
     background-image: _solid($borders_color);
     background-size: 1px 1px;
 
-    &:selected { background-image: _solid($selected_bg_color); }
+    &:selected { background-image: _solid($accent_color); }
 
     &.wide {
       min-width: 5px;
@@ -3354,8 +3354,8 @@ infobar {
   &.info {
     & > revealer > box,
     &:backdrop > revealer > box {
-      background-color: $selected_bg_color;
-      selection { color: $selected_bg_color; }
+      background-color: $accent_color;
+      selection { color: $accent_color; }
     }
   }
 
@@ -3390,7 +3390,7 @@ infobar {
     & > revealer > box,
     &:hover > revealer > box,
     &:backdrop > revealer > box {
-      color: $selected_fg_color;
+      color: $base_color;
       caret-color: currentColor;
 
       button {
@@ -3399,7 +3399,7 @@ infobar {
       }
 
       selection {
-        background-color: $selected_fg_color;
+        background-color: $base_color;
       }
 
       *:link { @extend %link_selected; }
@@ -3415,45 +3415,45 @@ infobar {
 // Buttons on selected backgrounds
 //
 %selected-button {
-  color: $selected_fg_color;
-  background-color: rgba($selected_fg_color, 0.0);
-  border-color: rgba($selected_fg_color, 0.5);
+  color: $base_color;
+  background-color: rgba($base_color, 0.0);
+  border-color: rgba($base_color, 0.5);
 
   &.flat {
     @include button(undecorated);
-    color: $selected_fg_color;
-    background-color: rgba($selected_fg_color, 0.0);
+    color: $base_color;
+    background-color: rgba($base_color, 0.0);
   }
 
   &.flat:disabled {
-    color: rgba($selected_fg_color, 0.42);
-    label { color: rgba($selected_fg_color, 0.42); }
+    color: rgba($base_color, 0.42);
+    label { color: rgba($base_color, 0.42); }
   }
 
   &:hover {
-    color: $selected_fg_color;
-    background-color: rgba($selected_fg_color, 0.2);
-    border-color: rgba($selected_fg_color, 0.8);
+    color: $base_color;
+    background-color: rgba($base_color, 0.2);
+    border-color: rgba($base_color, 0.8);
   }
 
   &:active, &:active:hover, &:checked {
-    color: $selected_bg_color;
-    background-color: $selected_fg_color;
-    border-color: $selected_fg_color;
+    color: $accent_color;
+    background-color: $base_color;
+    border-color: $base_color;
   }
 
   &:disabled {
-    color: rgba($selected_fg_color, 0.5);
-    background-color: rgba($selected_fg_color, 0.0);
-    border-color: rgba($selected_fg_color, 0.42);
+    color: rgba($base_color, 0.5);
+    background-color: rgba($base_color, 0.0);
+    border-color: rgba($base_color, 0.42);
 
-    label { color: rgba($selected_fg_color, 0.5); }
+    label { color: rgba($base_color, 0.5); }
   }
 
   &:disabled:active, &:disabled:checked {
-    color: $selected_bg_color;
-    background-color: rgba($selected_fg_color, 0.5);
-    border-color: rgba($selected_fg_color, 0.42);
+    color: $accent_color;
+    background-color: rgba($base_color, 0.5);
+    border-color: rgba($base_color, 0.42);
   }
 }
 
@@ -3777,13 +3777,13 @@ headerbar {
   background-color: $selected_bg_color;
   color: $selected_fg_color;
 
-  &:disabled { color: mix($selected_fg_color, $selected_bg_color, 50%); }
+  &:disabled { color: mix($base_color, $accent_color, 50%); }
 }
 
 %nobg_selected_items {
-  color: $selected_fg_color;
+  color: $base_color;
 
-  &:disabled { color: mix($selected_fg_color, $selected_bg_color, 50%); }
+  &:disabled { color: mix($base_color, $accent_color, 50%); }
 }
 
 /*********

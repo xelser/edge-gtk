@@ -22,14 +22,22 @@ $base_color: if($variant =='light', #FAFAFA, #33353F);
   $base_color: if($variant =='light', #FAFAFA, #333648);
 }
 
-$selected_bg_color: $text_color;
-@if $color=='red' { $selected_bg_color: if($variant =='light', #D05858, #EC7279); }
-@if $color=='yellow' { $selected_bg_color: if($variant =='light', #BE7E05, #DEB974); }
-@if $color=='green' { $selected_bg_color: if($variant =='light', #608E32, #A0C980); }
-@if $color=='cyan' { $selected_bg_color: if($variant =='light', #3A8B84, #5DBBC1); }
-@if $color=='blue' { $selected_bg_color: if($variant =='light', #5079BE, #6CB6EB); }
-@if $color=='purple' { $selected_bg_color: if($variant =='light', #B05CCC, #D38AEA); }
-$selected_fg_color: $base_color;
+$accent_color: $bg_color;
+@if $color=='red' { $accent_color: if($variant =='light', #D05858, #EC7279); }
+@if $color=='yellow' { $accent_color: if($variant =='light', #BE7E05, #DEB974); }
+@if $color=='green' { $accent_color: if($variant =='light', #608E32, #A0C980); }
+@if $color=='cyan' { $accent_color: if($variant =='light', #3A8B84, #5DBBC1); }
+@if $color=='blue' { $accent_color: if($variant =='light', #5079BE, #6CB6EB); }
+@if $color=='purple' { $accent_color: if($variant =='light', #B05CCC, #D38AEA); }
+
+$selected_bg_color: $accent_color;
+@if $color=='red' { $selected_bg_color: mix(#D05858, #EC7279, 70%); }
+@if $color=='yellow' { $selected_bg_color: mix(#BE7E05, #DEB974, 70%); }
+@if $color=='green' { $selected_bg_color: mix(#608E32, #A0C980, 70%); }
+@if $color=='cyan' { $selected_bg_color: mix(#3A8B84, #5DBBC1, 70%); }
+@if $color=='blue' { $selected_bg_color: mix(#5079BE, #6CB6EB, 70%); }
+@if $color=='purple' { $selected_bg_color: mix(#B05CCC, #D38AEA, 70%); }
+$selected_fg_color: #FAFAFA;
 
 $success_color: #76AF6F;
 $success_fg_color: #FAFAFA;
@@ -43,20 +51,20 @@ $destructive_fg_color: #FAFAFA;
 $error_color: #DE6569;
 $error_fg_color: #FAFAFA;
 
-$suggested_color: $selected_bg_color;
-$suggested_fg_color: $selected_fg_color;
+$suggested_color: $accent_color;
+$suggested_fg_color: $base_color;
 
-$progress_color: $selected_bg_color;
-$drop_target_color: $progress_color;
+$progress_color: $accent_color;
+$drop_target_color: $accent_color;
 
-$link_color: $selected_bg_color;
+$link_color: $accent_color;
 $link_visited_color: $text_color;
 
-$selection_mode_bg: if($transparency == 'true', transparentize($selected_bg_color, 0.05), $selected_bg_color);
-$selection_mode_fg: $selected_fg_color;
+$selection_mode_bg: if($transparency == 'true', transparentize($accent_color, 0.05), $accent_color);
+$selection_mode_fg: $base_color;
 
-$alt_selected_bg_color: lighten($selected_bg_color, 6%);
-$selected_borders_color: darken($selected_bg_color, 20%);
+$alt_selected_bg_color: lighten($accent_color, 6%);
+$selected_borders_color: darken($accent_color, 20%);
 $borders_color: if($variant =='light', darken($bg_color, 15%), darken($bg_color, 2%));
 $highlight: if($variant =='light', rgba(white, 0.13), rgba(white, 0.10));
 
@@ -75,10 +83,10 @@ $header_bg: $bg_color;
 
 $header_bg_backdrop: if($variant == 'dark', lighten($header_bg, 2%), lighten($header_bg, 3%));
 $header_border: if($variant == 'light', darken($header_bg, 7%), darken($header_bg, 4%));
-$header_fg: if($variant =='light', mix($selected_bg_color, #bdbdbd, 5%), $text_color);
+$header_fg: if($variant =='light', mix($accent_color, #bdbdbd, 5%), $text_color);
 
 $dark_sidebar_bg: if($transparency == 'true', transparentize(#4F5868, 0.05), #4F5868);
-$dark_sidebar_fg: if($variant =='light', mix($selected_bg_color, #bdbdbd, 5%), $text_color);
+$dark_sidebar_fg: if($variant =='light', mix($accent_color, #bdbdbd, 5%), $text_color);
 $dark_sidebar_border: if($variant == 'light', $dark_sidebar_bg, darken($dark_sidebar_bg, 5%));
 
 $osd_fg_color: $dark_sidebar_fg;
