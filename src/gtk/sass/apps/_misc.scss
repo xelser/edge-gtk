@@ -175,13 +175,13 @@ window.background:not(.csd) {
       background-image: image($base_color);
       border: 1px solid $firefox_border;
 
-      &:focus { border-color: $selected_bg_color; }
+      &:focus { border-color: $accent_color; }
     }
 
     > spinbutton {
       background-image: image($button_bg);
       border: 1px solid $firefox_border;
-      &:active { background-image: image($selected_bg_color); }
+      &:active { background-image: image($accent_color); }
 
       // Fixed thunderbird linked entry spinbutton border-radius.
       .entry { border-top-right-radius: 0;  border-bottom-right-radius: 0; }
