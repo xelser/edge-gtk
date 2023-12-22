@@ -366,7 +366,7 @@ spinbutton.vertical > text:focus-within, spinbutton:focus-within:not(.vertical),
 entry:focus-within {
   background-clip: border-box;
   color: #4F5868;
-  border-color: #73a049;
+  border-color: #608E32;
   background-color: #FAFAFA;
   outline: none;
 }
@@ -576,7 +576,7 @@ entry:drop(active) {
 .osd spinbutton.vertical > text:focus-within, .osd spinbutton:focus-within:not(.vertical), .osd entry:focus-within {
   color: #FAFAFA;
   border-color: rgba(0, 0, 0, 0.15);
-  background-color: #73a049;
+  background-color: #608E32;
 }
 
 .osd spinbutton.vertical > text:disabled, .osd spinbutton:disabled:not(.vertical), .osd entry:disabled {
@@ -753,8 +753,8 @@ button:hover {
 button:active,
 button:checked {
   color: #FAFAFA;
-  border-color: #73a049;
-  background-color: #73a049;
+  border-color: #608E32;
+  background-color: #608E32;
   background-clip: border-box;
   transition-duration: 50ms;
 }
@@ -800,8 +800,8 @@ button:disabled {
 
 button:disabled:active,
 button:disabled:checked {
-  border-color: rgba(115, 160, 73, 0.75);
-  background-color: rgba(115, 160, 73, 0.75);
+  border-color: rgba(96, 142, 50, 0.75);
+  background-color: rgba(96, 142, 50, 0.75);
   opacity: 0.6;
 }
 
@@ -888,8 +888,8 @@ button.osd:hover {
 button.osd:active,
 button.osd:checked {
   color: #FAFAFA;
-  border-color: #73a049;
-  background-color: #73a049;
+  border-color: #608E32;
+  background-color: #608E32;
 }
 
 
@@ -915,8 +915,8 @@ popover.background.touch-selection button:hover, popover.background.magnifier bu
 popover.background.touch-selection button:active, popover.background.magnifier button:active, popover.background.touch-selection button:checked, popover.background.magnifier button:checked, .osd button:active, .osd button:checked {
   background-clip: padding-box;
   color: #FAFAFA;
-  border-color: #73a049;
-  background-color: #73a049;
+  border-color: #608E32;
+  background-color: #608E32;
 }
 
 popover.background.touch-selection button:disabled, popover.background.magnifier button:disabled, .osd button:disabled {
@@ -947,8 +947,8 @@ popover.background.touch-selection button.flat:disabled, popover.background.magn
 
 popover.background.touch-selection button.flat:active, popover.background.magnifier button.flat:active, popover.background.touch-selection button.flat:checked, popover.background.magnifier button.flat:checked, .osd button.flat:active, .osd button.flat:checked {
   color: #FAFAFA;
-  border-color: #73a049;
-  background-color: #73a049;
+  border-color: #608E32;
+  background-color: #608E32;
 }
 
 .osd .linked:not(.vertical):not(.path-bar) > button:hover:not(:checked):not(:active):not(:only-child), .osd .linked:not(.vertical):not(.path-bar) > button:hover:not(:checked):not(:active) + button:not(:checked):not(:active) {
@@ -1833,8 +1833,8 @@ popover.menu box.circular-buttons button.circular.image-button.model:active, pop
 list > row button.image-button:not(.flat):active,
 list > row button.image-button:not(.flat):checked {
   color: #FAFAFA;
-  border-color: #73a049;
-  background-color: #73a049;
+  border-color: #608E32;
+  background-color: #608E32;
 }
 
 popover.menu box.circular-buttons button.suggested-action.circular.image-button.model,
@@ -2115,8 +2115,8 @@ spinbutton.vertical > button.down {
 
 .osd spinbutton.vertical > button:first-child:active {
   color: #FAFAFA;
-  border-color: #73a049;
-  background-color: #73a049;
+  border-color: #608E32;
+  background-color: #608E32;
 }
 
 .osd spinbutton.vertical > button:first-child:disabled {
@@ -2324,16 +2324,16 @@ toolbar.osd.right {
 .toolbar button:active,
 .toolbar menubutton > button:active {
   color: #FAFAFA;
-  border-color: #73a049;
-  background-color: #73a049;
+  border-color: #608E32;
+  background-color: #608E32;
 }
 
 
 .toolbar button:checked,
 .toolbar menubutton > button:checked {
   color: #FAFAFA;
-  border-color: #73a049;
-  background-color: #73a049;
+  border-color: #608E32;
+  background-color: #608E32;
 }
 
 
@@ -2442,7 +2442,7 @@ actionbar > revealer > box splitbutton {
 
 .sidebar-pane entry:focus-within, headerbar entry:focus-within {
   color: #7a8292;
-  border-color: #73a049;
+  border-color: #608E32;
   background-color: #FAFAFA;
   background-clip: border-box;
 }
@@ -2483,8 +2483,8 @@ actionbar > revealer > box splitbutton {
 .sidebar-pane button:active, headerbar button:active, .sidebar-pane button:checked, headerbar button:checked {
   transition: 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   color: #FAFAFA;
-  border-color: #73a049;
-  background-color: #73a049;
+  border-color: #608E32;
+  background-color: #608E32;
   background-clip: border-box;
 }
 
@@ -2496,8 +2496,8 @@ actionbar > revealer > box splitbutton {
 
 .sidebar-pane button:disabled:active, headerbar button:disabled:active, .sidebar-pane button:disabled:checked, headerbar button:disabled:checked {
   color: rgba(250, 250, 250, 0.5);
-  border-color: rgba(115, 160, 73, 0.75);
-  background-color: rgba(115, 160, 73, 0.75);
+  border-color: rgba(96, 142, 50, 0.75);
+  background-color: rgba(96, 142, 50, 0.75);
 }
 
 .sidebar-pane .linked.raised > button:not(:last-child):not(:only-child), headerbar .linked.raised > button:not(:last-child):not(:only-child) {
@@ -2530,7 +2530,7 @@ headerbar popover > contents entry {
 
 headerbar popover > contents entry:focus-within {
   color: #4F5868;
-  border-color: #73a049;
+  border-color: #608E32;
   background-color: #FAFAFA;
   outline: none;
 }
@@ -2556,8 +2556,8 @@ headerbar popover > contents button:hover {
 
 headerbar popover > contents button:active, headerbar popover > contents button:checked {
   color: #FAFAFA;
-  border-color: #73a049;
-  background-color: #73a049;
+  border-color: #608E32;
+  background-color: #608E32;
 }
 
 headerbar popover > contents button:disabled {
@@ -2570,8 +2570,8 @@ headerbar popover > contents button:disabled label, headerbar popover > contents
 }
 
 headerbar popover > contents button:disabled:active, headerbar popover > contents button:disabled:checked {
-  border-color: rgba(115, 160, 73, 0.75);
-  background-color: rgba(115, 160, 73, 0.75);
+  border-color: rgba(96, 142, 50, 0.75);
+  background-color: rgba(96, 142, 50, 0.75);
   opacity: 0.6;
 }
 
@@ -2741,8 +2741,8 @@ headerbar buttonbox.linked > button:active, headerbar buttonbox.linked > button:
 headerbar stackswitcher.linked > button:active,
 headerbar stackswitcher.linked > button:checked {
   color: #FAFAFA;
-  border-color: #73a049;
-  background-color: #73a049;
+  border-color: #608E32;
+  background-color: #608E32;
 }
 
 headerbar buttonbox.linked > button:disabled,
@@ -2891,8 +2891,8 @@ headerbar spinbutton:not(.vertical) button:hover {
 
 headerbar spinbutton:not(.vertical) button:active, headerbar spinbutton:not(.vertical) button:checked {
   color: #FAFAFA;
-  border-color: #73a049;
-  background-color: #73a049;
+  border-color: #608E32;
+  background-color: #608E32;
 }
 
 headerbar spinbutton:not(.vertical) button:disabled {
@@ -2938,7 +2938,7 @@ headerbar combobox > .linked > button.combo image, headerbar combobox > .linked 
 
 headerbar combobox > .linked > button.combo:hover {
   color: #7a8292;
-  border-color: #73a049;
+  border-color: #608E32;
   background-color: #FAFAFA;
   box-shadow: none;
 }
@@ -4988,8 +4988,8 @@ columnview row:not(:selected) cell editablelabel.editing text selection {
 
 .app-notification button:active, .app-notification button:checked {
   color: #FAFAFA;
-  border-color: #73a049;
-  background-color: #73a049;
+  border-color: #608E32;
+  background-color: #608E32;
   background-clip: padding-box;
 }
 
@@ -6429,14 +6429,14 @@ button.card:hover {
 
 button.card.keyboard-activating, button.card:active {
   color: #FAFAFA;
-  border-color: #73a049;
-  background-color: #73a049;
+  border-color: #608E32;
+  background-color: #608E32;
 }
 
 button.card:checked {
   color: #FAFAFA;
-  border-color: #73a049;
-  background-color: #73a049;
+  border-color: #608E32;
+  background-color: #608E32;
 }
 
 button.card:drop(active) {
@@ -7521,8 +7521,8 @@ toolbarview.undershoot-bottom scrolledwindow > undershoot.bottom {
 
 .sidebar-pane .navigation-sidebar > row:not(:selected) button.sidebar-button:active {
   color: #FAFAFA;
-  border-color: #73a049;
-  background-color: #73a049;
+  border-color: #608E32;
+  background-color: #608E32;
 }
 
 .sidebar-pane .navigation-sidebar > row:not(:selected) button.sidebar-button:not(:hover):not(:active) > image {
@@ -7988,8 +7988,8 @@ toolbarview.undershoot-bottom scrolledwindow > undershoot.bottom {
 
 .nautilus-window .sidebar-pane .navigation-sidebar > row:not(:selected) button.sidebar-button:active, .nautilus-window flap .navigation-sidebar > row:not(:selected) button.sidebar-button:active {
   color: #FAFAFA;
-  border-color: #73a049;
-  background-color: #73a049;
+  border-color: #608E32;
+  background-color: #608E32;
 }
 
 .nautilus-window .sidebar-pane .navigation-sidebar > row:not(:selected) button.sidebar-button:not(:hover):not(:active) > image, .nautilus-window flap .navigation-sidebar > row:not(:selected) button.sidebar-button:not(:hover):not(:active) > image {

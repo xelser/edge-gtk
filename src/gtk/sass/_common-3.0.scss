@@ -2006,14 +2006,14 @@ menu,
   border: 1px solid $borders_color;
 
   .csd & {
-    padding: 0px 0px;
-    border-radius: 0px;
+    padding: 4px 4px;
+    border-radius: 2px;
     border: none;
   }
 
   separator,
   .csd & separator {
-    margin: 0px 0px;
+    margin: 2px 2px;
     background-color: $_menu_bg;
   }
 
