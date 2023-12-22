@@ -6,7 +6,25 @@ A **vivid** and **colorful** 🎨 GTK theme based on [vinceliuice](https://githu
 - Cinnamon
 - XFCE (xfwm)
 - MATE (metacity)
-- Preferred icon theme: [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) with Edge's [Papirus Folders](https://github.com/xelser/edge-papirus-folders) theme
+- Preferred icon theme: [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) with [Edge's Papirus Folders](https://github.com/xelser/edge-papirus-folders) theme
+
+## Features
+- Color Variety
+
+| Accents | Red  | Yellow | Green | Cyan | Blue | Purple |
+|:-------:|:----:|:------:|:-----:|:----:|:----:|:------:|
+| Dark |![Red](src/gtk/assets-red/checkbox-checked-dark@2.png)|![Yellow](src/gtk/assets-yellow/checkbox-checked-dark@2.png)|![Green](src/gtk/assets-green/checkbox-checked-dark@2.png)|![cyan](src/gtk/assets-cyan/checkbox-checked-dark@2.png)|![Blue](src/gtk/assets-blue/checkbox-checked-dark@2.png)|![Purple](src/gtk/assets-purple/checkbox-checked-dark@2.png)|
+| Light |![Red](src/gtk/assets-red/checkbox-checked@2.png)|![Yellow](src/gtk/assets-yellow/checkbox-checked@2.png)|![Green](src/gtk/assets-green/checkbox-checked@2.png)|![cyan](src/gtk/assets-cyan/checkbox-checked@2.png)|![Blue](src/gtk/assets-blue/checkbox-checked@2.png)|![Purple](src/gtk/assets-purple/checkbox-checked@2.png)|
+
+| Backgrounds | Warmer "Default" | Blu-ish "Aura" | Purple-ish "Neon" |
+|:-----------:|:----------------:|:--------------:|:-----------------:|
+| Example |![Default](src/gtk/thumbnail-dark-green.png)|![Aura](src/gtk/thumbnail-dark-blue.png)|![Neon](src/gtk/thumbnail-dark-purple.png)|
+| Paired Accents | Red, Yellow, and Green | Cyan and Blue | Purple Only |
+
+- Arc Theme Design for WM Buttons
+
+![wm buttons](src/metacity-1/thumbnail.png)
+
 # Install
 #### Requirements for GTK2
 - Arch: `sudo pacman -S gtk-engine-murrine gtk-engines`
