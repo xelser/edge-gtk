@@ -2589,8 +2589,8 @@ menubar > menuitem > window.background.popup > menu,
 
 menu,
 .menu {
-  padding: 0px 0px;
-  border-radius: 0px;
+  padding: 6px 6px;
+  border-radius: 2px;
   background-color: #FAFAFA;
   border: 1px solid rgba(0, 0, 0, 0.15);
 }
@@ -6763,7 +6763,7 @@ window.background:not(.csd) > widget .entry {
 
 window.background:not(.csd) > widget > entry:focus,
 window.background:not(.csd) > widget .entry:focus {
-  border-color: #d86062;
+  border-color: #D05858;
 }
 
 window.background:not(.csd) > widget > spinbutton {
@@ -6772,7 +6772,7 @@ window.background:not(.csd) > widget > spinbutton {
 }
 
 window.background:not(.csd) > widget > spinbutton:active {
-  background-image: image(#d86062);
+  background-image: image(#D05858);
 }
 
 window.background:not(.csd) > widget > spinbutton .entry {
@@ -8739,7 +8739,7 @@ window#ValaPanel.background button.flat.-panel-icon-button:hover:not(:active):no
 panel-toplevel.background button:hover:not(:active):not(:checked),
 panel-toplevel.background button#tasklist-button:hover:not(:active):not(:checked) {
   color: #f3f5f7;
-  box-shadow: inset 0 -2px rgba(216, 96, 98, 0.5);
+  box-shadow: inset 0 -2px rgba(208, 88, 88, 0.5);
 }
 
 .xfce4-panel button:checked, window#ValaPanel.background button.flat.-panel-button:checked,
@@ -8749,7 +8749,7 @@ window#ValaPanel.background button.flat.-panel-icon-button:checked, .mate-panel-
 panel-toplevel.background button:checked,
 panel-toplevel.background button#tasklist-button:checked {
   color: #C5CDD9;
-  box-shadow: inset 0 -2px #d86062;
+  box-shadow: inset 0 -2px #D05858;
 }
 
 .xfce4-panel button:checked label, window#ValaPanel.background button.flat.-panel-button:checked label,
@@ -8774,7 +8774,7 @@ panel-toplevel.background button:active,
 panel-toplevel.background button#tasklist-button:active {
   background-color: rgba(250, 250, 250, 0.12);
   color: #C5CDD9;
-  box-shadow: inset 0 -2px #d86062;
+  box-shadow: inset 0 -2px #D05858;
 }
 
 .xfce4-panel.panel {
