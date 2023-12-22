@@ -25,6 +25,17 @@ A **vivid** and **colorful** 🎨 GTK theme based on [vinceliuice](https://githu
 
 ![wm buttons](src/metacity-1/thumbnail.png)
 
+## Preview
+<details>
+ <summary>Screenshots</summary>
+
+   ![purple](preview/purple.png)
+   ![blue](preview/blue.png)
+   ![red](preview/red.png)
+   ![yellow](preview/yellow.png)
+   ![cyan](preview/cyan.png)
+</details>
+
 # Install
 #### Requirements for GTK2
 - Arch: `sudo pacman -S gtk-engine-murrine gtk-engines`
