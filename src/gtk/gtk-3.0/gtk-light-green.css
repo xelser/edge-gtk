@@ -96,7 +96,7 @@ button.gtkstyle-fallback:active, button.gtkstyle-fallback:checked {
 }
 
 .view:selected:hover, iconview:selected:hover {
-  background-color: #56802d;
+  background-color: #689042;
 }
 
 textview, textview.view {
@@ -2404,7 +2404,7 @@ treeview.view {
 }
 
 treeview.view acceleditor > label {
-  background-color: #608E32;
+  background-color: #73a049;
 }
 
 treeview.view:selected, treeview.view:selected:focus {
@@ -2429,7 +2429,7 @@ treeview.view.separator {
 treeview.view:drop(active) {
   border-style: solid none;
   border-width: 1px;
-  border-color: #566f47;
+  border-color: #5f7852;
 }
 
 treeview.view:drop(active).after {
@@ -2472,7 +2472,7 @@ treeview.view.progressbar, treeview.view.progressbar:hover {
 }
 
 treeview.view.progressbar:selected, treeview.view.progressbar:selected:focus, treeview.view.progressbar:hover:selected, treeview.view.progressbar:hover:selected:focus {
-  color: #608E32;
+  color: #73a049;
   border-radius: 3px;
   box-shadow: none;
   background-color: #FAFAFA;
@@ -2506,7 +2506,7 @@ treeview.view header button {
 }
 
 treeview.view header button:hover {
-  color: #608E32;
+  color: #73a049;
 }
 
 treeview.view header button:active {
@@ -2539,7 +2539,7 @@ treeview.view header.button.dnd:active {
   padding: 0 6px;
   transition: none;
   color: #FAFAFA;
-  background-color: #608E32;
+  background-color: #73a049;
   border-radius: 0;
   border-style: none;
 }
@@ -4946,7 +4946,7 @@ headerbar button.titlebutton.minimize:active {
   background-image: -gtk-scaled(url("assets/titlebutton-restore-active.png"), url("assets/titlebutton-restore-active@2.png"));
 }
 
-.emoji widget:hover, .view:selected, .view:selected:focus, textview text selection:focus, textview text selection, iconview:selected, iconview:selected:focus, flowbox flowboxchild:selected, entry selection:focus, entry selection, menuitem.button.flat:active, menuitem.button.flat:active arrow, menuitem.button.flat:selected, menuitem.button.flat:selected arrow,
+.emoji widget:hover, textview text selection:focus, textview text selection, flowbox flowboxchild:selected, entry selection:focus, entry selection, menuitem.button.flat:active, menuitem.button.flat:active arrow, menuitem.button.flat:selected, menuitem.button.flat:selected arrow,
 modelbutton.flat:active,
 modelbutton.flat:active arrow,
 modelbutton.flat:selected,
@@ -4955,7 +4955,7 @@ modelbutton.flat:selected arrow, row:selected, calendar:selected {
   color: #FAFAFA;
 }
 
-.emoji widget:disabled:hover, .view:disabled:selected, textview text selection:disabled, iconview:disabled:selected, iconview:disabled:selected:focus, flowbox flowboxchild:disabled:selected, entry selection:disabled, menuitem.button.flat:disabled:active, menuitem.button.flat:active arrow:disabled, menuitem.button.flat:disabled:selected, menuitem.button.flat:selected arrow:disabled,
+.emoji widget:disabled:hover, textview text selection:disabled, flowbox flowboxchild:disabled:selected, entry selection:disabled, menuitem.button.flat:disabled:active, menuitem.button.flat:active arrow:disabled, menuitem.button.flat:disabled:selected, menuitem.button.flat:selected arrow:disabled,
 modelbutton.flat:disabled:active,
 modelbutton.flat:active arrow:disabled,
 modelbutton.flat:disabled:selected,
@@ -4970,7 +4970,7 @@ filechooser placessidebar.sidebar row.sidebar-row.has-open-popup:selected, filec
 .nautilus-window placessidebar.sidebar row.sidebar-row:active:hover, .budgie-popover.budgie-menu button:checked, .atril-window scrolledwindow.frame > .view:selected, .atril-window scrolledwindow.frame > .view:active,
 .xreader-window scrolledwindow.frame > .view:selected,
 .xreader-window scrolledwindow.frame > .view:active, .caja-desktop > widget.entry:selected, .caja-desktop > widget.entry:focus:selected, #MozillaGtkWidget > widget > scrolledwindow > textview text:selected, #MozillaGtkWidget > widget > scrolledwindow > textview text:selected:focus,
-#MozillaGtkWidget > widget > scrolledwindow > textview text selection, .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected, .nemo-window .nemo-places-sidebar .places-treeview:selected, .nemo-window .nemo-places-sidebar .places-treeview:selected:hover, treeview.view:selected, treeview.view:selected:focus {
+#MozillaGtkWidget > widget > scrolledwindow > textview text selection, .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected, .nemo-window .nemo-places-sidebar .places-treeview:selected, .nemo-window .nemo-places-sidebar .places-treeview:selected:hover, .view:selected, .view:selected:focus, iconview:selected, iconview:selected:focus, treeview.view:selected, treeview.view:selected:focus {
   background-color: #73a049;
   color: #FAFAFA;
 }
@@ -4980,7 +4980,7 @@ filechooser placessidebar.sidebar row.sidebar-row:disabled:selected, filechooser
 .nautilus-window placessidebar.sidebar row.sidebar-row:disabled:active:hover, .budgie-popover.budgie-menu button:disabled:checked, .atril-window scrolledwindow.frame > .view:disabled:selected, .atril-window scrolledwindow.frame > .view:disabled:active,
 .xreader-window scrolledwindow.frame > .view:disabled:selected,
 .xreader-window scrolledwindow.frame > .view:disabled:active, .caja-desktop > widget.entry:disabled:selected, #MozillaGtkWidget > widget > scrolledwindow > textview text:disabled:selected,
-#MozillaGtkWidget > widget > scrolledwindow > textview text selection:disabled, .nemo-window .nemo-window-pane widget.entry:disabled:selected, .nemo-window .nemo-places-sidebar .places-treeview:disabled:selected, treeview.view:disabled:selected {
+#MozillaGtkWidget > widget > scrolledwindow > textview text selection:disabled, .nemo-window .nemo-window-pane widget.entry:disabled:selected, .nemo-window .nemo-places-sidebar .places-treeview:disabled:selected, .view:disabled:selected, iconview:disabled:selected, iconview:disabled:selected:focus {
   color: #b7cda2;
 }
 

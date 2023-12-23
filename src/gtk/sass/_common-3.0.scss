@@ -86,13 +86,13 @@ button.gtkstyle-fallback { // For Cinnamon system setting
   }
 
   &:selected {
-    @extend %accent_items;
+    @extend %selected_items;
 
     &:focus {
-      @extend %accent_items;
+      @extend %selected_items;
     }
 
-    &:hover { background-color: mix(black, $accent_color, 10%); }
+    &:hover { background-color: mix(black, $selected_bg_color, 10%); }
   }
 }
 
@@ -1826,7 +1826,7 @@ treeview.view {
 
   rubberband { @extend rubberband; }                    // to avoid borders being overridden by the previously set props
 
-  acceleditor > label { background-color: $accent_color; }
+  acceleditor > label { background-color: $selected_bg_color; }
 
   &:selected {
     &, &:focus {
@@ -1854,7 +1854,7 @@ treeview.view {
   &:drop(active) {
     border-style: solid none;
     border-width: 1px;
-    border-color: mix($fg_color, $accent_color, 50%);
+    border-color: mix($fg_color, $selected_bg_color, 50%);
 
     &.after { border-top-style: none; }
     &.before { border-bottom-style: none; }
@@ -1871,22 +1871,22 @@ treeview.view {
 
     &:selected {
       color: mix($selected_fg_color, $selected_bg_color, 70%);
-      &:hover { color: $base_color; }
+      &:hover { color: $selected_fg_color; }
     }
 
     &:checked { -gtk-icon-source: -gtk-icontheme('pan-down-symbolic'); }
   }
 
   &.progressbar, &.progressbar:hover { // progress bar in treeviews
-    color: $base_color;
+    color: $selected_fg_color;
     border-radius: 3px;
     background-color: $progress_color;
 
     &:selected, &:selected:focus {
-      color: $accent_color;
+      color: $selected_bg_color;
       border-radius: 3px;
       box-shadow: none;
-      background-color: $base_color;
+      background-color: $selected_fg_color;
     }
   }
 
@@ -1897,7 +1897,7 @@ treeview.view {
     border-width: 0;
 
     &:selected, &:selected:focus {
-      color: $base_color;
+      color: $selected_fg_color;
       background-color: rgba(black, 0.2);
       border-radius: 3px;
       border-width: 0;
@@ -1924,7 +1924,7 @@ treeview.view {
                                     rgba(if($variant == 'light', black, white), 0.12) 80%,
                                     $base_color 80%) 0 1 0 0 / 0 1px 0 0 stretch;
 
-      &:hover { color: $accent_color; }
+      &:hover { color: $selected_bg_color; }
       &:active { color: $fg_color; }
 
       &:active, &:hover { background-color: $base_color; }
@@ -1947,8 +1947,8 @@ treeview.view {
     &, &:selected, &:hover, &:active {
       padding: 0 6px;
       transition: none;
-      color: $base_color;
-      background-color: $accent_color;
+      color: $selected_fg_color;
+      background-color: $selected_bg_color;
       border-radius: 0;
       border-style: none;
     }
