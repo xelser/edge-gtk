@@ -1857,7 +1857,7 @@ window.thunar toolbar button:hover, window.thunar .inline-toolbar button:hover, 
 window.thunar toolbar button:active, window.thunar .inline-toolbar button:active, .caja-navigation-window toolbar#Toolbar.primary-toolbar button:active, .caja-navigation-window #Toolbar.primary-toolbar.inline-toolbar button:active, .nemo-window .primary-toolbar button:active, headerbar button:active, window.thunar toolbar button:checked, window.thunar .inline-toolbar button:checked, .caja-navigation-window toolbar#Toolbar.primary-toolbar button:checked, .caja-navigation-window #Toolbar.primary-toolbar.inline-toolbar button:checked, .nemo-window .primary-toolbar button:checked, headerbar button:checked {
   transition: 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   color: #333644;
-  border-color: #6CB6EB;
+  border-color: transparent;
   background-color: #6CB6EB;
   background-clip: padding-box;
 }
@@ -2026,7 +2026,7 @@ headerbar windowhandle .linked > button.toggle:not(.disclosure-button):active, h
 headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active,
 headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked {
   color: #333644;
-  border-color: #6CB6EB;
+  border-color: transparent;
   background-color: #6CB6EB;
 }
 
@@ -2172,7 +2172,7 @@ headerbar spinbutton:not(.vertical) button:hover {
 
 headerbar spinbutton:not(.vertical) button:active, headerbar spinbutton:not(.vertical) button:checked {
   color: #333644;
-  border-color: #6CB6EB;
+  border-color: transparent;
   background-color: #6CB6EB;
 }
 
@@ -4863,7 +4863,7 @@ headerbar button.titlebutton:hover {
 
 headerbar button.titlebutton:active, headerbar button.titlebutton:checked {
   color: #333644;
-  border-color: #6CB6EB;
+  border-color: transparent;
   background-color: #6CB6EB;
 }
 
@@ -5309,7 +5309,7 @@ window.thunar toolbar .linked:not(.vertical):not(.stack-switcher).path-bar butto
   }
   100% {
     color: #333644;
-    border-color: #6CB6EB;
+    border-color: transparent;
     background-color: #6CB6EB;
   }
 }
@@ -6854,7 +6854,7 @@ window.background.chromium headerbar.titlebar button.toggle:hover {
 
 window.background.chromium headerbar.titlebar button.toggle:checked, window.background.chromium headerbar.titlebar button.toggle:active {
   color: #333644;
-  border-color: #6CB6EB;
+  border-color: transparent;
   background-color: #6CB6EB;
 }
 
@@ -8355,7 +8355,7 @@ frame.raven-frame > border {
 
 .raven .raven-header.top stackswitcher button:active, .raven .raven-header.top stackswitcher button:checked {
   color: #333644;
-  border-color: #6CB6EB;
+  border-color: transparent;
   background-color: #6CB6EB;
 }
 
@@ -9763,7 +9763,7 @@ filechooser placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-
 filechooser placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button:active,
 .nautilus-window placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button:active {
   color: #333644;
-  border-color: #6CB6EB;
+  border-color: transparent;
   background-color: #6CB6EB;
 }
 

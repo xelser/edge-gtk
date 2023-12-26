@@ -2483,7 +2483,7 @@ actionbar > revealer > box splitbutton {
 .sidebar-pane button:active, headerbar button:active, .sidebar-pane button:checked, headerbar button:checked {
   transition: 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   color: #FAFAFA;
-  border-color: #B05CCC;
+  border-color: transparent;
   background-color: #B05CCC;
   background-clip: border-box;
 }
@@ -2741,7 +2741,7 @@ headerbar buttonbox.linked > button:active, headerbar buttonbox.linked > button:
 headerbar stackswitcher.linked > button:active,
 headerbar stackswitcher.linked > button:checked {
   color: #FAFAFA;
-  border-color: #B05CCC;
+  border-color: transparent;
   background-color: #B05CCC;
 }
 
@@ -2891,7 +2891,7 @@ headerbar spinbutton:not(.vertical) button:hover {
 
 headerbar spinbutton:not(.vertical) button:active, headerbar spinbutton:not(.vertical) button:checked {
   color: #FAFAFA;
-  border-color: #B05CCC;
+  border-color: transparent;
   background-color: #B05CCC;
 }
 
@@ -7521,7 +7521,7 @@ toolbarview.undershoot-bottom scrolledwindow > undershoot.bottom {
 
 .sidebar-pane .navigation-sidebar > row:not(:selected) button.sidebar-button:active {
   color: #FAFAFA;
-  border-color: #B05CCC;
+  border-color: transparent;
   background-color: #B05CCC;
 }
 
@@ -7988,7 +7988,7 @@ toolbarview.undershoot-bottom scrolledwindow > undershoot.bottom {
 
 .nautilus-window .sidebar-pane .navigation-sidebar > row:not(:selected) button.sidebar-button:active, .nautilus-window flap .navigation-sidebar > row:not(:selected) button.sidebar-button:active {
   color: #FAFAFA;
-  border-color: #B05CCC;
+  border-color: transparent;
   background-color: #B05CCC;
 }
 
