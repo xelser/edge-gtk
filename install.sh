@@ -35,7 +35,7 @@ install() {
   local color="${3}"
   local theme="${4}"
 
-  local themedir="${dest}/${name}${color}${theme}"
+  local themedir="${dest}/${name}${theme}${color}"
 	
   [[ ${color} == '-dark' ]] && local ELSE_DARK="${color}"
   [[ ${color} == '-light' ]] && local ELSE_LIGHT="${color}"
@@ -48,13 +48,13 @@ install() {
   # Install index.theme
   echo "[Desktop Entry]"                                                           >> "${themedir}/index.theme"
   echo "Type=X-GNOME-Metatheme"                                                    >> "${themedir}/index.theme"
-  echo "Name=${name}${color}${theme}"                                              >> "${themedir}/index.theme"
+  echo "Name=${name}${theme}${color}"                                              >> "${themedir}/index.theme"
   echo "Comment=A dark modern design theme"                                        >> "${themedir}/index.theme"
   echo "Encoding=UTF-8"                                                            >> "${themedir}/index.theme"
   echo ""                                                                          >> "${themedir}/index.theme"
   echo "[X-GNOME-Metatheme]"                                                       >> "${themedir}/index.theme"
-  echo "GtkTheme=${name}${color}${theme}"                                          >> "${themedir}/index.theme"
-  echo "MetacityTheme=${name}${color}${theme}"                                     >> "${themedir}/index.theme"
+  echo "GtkTheme=${name}${theme}${color}"                                          >> "${themedir}/index.theme"
+  echo "MetacityTheme=${name}${theme}${color}"                                     >> "${themedir}/index.theme"
   echo "IconTheme=Papirus"                                                  			 >> "${themedir}/index.theme"
   echo "CursorTheme=Qogir-manjaro"                                                 >> "${themedir}/index.theme"
   echo "ButtonLayout=menu:minimize,maximize,close"                                 >> "${themedir}/index.theme"
