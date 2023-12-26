@@ -217,7 +217,7 @@
   // pushed button
   //
     color: $base_color;
-    border-color: if($variant=='light', $accent_color, $button_border);
+    border-color: $button_border;
     background-color: $accent_color;
   }
 
@@ -226,7 +226,7 @@
     // pushed button
     //
     color: $base_color;
-    border-color: if($variant=='light', $accent_color, $button_border);
+    border-color: $button_border;
     background-color: $accent_color;
   }
 
@@ -276,7 +276,7 @@
   // pushed header-bar button
   //
     color: $base_color;
-    border-color: if($variant=='light', $accent_color, transparent);
+    border-color: $accent_color;
     background-color: $accent_color;
   }
 
@@ -321,7 +321,7 @@
   // active osd button
   //
     color: $base_color;
-    border-color: if($header == 'light', $accent_color, $osd_button_border);
+    border-color: $osd_button_border;
     background-color: $accent_color;
   }
 

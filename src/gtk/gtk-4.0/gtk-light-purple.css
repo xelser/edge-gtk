@@ -753,7 +753,7 @@ button:hover {
 button:active,
 button:checked {
   color: #FAFAFA;
-  border-color: #B05CCC;
+  border-color: rgba(0, 0, 0, 0.15);
   background-color: #B05CCC;
   background-clip: border-box;
   transition-duration: 50ms;
@@ -888,7 +888,7 @@ button.osd:hover {
 button.osd:active,
 button.osd:checked {
   color: #FAFAFA;
-  border-color: #B05CCC;
+  border-color: rgba(0, 0, 0, 0.15);
   background-color: #B05CCC;
 }
 
@@ -915,7 +915,7 @@ popover.background.touch-selection button:hover, popover.background.magnifier bu
 popover.background.touch-selection button:active, popover.background.magnifier button:active, popover.background.touch-selection button:checked, popover.background.magnifier button:checked, .osd button:active, .osd button:checked {
   background-clip: padding-box;
   color: #FAFAFA;
-  border-color: #B05CCC;
+  border-color: rgba(0, 0, 0, 0.15);
   background-color: #B05CCC;
 }
 
@@ -947,7 +947,7 @@ popover.background.touch-selection button.flat:disabled, popover.background.magn
 
 popover.background.touch-selection button.flat:active, popover.background.magnifier button.flat:active, popover.background.touch-selection button.flat:checked, popover.background.magnifier button.flat:checked, .osd button.flat:active, .osd button.flat:checked {
   color: #FAFAFA;
-  border-color: #B05CCC;
+  border-color: rgba(0, 0, 0, 0.15);
   background-color: #B05CCC;
 }
 
@@ -1833,7 +1833,7 @@ popover.menu box.circular-buttons button.circular.image-button.model:active, pop
 list > row button.image-button:not(.flat):active,
 list > row button.image-button:not(.flat):checked {
   color: #FAFAFA;
-  border-color: #B05CCC;
+  border-color: rgba(0, 0, 0, 0.15);
   background-color: #B05CCC;
 }
 
@@ -2115,7 +2115,7 @@ spinbutton.vertical > button.down {
 
 .osd spinbutton.vertical > button:first-child:active {
   color: #FAFAFA;
-  border-color: #B05CCC;
+  border-color: rgba(0, 0, 0, 0.15);
   background-color: #B05CCC;
 }
 
@@ -2324,7 +2324,7 @@ toolbar.osd.right {
 .toolbar button:active,
 .toolbar menubutton > button:active {
   color: #FAFAFA;
-  border-color: #B05CCC;
+  border-color: rgba(0, 0, 0, 0.15);
   background-color: #B05CCC;
 }
 
@@ -2332,7 +2332,7 @@ toolbar.osd.right {
 .toolbar button:checked,
 .toolbar menubutton > button:checked {
   color: #FAFAFA;
-  border-color: #B05CCC;
+  border-color: rgba(0, 0, 0, 0.15);
   background-color: #B05CCC;
 }
 
@@ -2556,7 +2556,7 @@ headerbar popover > contents button:hover {
 
 headerbar popover > contents button:active, headerbar popover > contents button:checked {
   color: #FAFAFA;
-  border-color: #B05CCC;
+  border-color: rgba(0, 0, 0, 0.15);
   background-color: #B05CCC;
 }
 
@@ -4988,7 +4988,7 @@ columnview row:not(:selected) cell editablelabel.editing text selection {
 
 .app-notification button:active, .app-notification button:checked {
   color: #FAFAFA;
-  border-color: #B05CCC;
+  border-color: rgba(0, 0, 0, 0.15);
   background-color: #B05CCC;
   background-clip: padding-box;
 }
@@ -6429,13 +6429,13 @@ button.card:hover {
 
 button.card.keyboard-activating, button.card:active {
   color: #FAFAFA;
-  border-color: #B05CCC;
+  border-color: rgba(0, 0, 0, 0.15);
   background-color: #B05CCC;
 }
 
 button.card:checked {
   color: #FAFAFA;
-  border-color: #B05CCC;
+  border-color: rgba(0, 0, 0, 0.15);
   background-color: #B05CCC;
 }
 
@@ -7478,20 +7478,20 @@ toolbarview.undershoot-bottom scrolledwindow > undershoot.bottom {
 }
 
 .sidebar-pane .navigation-sidebar > row {
-  color: #4F5868;
+  color: #4B505B;
 }
 
 .sidebar-pane .navigation-sidebar > row .sidebar-icon {
-  color: rgba(79, 88, 104, 0.6);
+  color: rgba(75, 80, 91, 0.6);
 }
 
 .sidebar-pane .navigation-sidebar > row:hover {
-  color: #4F5868;
+  color: #4B505B;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
 .sidebar-pane .navigation-sidebar > row:active {
-  color: #4F5868;
+  color: #4B505B;
   background-color: rgba(0, 0, 0, 0.15);
 }
 
@@ -7506,11 +7506,11 @@ toolbarview.undershoot-bottom scrolledwindow > undershoot.bottom {
 }
 
 .sidebar-pane .navigation-sidebar > row:disabled {
-  color: rgba(79, 88, 104, 0.45);
+  color: rgba(75, 80, 91, 0.45);
 }
 
 .sidebar-pane .navigation-sidebar > row:not(:selected) button.sidebar-button {
-  color: #4F5868;
+  color: #4B505B;
 }
 
 .sidebar-pane .navigation-sidebar > row:not(:selected) button.sidebar-button:hover {
@@ -7538,18 +7538,18 @@ toolbarview.undershoot-bottom scrolledwindow > undershoot.bottom {
 }
 
 .sidebar-pane {
-  background-color: rgba(238, 241, 244, 0.95);
-  color: #4F5868;
+  background-color: #e2e7ec;
+  color: #4B505B;
 }
 
 .sidebar-pane:backdrop {
   background-color: #EEF1F4;
-  color: rgba(79, 88, 104, 0.45);
+  color: rgba(75, 80, 91, 0.45);
 }
 
 .sidebar-pane .dim-label, .sidebar-pane label.separator,
 .sidebar-pane entry > text > placeholder, .sidebar-pane spinbutton:not(.vertical) > text > placeholder, .sidebar-pane spinbutton.vertical > text > text > placeholder, .sidebar-pane headerbar .subtitle, headerbar .sidebar-pane .subtitle, .sidebar-pane popover.background label.separator, popover.background .sidebar-pane label.separator, .sidebar-pane row label.subtitle, row .sidebar-pane label.subtitle {
-  color: rgba(79, 88, 104, 0.45);
+  color: rgba(75, 80, 91, 0.45);
 }
 
 .sidebar-pane .sidebar,
@@ -7598,47 +7598,47 @@ toolbarview.undershoot-bottom scrolledwindow > undershoot.bottom {
 .sidebar-pane leaflet > shadow.left,
 .sidebar-pane navigation-view > shadow.left,
 .sidebar-pane overlay-split-view > shadow.left {
-  background-image: linear-gradient(to right, alpha(rgba(192, 203, 214, 0.95),0.7), alpha(rgba(192, 203, 214, 0.95),0.14) 40px, alpha(rgba(192, 203, 214, 0.95),0) 56px), linear-gradient(to right, alpha(rgba(192, 203, 214, 0.95),0.4), alpha(rgba(192, 203, 214, 0.95),0.14) 7px, alpha(rgba(192, 203, 214, 0.95),0) 24px);
+  background-image: linear-gradient(to right, alpha(#b3c1ce,0.7), alpha(#b3c1ce,0.14) 40px, alpha(#b3c1ce,0) 56px), linear-gradient(to right, alpha(#b3c1ce,0.4), alpha(#b3c1ce,0.14) 7px, alpha(#b3c1ce,0) 24px);
 }
 
 .sidebar-pane flap > shadow.right,
 .sidebar-pane leaflet > shadow.right,
 .sidebar-pane navigation-view > shadow.right,
 .sidebar-pane overlay-split-view > shadow.right {
-  background-image: linear-gradient(to left, alpha(rgba(192, 203, 214, 0.95),0.7), alpha(rgba(192, 203, 214, 0.95),0.14) 40px, alpha(rgba(192, 203, 214, 0.95),0) 56px), linear-gradient(to left, alpha(rgba(192, 203, 214, 0.95),0.4), alpha(rgba(192, 203, 214, 0.95),0.14) 7px, alpha(rgba(192, 203, 214, 0.95),0) 24px);
+  background-image: linear-gradient(to left, alpha(#b3c1ce,0.7), alpha(#b3c1ce,0.14) 40px, alpha(#b3c1ce,0) 56px), linear-gradient(to left, alpha(#b3c1ce,0.4), alpha(#b3c1ce,0.14) 7px, alpha(#b3c1ce,0) 24px);
 }
 
 .sidebar-pane flap > shadow.up,
 .sidebar-pane leaflet > shadow.up,
 .sidebar-pane navigation-view > shadow.up,
 .sidebar-pane overlay-split-view > shadow.up {
-  background-image: linear-gradient(to bottom, alpha(rgba(192, 203, 214, 0.95),0.7), alpha(rgba(192, 203, 214, 0.95),0.14) 40px, alpha(rgba(192, 203, 214, 0.95),0) 56px), linear-gradient(to bottom, alpha(rgba(192, 203, 214, 0.95),0.4), alpha(rgba(192, 203, 214, 0.95),0.14) 7px, alpha(rgba(192, 203, 214, 0.95),0) 24px);
+  background-image: linear-gradient(to bottom, alpha(#b3c1ce,0.7), alpha(#b3c1ce,0.14) 40px, alpha(#b3c1ce,0) 56px), linear-gradient(to bottom, alpha(#b3c1ce,0.4), alpha(#b3c1ce,0.14) 7px, alpha(#b3c1ce,0) 24px);
 }
 
 .sidebar-pane flap > shadow.down,
 .sidebar-pane leaflet > shadow.down,
 .sidebar-pane navigation-view > shadow.down,
 .sidebar-pane overlay-split-view > shadow.down {
-  background-image: linear-gradient(to top, alpha(rgba(192, 203, 214, 0.95),0.7), alpha(rgba(192, 203, 214, 0.95),0.14) 40px, alpha(rgba(192, 203, 214, 0.95),0) 56px), linear-gradient(to top, alpha(rgba(192, 203, 214, 0.95),0.4), alpha(rgba(192, 203, 214, 0.95),0.14) 7px, alpha(rgba(192, 203, 214, 0.95),0) 24px);
+  background-image: linear-gradient(to top, alpha(#b3c1ce,0.7), alpha(#b3c1ce,0.14) 40px, alpha(#b3c1ce,0) 56px), linear-gradient(to top, alpha(#b3c1ce,0.4), alpha(#b3c1ce,0.14) 7px, alpha(#b3c1ce,0) 24px);
 }
 
 .sidebar-pane banner > revealer > widget {
-  background-color: mix(#bb6ad5,rgba(238, 241, 244, 0.95),0.7);
-  color: #4F5868;
+  background-color: mix(#bb6ad5,#e2e7ec,0.7);
+  color: #4B505B;
 }
 
 .sidebar-pane banner > revealer > widget:backdrop {
-  background-color: mix(#bb6ad5,rgba(238, 241, 244, 0.95),0.7);
+  background-color: mix(#bb6ad5,#e2e7ec,0.7);
 }
 
 .sidebar-pane:dir(ltr), .sidebar-pane:dir(ltr) banner > revealer > widget, .sidebar-pane.end:dir(rtl), .sidebar-pane.end:dir(rtl) banner > revealer > widget {
   box-shadow: none;
-  border-right: 1px solid rgba(192, 203, 214, 0.95);
+  border-right: 1px solid #b3c1ce;
 }
 
 .sidebar-pane:dir(rtl), .sidebar-pane:dir(rtl) banner > revealer > widget, .sidebar-pane.end:dir(ltr), .sidebar-pane.end:dir(ltr) banner > revealer > widget {
   box-shadow: none;
-  border-left: 1px solid rgba(192, 203, 214, 0.95);
+  border-left: 1px solid #b3c1ce;
 }
 
 /* Middle pane in three-pane setups */
@@ -7912,24 +7912,24 @@ toolbarview.undershoot-bottom scrolledwindow > undershoot.bottom {
 }
 
 .sidebar-pane scrollbar {
-  border-color: rgba(223, 228, 234, 0.95);
+  border-color: #d2dae2;
 }
 
 .sidebar-pane scrollbar.overlay-indicator:not(.dragging):not(.hovering) > range > trough > slider {
-  background-color: #717d93;
+  background-color: #6e7585;
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .sidebar-pane scrollbar > range > trough {
-  background-color: rgba(223, 228, 234, 0.95);
+  background-color: #d2dae2;
 }
 
 .sidebar-pane scrollbar > range > trough > slider {
-  background-color: rgba(113, 125, 147, 0.7);
+  background-color: rgba(110, 117, 133, 0.7);
 }
 
 .sidebar-pane scrollbar > range > trough > slider:hover {
-  background-color: #7f8a9e;
+  background-color: #7a8292;
 }
 
 .sidebar-pane scrollbar > range > trough > slider:hover:active {
@@ -7941,11 +7941,11 @@ toolbarview.undershoot-bottom scrolledwindow > undershoot.bottom {
 }
 
 .nautilus-window .sidebar-pane .navigation-sidebar > row, .nautilus-window flap .navigation-sidebar > row {
-  color: #4F5868;
+  color: #4B505B;
 }
 
 .nautilus-window .sidebar-pane .navigation-sidebar > row .sidebar-icon, .nautilus-window flap .navigation-sidebar > row .sidebar-icon {
-  color: rgba(79, 88, 104, 0.75);
+  color: rgba(75, 80, 91, 0.75);
 }
 
 .nautilus-window .sidebar-pane .navigation-sidebar > row:hover, .nautilus-window flap .navigation-sidebar > row:hover {
@@ -7973,11 +7973,11 @@ toolbarview.undershoot-bottom scrolledwindow > undershoot.bottom {
 }
 
 .nautilus-window .sidebar-pane .navigation-sidebar > row:disabled, .nautilus-window flap .navigation-sidebar > row:disabled {
-  color: rgba(79, 88, 104, 0.45);
+  color: rgba(75, 80, 91, 0.45);
 }
 
 .nautilus-window .sidebar-pane .navigation-sidebar > row:not(:selected) button.sidebar-button, .nautilus-window flap .navigation-sidebar > row:not(:selected) button.sidebar-button {
-  color: #4F5868;
+  color: #4B505B;
 }
 
 .nautilus-window .sidebar-pane .navigation-sidebar > row:not(:selected) button.sidebar-button:hover, .nautilus-window flap .navigation-sidebar > row:not(:selected) button.sidebar-button:hover {
@@ -8040,8 +8040,8 @@ toolbarview.undershoot-bottom scrolledwindow > undershoot.bottom {
 }
 
 .nautilus-window flap .navigation-sidebar {
-  background-color: rgba(238, 241, 244, 0.95);
-  color: #4F5868;
+  background-color: #e2e7ec;
+  color: #4B505B;
   padding: 0;
 }
 
@@ -8273,15 +8273,15 @@ menubutton.flat.popup.sources-button > button image.calendar-color-image {
 }
 
 .sidebar-pane datechooser .current-week {
-  background-color: rgba(79, 88, 104, 0.05);
+  background-color: rgba(75, 80, 91, 0.05);
 }
 
 .sidebar-pane datechooser label.weeknum {
-  color: rgba(79, 88, 104, 0.75);
+  color: rgba(75, 80, 91, 0.75);
 }
 
 .sidebar-pane datechooser label.weekday {
-  color: rgba(79, 88, 104, 0.45);
+  color: rgba(75, 80, 91, 0.45);
 }
 
 @define-color theme_fg_color #4B505B;

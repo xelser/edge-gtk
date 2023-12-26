@@ -81,7 +81,7 @@
 
 button.gtkstyle-fallback:active, button.gtkstyle-fallback:checked {
   color: #FAFAFA;
-  border-color: #3A8B84;
+  border-color: rgba(0, 0, 0, 0.15);
   background-color: #3A8B84;
 }
 
@@ -477,7 +477,7 @@ button:hover {
 
 button:active, button:checked {
   color: #FAFAFA;
-  border-color: #3A8B84;
+  border-color: rgba(0, 0, 0, 0.15);
   background-color: #3A8B84;
   background-clip: border-box;
   transition-duration: 50ms;
@@ -581,7 +581,7 @@ button.osd:hover {
 
 button.osd:active, button.osd:checked {
   color: #FAFAFA;
-  border-color: #3A8B84;
+  border-color: rgba(0, 0, 0, 0.15);
   background-color: #3A8B84;
 }
 
@@ -606,7 +606,7 @@ button.osd:disabled {
 .osd button:active, .osd button:checked {
   background-clip: padding-box;
   color: #FAFAFA;
-  border-color: #3A8B84;
+  border-color: rgba(0, 0, 0, 0.15);
   background-color: #3A8B84;
 }
 
@@ -638,7 +638,7 @@ button.osd:disabled {
 
 .osd button.flat:active, .osd button.flat:checked {
   color: #FAFAFA;
-  border-color: #3A8B84;
+  border-color: rgba(0, 0, 0, 0.15);
   background-color: #3A8B84;
 }
 
@@ -800,7 +800,7 @@ button.font separator, button.file separator {
 
 .inline-toolbar toolbutton > button:active, .inline-toolbar toolbutton > button:checked {
   color: #FAFAFA;
-  border-color: #3A8B84;
+  border-color: rgba(0, 0, 0, 0.15);
   background-color: #3A8B84;
 }
 
@@ -4034,7 +4034,7 @@ row:not(:hover) {
 
 .app-notification button:active, .app-notification button:checked {
   color: #FAFAFA;
-  border-color: #3A8B84;
+  border-color: rgba(0, 0, 0, 0.15);
   background-color: #3A8B84;
   background-clip: padding-box;
 }
@@ -7026,7 +7026,7 @@ widget > box.terminal-titlebar > button.image-button, widget > box.terminal-titl
 }
 
 list.tilix-session-sidebar {
-  background-image: image(rgba(238, 241, 244, 0.95));
+  background-image: image(#e2e7ec);
 }
 
 list.tilix-session-sidebar button.tilix-sidebar-close-button {
@@ -7607,13 +7607,13 @@ window#MyControlCenter > frame > box.horizontal > widget > scrolledwindow.frame 
 
 .drop-shadow button:active, .raven .raven-header:not(.top) button.image-button:active, .budgie-popover > frame > box.vertical > box.vertical > box.horizontal > button.image-button.toggle:active, .budgie-popover:not(.budgie-menu) button.flat:active:not(.image-button) {
   color: #FAFAFA;
-  border-color: #3A8B84;
+  border-color: rgba(0, 0, 0, 0.15);
   background-color: #3A8B84;
 }
 
 .drop-shadow button:checked, .raven .raven-header:not(.top) button.image-button:checked, .budgie-popover > frame > box.vertical > box.vertical > box.horizontal > button.image-button.toggle:checked, .budgie-popover:not(.budgie-menu) button.flat:checked:not(.image-button) {
   color: #FAFAFA;
-  border-color: #3A8B84;
+  border-color: rgba(0, 0, 0, 0.15);
   background-color: #3A8B84;
 }
 
@@ -7862,7 +7862,7 @@ window#MyControlCenter > frame > box.horizontal > widget > scrolledwindow.frame 
 
 .budgie-popover.sound-popover buttonbox.linked > button:active, .budgie-popover.sound-popover buttonbox.linked > button:checked {
   color: #FAFAFA;
-  border-color: #3A8B84;
+  border-color: rgba(0, 0, 0, 0.15);
   background-color: #3A8B84;
 }
 
@@ -9239,8 +9239,8 @@ MarlinViewWindow FMListView, MarlinViewWindow FMColumnView {
 }
 
 treeview.view.sidebar {
-  color: #4F5868;
-  background-color: rgba(238, 241, 244, 0.95);
+  color: #4B505B;
+  background-color: #e2e7ec;
 }
 
 treeview.view.sidebar.source-list {
@@ -9382,7 +9382,7 @@ scale.warmth trough {
 
 #content_frame button:active, #content_frame button:checked {
   color: #FAFAFA;
-  border-color: #3A8B84;
+  border-color: rgba(0, 0, 0, 0.15);
   background-color: #3A8B84;
 }
 
@@ -9404,7 +9404,7 @@ scale.warmth trough {
   border-bottom-right-radius: 3px;
   border: solid rgba(0, 0, 0, 0.1);
   border-width: 0 1px 1px 1px;
-  box-shadow: inset 0 1px rgba(192, 203, 214, 0.95);
+  box-shadow: inset 0 1px #b3c1ce;
 }
 
 #buttonbox_frame button {
@@ -9421,7 +9421,7 @@ scale.warmth trough {
 
 #buttonbox_frame button:active, #buttonbox_frame button:checked {
   color: #FAFAFA;
-  border-color: #3A8B84;
+  border-color: rgba(0, 0, 0, 0.15);
   background-color: #3A8B84;
 }
 
@@ -9688,7 +9688,7 @@ GtkListBox .h4 {
 
 filechooser paned > separator,
 .nautilus-window paned > separator {
-  background-image: linear-gradient(to bottom, rgba(192, 203, 214, 0.95), rgba(192, 203, 214, 0.95));
+  background-image: linear-gradient(to bottom, #b3c1ce, #b3c1ce);
 }
 
 filechooser.csd.background, filechooser placessidebar list,
@@ -9699,7 +9699,7 @@ filechooser.csd.background, filechooser placessidebar list,
 
 filechooser placessidebar.sidebar,
 .nautilus-window placessidebar.sidebar {
-  background-color: rgba(238, 241, 244, 0.95);
+  background-color: #e2e7ec;
 }
 
 filechooser placessidebar.sidebar row.sidebar-row,
@@ -9707,19 +9707,19 @@ filechooser placessidebar.sidebar row.sidebar-row,
   margin: 0 0;
   border: none;
   border-radius: 0;
-  color: #4F5868;
+  color: #4B505B;
 }
 
 filechooser placessidebar.sidebar row.sidebar-row .sidebar-icon,
 .nautilus-window placessidebar.sidebar row.sidebar-row .sidebar-icon {
-  color: rgba(79, 88, 104, 0.6);
+  color: rgba(75, 80, 91, 0.6);
 }
 
 filechooser placessidebar.sidebar row.sidebar-row.has-open-popup, filechooser placessidebar.sidebar row.sidebar-row:hover,
 .nautilus-window placessidebar.sidebar row.sidebar-row.has-open-popup,
 .nautilus-window placessidebar.sidebar row.sidebar-row:hover {
   border-radius: 0;
-  background-color: rgba(79, 88, 104, 0.15);
+  background-color: rgba(75, 80, 91, 0.15);
   box-shadow: inset 3px 0 #5cb5b2;
 }
 
@@ -9727,7 +9727,7 @@ filechooser placessidebar.sidebar row.sidebar-row:disabled, filechooser placessi
 .nautilus-window placessidebar.sidebar row.sidebar-row:disabled,
 .nautilus-window placessidebar.sidebar row.sidebar-row:disabled label,
 .nautilus-window placessidebar.sidebar row.sidebar-row:disabled image {
-  color: rgba(79, 88, 104, 0.45);
+  color: rgba(75, 80, 91, 0.45);
 }
 
 filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup, filechooser placessidebar.sidebar row.sidebar-row:selected, filechooser placessidebar.sidebar row.sidebar-row:selected:hover, filechooser placessidebar.sidebar row.sidebar-row:active:hover,
@@ -9756,7 +9756,7 @@ filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup .sideb
 
 filechooser placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button,
 .nautilus-window placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button {
-  color: #4F5868;
+  color: #4B505B;
 }
 
 filechooser placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button:hover,
@@ -9819,7 +9819,7 @@ filechooser placessidebar.sidebar separator,
 
 filechooser.maximized placessidebar.sidebar,
 .nautilus-window.maximized placessidebar.sidebar {
-  background-color: #eef1f4;
+  background-color: #e2e7ec;
 }
 
 filechooser actionbar {
@@ -9842,7 +9842,7 @@ filechooser actionbar button:hover {
 
 filechooser actionbar button:active, filechooser actionbar button:checked {
   color: #FAFAFA;
-  border-color: #3A8B84;
+  border-color: rgba(0, 0, 0, 0.15);
   background-color: #3A8B84;
 }
 
@@ -9884,7 +9884,7 @@ filechooser actionbar label, filechooser actionbar combobox {
 }
 
 .gedit-side-panel-paned > separator {
-  background-image: linear-gradient(to bottom, rgba(192, 203, 214, 0.95), rgba(192, 203, 214, 0.95));
+  background-image: linear-gradient(to bottom, #b3c1ce, #b3c1ce);
 }
 
 .gedit-bottom-panel-paned > separator {
@@ -9892,20 +9892,20 @@ filechooser actionbar label, filechooser actionbar combobox {
 }
 
 .gedit-document-panel {
-  background-color: rgba(238, 241, 244, 0.95);
+  background-color: #e2e7ec;
 }
 
 .maximized .gedit-document-panel {
-  background-color: #eef1f4;
+  background-color: #e2e7ec;
 }
 
 .gedit-document-panel row {
-  color: #4F5868;
-  background-color: rgba(79, 88, 104, 0);
+  color: #4B505B;
+  background-color: rgba(75, 80, 91, 0);
 }
 
 .gedit-document-panel row:hover {
-  background-color: rgba(79, 88, 104, 0.15);
+  background-color: rgba(75, 80, 91, 0.15);
 }
 
 .gedit-document-panel row:active {
@@ -9923,28 +9923,28 @@ filechooser actionbar label, filechooser actionbar combobox {
 }
 
 .gedit-document-panel row:hover:not(:selected) button:active {
-  color: #4F5868;
+  color: #4B505B;
 }
 
 filechooser placessidebar.sidebar scrollbar,
 .nautilus-window placessidebar.sidebar scrollbar {
-  border-color: rgba(223, 228, 234, 0.95);
+  border-color: #d2dae2;
 }
 
 filechooser placessidebar.sidebar scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider,
 .nautilus-window placessidebar.sidebar scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider {
-  background-color: #717d93;
+  background-color: #6e7585;
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 filechooser placessidebar.sidebar scrollbar slider,
 .nautilus-window placessidebar.sidebar scrollbar slider {
-  background-color: rgba(113, 125, 147, 0.7);
+  background-color: rgba(110, 117, 133, 0.7);
 }
 
 filechooser placessidebar.sidebar scrollbar slider:hover,
 .nautilus-window placessidebar.sidebar scrollbar slider:hover {
-  background-color: #7f8a9e;
+  background-color: #7a8292;
 }
 
 filechooser placessidebar.sidebar scrollbar slider:hover:active,
@@ -9959,7 +9959,7 @@ filechooser placessidebar.sidebar scrollbar slider:disabled,
 
 filechooser placessidebar.sidebar scrollbar trough,
 .nautilus-window placessidebar.sidebar scrollbar trough {
-  background-color: rgba(223, 228, 234, 0.95);
+  background-color: #d2dae2;
 }
 
 @define-color theme_fg_color #4B505B;

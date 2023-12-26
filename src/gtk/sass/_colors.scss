@@ -87,10 +87,14 @@ $header_bg: $bg_color;
 
 $header_bg_backdrop: if($header == 'light', lighten($header_bg, 6%), lighten($header_bg, 5%));
 $header_border: if($header == 'light', rgba(black, 0.15), rgba(black, 0.25));
-$header_fg: if($header =='light', $fg_color, mix($accent_color, #BAC3CB, 5%));
+$header_fg: if($header =='light', $fg_color, mix($accent_color, #97A4B5, 5%));
 
-$dark_sidebar_bg: if($variant == 'light' and $header == 'light', rgba(#EEF1F4, 0.95), rgba(#4F5868, 0.95));
-$dark_sidebar_fg: if($variant == 'light' and $header == 'light', $text_color, mix($accent_color, #BAC3CB, 5%));
+$dark_sidebar_bg: if($variant == 'light' and $header == 'light', darken($bg_color, 4%), darken(#33353F, 5%));
+@if $color=='cyan' { $dark_sidebar_bg: if($variant == 'light' and $header == 'light', darken($bg_color, 4%), darken(#333644, 5%)); }
+@if $color=='blue' { $dark_sidebar_bg: if($variant == 'light' and $header == 'light', darken($bg_color, 4%), darken(#333644, 5%)); }
+@if $color=='purple' { $dark_sidebar_bg: if($variant == 'light' and $header == 'light', darken($bg_color, 4%), darken(#333648, 5%)); }
+
+$dark_sidebar_fg: if($variant == 'light' and $header == 'light', $fg_color, mix($accent_color, #97A4B5, 5%));
 $dark_sidebar_border: if($variant == 'light' and $header == 'light', darken($dark_sidebar_bg, 15%), darken($base_color, 5%));
 $dark_sidebar_hover_color: if($variant == 'light' and $header == 'light', rgba(black, 0.1), rgba(white, 0.08));
 $dark_sidebar_active_color: if($variant == 'light' and $header == 'light', rgba(black, 0.15), rgba(white, 0.12));
@@ -148,3 +152,4 @@ $wm_icon_bg: $header_fg;
 $wm_icon_unfocused_bg: if($variant == 'light', lighten($header_fg, 50%), darken($header_fg, 50%));
 $wm_icon_hover_bg: $header_fg;
 $wm_icon_active_bg: $selected_fg_color;
+
