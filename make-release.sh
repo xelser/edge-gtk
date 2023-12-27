@@ -17,12 +17,12 @@ fi
 
 Tar_themes() {
 for theme in "${_THEME_VARIANTS[@]}"; do
-  rm -rf ${THEME_NAME}${color}${theme}.tar.xz
+  rm -rf ${THEME_NAME}${theme}${color}.tar.xz
 done
 
 for theme in "${_THEME_VARIANTS[@]}"; do
   for color in "${_COLOR_VARIANTS[@]}"; do
-		tar -Jcvf ${THEME_NAME}${color}${theme}.tar.xz ${THEME_NAME}${color}${theme}{,-hdpi,-xhdpi}
+		tar -Jcvf ${THEME_NAME}${theme}${color}.tar.xz ${THEME_NAME}${theme}${color}{,-hdpi,-xhdpi}
   done
 done
 }
@@ -30,14 +30,13 @@ done
 Clear_theme() {
 for theme in "${_THEME_VARIANTS[@]}"; do
   for color in "${_COLOR_VARIANTS[@]}"; do
-    [[ -d "${THEME_NAME}${color}${theme}" ]] && rm -rf "${THEME_NAME}${color}${theme}"
-    [[ -d "${THEME_NAME}${color}${theme}-hdpi" ]] && rm -rf "${THEME_NAME}${color}${theme}-hdpi"
-    [[ -d "${THEME_NAME}${color}${theme}-xhdpi" ]] && rm -rf "${THEME_NAME}${color}${theme}-xhdpi"
+    [[ -d "${THEME_NAME}${theme}${color}" ]] && rm -rf "${THEME_NAME}${theme}${color}"
+    [[ -d "${THEME_NAME}${theme}${color}-hdpi" ]] && rm -rf "${THEME_NAME}${theme}${color}-hdpi"
+    [[ -d "${THEME_NAME}${theme}${color}-xhdpi" ]] && rm -rf "${THEME_NAME}${theme}${color}-xhdpi"
   done
 done
 }
 
-./install.sh -d $THEME_DIR
-
+mkdir -p $THEME_DIR && ./install.sh -d $THEME_DIR
 cd $THEME_DIR && Tar_themes && Clear_theme
 
