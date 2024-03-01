@@ -36,7 +36,7 @@ install() {
   local theme="${4}"
 
   local themedir="${dest}/${name}${theme}${color}"
-	
+
   [[ ${color} == '-dark' ]] && local ELSE_DARK="${color}"
   [[ ${color} == '-light' ]] && local ELSE_LIGHT="${color}"
 
@@ -93,7 +93,7 @@ install() {
   cd "${SRC_DIR}/cinnamon/assets${theme}"
   cp -r common-assets                                                                 "${themedir}/cinnamon"
   cp -r "assets${ELSE_DARK}"                                                          "${themedir}/cinnamon/assets"
-  
+
   # Install Metacity Theme
   mkdir -p                                                                            "${themedir}/metacity-1"
   cd "${SRC_DIR}/metacity-1"
@@ -133,6 +133,11 @@ install() {
   else
     cp -r "themerc${theme}"                                                           "${themedir}-xhdpi/xfwm4/themerc"
   fi
+
+  # Install Plank Theme
+  mkdir -p                                                                            "${themedir}/plank"
+  cd "${SRC_DIR}"
+  cp -r plank                                                                         "${themedir}"                                                                    "${GTKSV_DIR}/"
 }
 
 while [[ $# -gt 0 ]]; do
