@@ -134,10 +134,6 @@ install() {
     cp -r "themerc${theme}"                                                           "${themedir}-xhdpi/xfwm4/themerc"
   fi
 
-  # Install Plank Theme
-  mkdir -p                                                                            "${themedir}/plank"
-  cd "${SRC_DIR}"
-  cp -r plank                                                                         "${themedir}"                                                                    "${GTKSV_DIR}/"
 }
 
 while [[ $# -gt 0 ]]; do
